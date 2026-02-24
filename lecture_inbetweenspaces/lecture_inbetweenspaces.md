@@ -801,3 +801,11 @@ If we accept that computational pipelines produce third spaces — spaces with e
 
 
 If we are building worlds, what does that oblige us to?
+
+
+---
+template:inverse
+
+## The End
+
+# 💧 🌊 💦
