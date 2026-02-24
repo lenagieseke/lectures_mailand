@@ -178,6 +178,28 @@ Moving something from one domain into another:
 Computational translation is typically framed as transfer (moving something from one domain into another), but this framing obscures what is actually happening. Introduce the alternative frame: translation as production of a third space. Lead over to examples
 
 
+The integration question is worth thinking through carefully. Here is an honest assessment:
+The domain/translation/third space structure for Lavarand
+
+Source domain: chaotic physical phenomenon (fluid, light, heat)
+Translation: camera → pixel values → hash function → PRNG seed
+"Third space": pseudo-random number sequence
+
+The third space is genuinely novel — it is neither the lava lamps nor true randomness. It has its own internal logic: period lengths, statistical distributions, seed dependency. And it has real-world consequences: it secures 20% of internet traffic. By your own three criteria it actually scores reasonably well: emergent structure (yes), generativity (yes, infinite), feedback potential (yes — it shapes cryptographic infrastructure globally).
+But the third space is entirely operational, not experiential or inhabitable. Nobody lives in a PRNG sequence. This is categorically different from Body Paint, Superradiance, or The Lake, where the third space is a space you can be inside.
+My recommendation: keep it, but reframe its function explicitly
+Lavarand works perfectly as a conceptual on-ramp — it illustrates the translation structure with unusual clarity and surprise, before the artistic examples complicate it. The weakness is actually rhetorical rather than logical: if you present it as a case study on equal footing with the others, the third space claim feels thin. But if you frame it explicitly as the simplest possible example of the structure — translation produces something that belongs to neither domain — it earns its place. And the closing callback to the lava lamp wall lands well precisely because the audience has been carrying it the whole time.
+The slide note already says this well: "The PRNG was never a failed copy of randomness — it was a new kind of object." That is the argument. Just make sure the introduction frames Lavarand as illustration, not as full case study.
+
+---
+## Lavarand
+
+* Source domain: chaotic physical phenomenon (fluid, light, heat)
+* Translation: camera → pixel values → hash function → PRNG seed
+* "Third space": pseudo-random number sequence
+
+
+
 ---
 template:inverse
 
@@ -346,8 +368,34 @@ The fluid field produced by Body Paint has viscosity, diffusion rates, attractor
 * User-to-user interaction: throw paint, splash each other
 * While the installation is suitable for a single user, when multiple users are present a new dynamic emerges between people. A user-to-user interaction is born when the audience start playing with each other through the installation, throwing virtual paint at each other, trying to splash their friends, working collaboratively to create shared artwork, or mischievously trying to vandalize others’ work.
 
+---
+
+## Body Paint
+
+Source domains
+* The moving body (infrared camera: speed, acceleration, curvature)
+* Fluid dynamics simulation
+
+--
+
+Translation operation
+* Motion signal → velocity vectors → fluid field parameters
+* The system does not see bodies — only movement
 
 
+???
+* the translation is real-time and reactive, the third space is co-produced live.
+
+--
+
+The third space
+* A living painterly space with its own viscosity, diffusion, and memory
+* Neither the gesture nor the physics — a new aesthetic domain
+
+???
+* The body is already abstracted away at capture: anything moving triggers the same response.
+* The field has properties the gesture never had: persistence, diffusion rates, attractor behavior.
+* The third space talks back — multi-user dynamics emerge that were never choreographed.
 
 
 ---
@@ -484,52 +532,272 @@ https://superradiance.net/
 .footnote[[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
 
 ---
+## Superradiance
+
+Source domains
+* The dancing body
+* Natural processes: waves, root growth, wind, tidal movement
+
+--
+
+Translation operation
+* Body pose → ControlNet skeleton → diffusion latent space
+* Natural imagery → IP-Adapter conditioning
+
+
+???
+* Superradiance it is authored and rendered, the third space is designed in advance. 
+
+--
+
+The third space
+* Ecological entanglement made *felt*, not just known
+* Neither the dance nor the footage but a new experiential domain
+
+???
+* The idea (entanglement) is not in either source domain. 
+* It only emerges in the crossing
+* The third space is not a copy of either domain (dancing, nature), it is a system with its own rules.
+
+---
+## Machine Hallucinations — Nature Dreams
+
+Rafik Anadol, 2021
+
+> A giant data sculpture displaying machine-generated, dynamic pigments of nature.
+
+<br />
+
+> [...] to commemorate the beauty of the earth we share.
+
+---
+## Machine Hallucinations — Nature Dreams
+
+* Superradiance → the body steers the latent space
+* Anadol → data IS the latent space, rendered as environment
+
+
+???
+* Then Anadol flips the input: instead of a body, the source is pure data — millions of images, climate records, neural signals — fed directly into ML models, and the latent space is rendered as architectural-scale visual space. The gesture disappears; data becomes the gesture.
+* utilizes over 300 million publicly available photographs of nature collected between 2018- 2021 at Refik Anadol Studio
+* used to train a GAN AI algorithm
+* The resulting AI Data Painting incorporates pigments, shapes, and patterns that we associate with nature, but only exist in the mind of a machine as dreams. 
+
+---
+## Nature Dreams
+
+* Data collection
+    * 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+<img src="./img/naturedreams_01.png" alt="naturedreams_01" style="width:98%;">
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+<img src="./img/naturedreams_02.png" alt="naturedreams_02" style="width:98%;">
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+<img src="./img/naturedreams_03.png" alt="naturedreams_03" style="width:98%;">
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+<img src="./img/naturedreams_04.png" alt="naturedreams_04" style="width:98%;">
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+<img src="./img/naturedreams_05.png" alt="naturedreams_05" style="width:98%;">
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+---
+## Nature Dreams
+
+* Data collection
+    * 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
+
+---
+## Nature Dreams
+
+* Feature extraction and filtering (ResNeXt)
+    * A CNN architecture, producing a high-dimensional feature vector per image
+    * Vectors encode semantic content
+    * Xie, S., Girshick, R., Dollár, P., Tu, Z., and He, K. 2017. Aggregated Residual Transformations for Deep Neural Networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1492–1500. https://doi.org/10.1109/CVPR.2017.634
+
+---
+## Nature Dreams
+
+* Dimensionality reduction and spatial clustering (UMAP)
+    * Projection of high-dimensional feature vectors into three-dimensional space using UMAP, preserving local and global structure of the data manifold, where proximity equals semantic similarity. 
+    * McInnes, L., Healy, J., and Melville, J. 2018. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv preprint arXiv:1802.03426. https://arxiv.org/abs/1802.03426
+
+---
+## Nature Dreams
+
+* Generative synthesis (StyleGAN2-ADA)
+    * Thematically clustered subsets train a StyleGAN2-ADA model, producing 1024-dimensional embeddings
+    * A custom Latent Space Browser (developed since 2017) enables navigation and interpolation through the learned distribution
+    * Sampled GAN outputs — color fields, forms, textures that exist nowhere outside the model — serve as Anadol's "data pigments"
+    * These pigments feed a GPU-accelerated fluid dynamics solver (vvvv / Fuse library), where they become color and form attributes driving a particle simulation of up to 100 million elements
+    * Karras, T., Aittala, M., Hellsten, J., Laine, S., Lehtinen, J., and Aila, T. 2020. Training Generative Adversarial Networks with Limited Data. In Advances in Neural Information Processing Systems (NeurIPS), Vol. 33, 12104–12114. https://arxiv.org/abs/2006.06676
+
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+
+???
+The pipeline has four distinct stages:
+1. Data collection — 300 million publicly available nature photographs gathered over three years. The scale matters: this is not a curated art dataset but a mass-scraped collective visual memory of how humans have photographed nature.
+2. Feature extraction and filtering (ResNeXt) — Each image is passed through ResNeXt, a CNN architecture that extends ResNet via grouped convolutions, producing a high-dimensional feature vector per image. These vectors encode semantic content — not pixels, but learned representations of what the image means to the network. The vectors are then used to qualitatively filter the dataset, removing noise and semantic outliers. (Xie et al., 2017, CVPR)
+3. Dimensionality reduction and spatial clustering (UMAP) — The feature vectors, still high-dimensional, are projected into three-dimensional space using UMAP, which preserves both local and global structure of the data manifold. The result is a navigable, real-time 3D "data universe" where proximity equals semantic similarity. This is the step where data becomes space. (McInnes et al., 2018, arXiv:1802.03426)
+4. Generative synthesis (StyleGAN2-ADA) — Thematically clustered subsets train a StyleGAN2-ADA model. The ADA variant is specifically designed to prevent discriminator overfitting on smaller training sets — relevant because thematic clusters, despite originating from 300M images, are relatively small after filtering. A latent space browser then allows navigation and interpolation through the learned distribution. (Karras et al., 2020, NeurIPS)
+The quantum computing layer mentioned in the project description is not documented with sufficient technical specificity to be cited reliably — best left aside.
+
+This two-stage synthesis is the crucial technical detail for your talk: the GAN is not the final output layer but a material generator feeding a separate spatial simulation system. The translation chain is longer than it appears — and the final aesthetic space is the product of at least two distinct computational domains in dialogue.:
+
+5. Latent space navigation (custom software) — The studio has developed a proprietary Latent Space Browser since 2017. This tool allows navigation and interpolation through the trained GAN's latent space, extracting sequences of generated images — what Anadol calls "data pigments": color fields, forms, and textures that exist only in the model's learned distribution. The output here is not a finished image but a stream of generative material.
+6. Fluid particle simulation (vvvv / Fuse) — The data pigments are fed into a GPU-accelerated fluid dynamics solver implemented in vvvv, a visual programming environment developed by the German developer collective, using their Fuse library for GPU computation. The StyleGAN outputs become color and form attributes assigned to particles in a fluid simulation — essentially the GAN paints the fluid. The Fluid Dreams variant at MoMA used approximately 100 million particles with real-time ray-traced lighting. Notably, at that scale the simulation cannot run in real time and must be pre-rendered — even on Anadol's custom-built computing infrastructure.
+
+
+
+* Data collection
+    * 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
+* Classification: Complied dataset is fed into an image recognition algorithm, ResNext, for feature vectorization. Those computed features are then to qualitativly filter the dataset.
+* Image Cluster: The UML-UMAP algorithm is used in a real time explorable, and three-dimensional data universe with a custom software.
+* Style Gan2, with adaptive descriptor augmentation (ADA) with a latent space browser
+
+## Machine Hallucinations — Nature Dreams
+
+Source domain
+* 300,000,000 publicly available nature photographs (2018–2021)
+
+--
+
+Translation pipeline
+* Feature extraction
+* Dimensionality reduction
+* Generative synthesis
+
+--
+
+The third space
+* Very beautiful moving abstract imagery
+
+> The translation is complete, but the space produced has no grammar of its own.
+
+
+
+???
+* No new logic, no emergent behavior the audience can inhabit, no feedback loop.
+* Nature imagery that has never existed — latent pigments, shapes,  
+  patterns distilled from 300M photographs into a navigable dream
+* The dataset is not displayed — it is *metabolized*
+* Important distinction from Superradiance: no body, no gesture. The data itself is the sole source domain.
+* UMAP is the crucial step for your argument: it is where high-dimensional data *becomes space* — literally a spatial translation operation.
+* "Data as pigment" — Anadol's own framing — rhymes deliberately with Body Paint.
+* Anadol is useful precisely as a limit case: 
+  he shows the translation operation with unusual clarity,
+  then stops short.
+* Body Paint: audience inside the system, co-producing the space
+* Superradiance: viewer's body collapsed into the ecological argument
+* Anadol: spectacular, but you watch it from the outside
+* This sets up the question Datamorphism attempts to answer
+
 ## The Third Space
 
-The Primary Gesture: The Dancing Body
+Oftentimes the idea of a thrid space based on data is enoguh.
 
-
-???
-* generative latent space
-* Dancer's movement captured and fed into ControlNet as pose skeleton data
-Bodily gesture becomes a latent space constraint — the choreography steers the generative diffusion process
-The gesture is preserved structurally while the visual world around it is transformed
-* Superradiance: body gesture → ControlNet pose skeleton → steers diffusion latent space → rendered environment. The ML model is a translation layer — the gesture constrains what the latent space can express.
-* the body steers the latent space
-
---
-
-The Ecological Gesture
-
-
-???
-* Natural processes (waves, root growth, wind, tidal movement) are framed as gestural — the planet moves, and the work renders those movements as cognate to bodily movement
-
---
-
-The third space is not a copy of either domain — it is a system with its own rules.
-
----
-## Machine Learning
-
-https://refikanadol.com/works/unsupervised/
-
-Superradiance → the body steers the latent space
-           ↓
-Anadol     → data IS the latent space, rendered as environment
-           ↓
-Datamorphism → naming the operation: 
-               any domain can be translated into inhabited space 
-               via ML as the translational engine
-
-
-Superradiance: body gesture → ControlNet pose skeleton → steers diffusion latent space → rendered environment. The ML model is a translation layer — the gesture constrains what the latent space can express.
-Then Anadol flips the input: instead of a body, the source is pure data — millions of images, climate records, neural signals — fed directly into ML models, and the latent space is rendered as architectural-scale visual space. The gesture disappears; data becomes the gesture.
+We call this *Datamorphism*.
 
 
 ---
-template:inverse
+## Datamorphism
 
-## The End
+> How data properties and our understanding of data shape the form *and reception* of data artworks.
+  
 
-# 💧 🌊 💦
+Analogous to anthropomorphism, but instead of projecting *human traits*, datamorphism projects *data values*:  
+truth, universality, objectivity.
+
+
+.footnote[[Huson, M. and Gieseke, L. 2025. Datamorphism: Data Art of the Other-Than-Human. xCoAx 2025.]]
+
+
+???
+* In related work, we proposed datamorphism to describe how data properties — their size, their mapping logic, and their meta-communication — actively shape both the form of a data-based representation and its reception by an audience. The concept was developed in the context of data art about other-than-human phenomena, but it applies directly here. The key insight: translation is never neutral. The codec is an argument. What you encode, how you map it, and what you make visible to the audience are all decisions that produce the third space — not merely describe it.
+
+Four properties that shape datamorphic reception:
+
+* **Dataset size** — scale produces the sublime; comprehension breaks down
+* **Meta-communication** — the audience must *know* the work is data-based
+* **Machine-generated data** — decoupled from human agency at the moment of capture
+* **Data mapping** — the translation from formal data to aesthetic form
+
+* The perceptual shift is the core claim: knowing an artwork is data-based changes how you receive it.
+* "Belief at first sight" — Kosminsky et al. 2019 — data lend authority the work may not otherwise possess.
+* Key distinction from visualization: datamorphism is about reception and artistic potential, not communicative efficiency.
+* The limit case of Anadol now reads clearly: the pipeline is there, the scale is there, but the meta-communication is weak — the audience experiences spectacle, not data.
+
+---
+## Datamorphism
+
+Four properties that shape datamorphic reception:
+
+* **Dataset size** — scale produces the sublime; comprehension breaks down
+* **Meta-communication** — the audience must *know* the work is data-based
+* **Machine-generated data** — decoupled from human agency at the moment of capture
+* **Data mapping** — the translation from formal data to aesthetic form
+
+.footnote[[Huson, M. and Gieseke, L. 2025. Datamorphism: Data Art of the Other-Than-Human. xCoAx 2025.]]
+
+---
+## Three Properties of the Third Space 
+
+1. Emergent structure
+    * the third space has properties that were not present in the source and could not have been predicted from it alone. The fluid field has attractors; the navigation graph has centrality; the lake installation has harmonic emergence.
+
+---
+## Three Properties of the Third Space 
+
+2. Generativity beyond the source
+    * the third space produces outputs, events, or behaviors that exceed what the source could generate. The field produces movements no body made; the graph predicts flows the building cannot; the fish installation composes music no fish intended.
+
+---
+## Three Properties of the Third Space 
+
+3. Feedback potential
+    * the third space begins to shape behavior in the original domain. The navigation representation changes how pedestrians walk. The datamorphic artwork changes how audiences perceive the phenomenon it represents. The encoded space starts encoding us.
+
+---
+## From Translation to World-Building 
+
+If the third space is real — if it has its own structure, generativity, and feedback effects — then the act of designing the pipeline is not a technical decision. It is an ontological one. The pipeline author decides what exists in the third space. This reframes the entire practice of computational translation: not as a means of representing the world, but as a means of producing new parts of it. One line to close the section and open the final movement: we have been building worlds. The question is whether we have been doing so deliberately.
+
+Closing: World-Building, Not World-Copying
+
+---
+## From Translation to World-Building 
+
+A single image: the Cloudflare lava lamp wall. The opening provocation revisited. The PRNG was never a failed copy of randomness — it was a new kind of object, built deliberately for a purpose, with its own internal logic and its own real-world effects. It secures 20% of the world's internet traffic. The third space it produces is consequential. The same is true, I want to propose, of every computational pipeline that translates physical behavior into algorithmic systems.
+
+## The Take-Home
+
+Computational translation is not world-copying. It is world-building.
+
+
+???
+
+Slide 3 — The Open Question Closing without resolution
+
+If we accept that computational pipelines produce third spaces — spaces with emergent structure, generativity, and feedback potential — then every design decision in the pipeline carries authorial and ethical weight. Who decides what gets encoded? What is lost in the translation, and for whom? When the third space starts shaping behavior in the original domain, who is responsible?
+
+## The Take-Home
+
+
+If we are building worlds, what does that oblige us to?
