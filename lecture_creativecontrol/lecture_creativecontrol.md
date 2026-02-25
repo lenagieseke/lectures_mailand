@@ -29,7 +29,7 @@ class: center, middle, inverse
 7. WHEN — The Temporal Position of Control
 8. WHO — Agency, Authorship, and the Co-Agency Spectrum
 9. Five Dimensions, One Design Space
-10. Closing — Authorship is a Configuration
+10. Closing — Authorship as Configuration
 
 
 
@@ -87,15 +87,39 @@ The point: the questions still map. What changes is not the structure of creativ
 ## Agenda
 
 * The Problem of Defining Creative Usability
-* Existing Frameworks
+* Authorship as Configuration
     * How
     * What
     * Where
     * When
     * Who
-* Five Dimensions, One Design Space
-* Authorship as Configuration
 
+
+---
+
+## Creative Control Systems
+
+--
+
+.left-quarter[<img src="./img/deco/spectrum.png" alt="spectrum" style="width:100%;">]
+
+--
+
+.right-quarter[
+
+Balancing
+
+* the efficiency and accuracy of computation, and
+* the control and quality of manual creation.
+
+]
+
+
+
+???
+.task[COMMENT:]  
+
+* The repetitive nature of patterns is well-suited to algorithmic creation and automation, an artist needs more flexible control mechanisms for adaptable and inventive designs.
 
 
 ---
@@ -535,7 +559,7 @@ template:inverse
 
 .header[Control Characteristics]
 
-## What - Content
+## What
 
 > What does an artist give as input?
 
@@ -547,7 +571,7 @@ template:inverse
 
 .header[Control Characteristics]
 
-## What - Content
+## What
 
 What is the level of abstraction of the content that an artist works with?
 
@@ -843,81 +867,376 @@ template:inverse
 ---
 .header[Control Characteristics]
 
-## Who - User
+## Who
 
 > Who has the skill set needed to provide the input?
 
 <br />
 .center[<img src="./img/who.png" alt="who" style="width:90%;">]
 
---
+---
+.header[Control Characteristics]
+
+## Who
 
 > Who is authoring: human or system?
+
+
+???
+
+Gieseke et al. (2021) systematically map HOW, WHAT, WHERE, and WHEN — corresponding, at the system level, to Navigation, Transparency, Variation, and Stimulation as evaluative dimensions. But neither the taxonomy nor the CSI addresses the fifth question: who is in control? This is not an oversight — it is a boundary. WHO belongs to a different register of analysis: not algorithm design but agency theory. The thesis (Ch. 2) provides the framework. Opening provocation: if the system produces behavior the artist did not anticipate — who made that?
+
+--
+
+Generative Systems: Algorithm, mathematical functions or set of rules, designed to generate an output
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems | McCormack, J. 2017. Working with Generative Systems: An Artistic Perspective | Boden, M. and Edmonds, E. 2010. What Is Generative Art?]]
+
+--
+* Specified by the process rather than the artifact
+
+--
+* Can make independent decisions within constraints, reducing the artist's total control → Autonomy
+
+---
+.header[Control Characteristics]
+
+## Who
+
+> How can we both embrace and steer the "out-of-control-ness" of generative systems?
+  
+--
+  
+→ *Stimulation* often enhances human creativity.
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems |  Memelink, M. 2023. Tracing Autonomy & Artistic Significance: An Alternative Framework for Analysing & Comparing Generative Art.]]
+
+
+---
+.header[Control Characteristics]
+
+## Who
+
+* Autonomy: operational independence; the system runs without intervention
+* Agency: impact on the creative outcome; the system shapes what the work becomes
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems.]]
+
+--
+
+> A system can be operationally autonomous but have low aesthetic agency — or vice versa.
+
+
+???
+* A batch-rendering pipeline is operationally autonomous — it runs 
+unattended — but if it executes exactly what the artist specified, its aesthetic 
+agency is near zero. Conversely, a simple random seed introduced into an 
+otherwise tightly controlled system has low operational autonomy but potentially 
+high aesthetic agency: one value change cascades into a completely different 
+output. The implication for design: autonomy is an engineering property; agency 
+is an aesthetic one. Designers who conflate them tend to either over-attribute 
+creativity to the system or under-recognize how much a small stochastic element 
+can shift authorship.
 
 
 ---
 .header[Control Characteristics | Who]
 
-## The Question the Survey Cannot Answer
-Gieseke et al. (2021) systematically map HOW, WHAT, WHERE, and WHEN — corresponding, at the system level, to Navigation, Transparency, Variation, and Stimulation as evaluative dimensions. But neither the taxonomy nor the CSI addresses the fifth question: who is in control? This is not an oversight — it is a boundary. WHO belongs to a different register of analysis: not algorithm design but agency theory. The thesis (Ch. 2) provides the framework. Opening provocation: if the system produces behavior the artist did not anticipate — who made that?
+## State of the Art
+
+Human-System Co-agency: Authorship is distributed and creativity is augmented (not replaced), no true system autonomy
+* Galanter: artist cedes partial control
+* Boden: creativity = novel & valuable; indirect control (curation)
+* McCormack: artists specify processes rather than outcomes; program “authors what it produces”, artist “author of the program”
+* Hu et al.: co-agency spectrum, shifting roles across the process
+* Memelink: rank Autonomous Ability & Artistic Significance of parts of the system
+* Hertzmann: also AI augments, does not replace human creativity 
+
+
+???
+So, there is a consensus that authorship is not replaced, but distributed when working with generative systems, 
+Creativity is augmented
+And also that the systems don’t have true autonomy, as the artist is always the initiator and the author of the system. And that is even true for Generative AI as well.So, there is human–system co-agency, which shifts during the process of creation of and with the system
+
+And regarding the process: The process of creative coding is often described as an iterative, sketch-like process where 
+both the outcome and the system are continuously evaluated and refined and even ideas reshaped.
+
 
 ---
 .header[Control Characteristics | Who]
 
 ## The Co-Agency Spectrum
+
+.center[<img src="./img/coagency_01.png" alt="coagency_01" style="width:76%;">]
+
+
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems | Xi Hu, Yiwen Xing, Xudong Cai, Yihang Zhao, Michael Cook, Rita Borgo, and Timothy Neate. 2025. Designing Interactions with Generative AI for Art and Creativity: A Systematic Review and Taxonomy. In Proceedings of the 2025 ACM Designing Interactive Systems Conference, 1126–1155.]]
+
+
+???
+
 From the thesis: creative work with generative systems is not a binary between the artist controlling the system and the system controlling itself. It is a spectrum — from fully artist-led (the system as obedient tool) to fully system-led (the artist as observer of autonomous behavior). At each position, distinct artist-system relationships emerge: Tool-Protagonist (direct execution), Delegate-Manager (conductor/project manager role), Collaborator (equal creative partner), Curator (responds to what the system produces). Visual: the co-agency spectrum diagram from the thesis. The key insight: working with generative systems is not about ceding control — it is about distributing it.
 
 ---
 .header[Control Characteristics | Who]
 
-## How Architectural Choices Position the WHO
+##  The Co-Agency Spectrum - Architectural Choices
+
+
+* Randomness: shifts agency toward the system; outputs become partially unpredictable
+
+* Rule-based emergence: local rules produce global behavior no one designed
+
+* Agent-based systems: can produce behavior that exceeds the artist's predictive capacity
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems.]]
+
+--
+
+> The same architecture that produces surprise also redistributes authorship.
+
+
+
+???
+
+
 The WHO question is not answered by intent alone — it is determined by architectural choices. From the thesis Ch. 4: introducing randomness shifts creative agency toward the system; rule-based systems with emergent behavior shift it further; agent-based systems can produce behavior that genuinely exceeds the artist's predictive capacity. The same system architecture that produces surprise also redistributes authorship. The thesis is explicit: "autonomy" describes operational independence; "agency" describes impact on the creative outcome. A system can be operationally autonomous but have low aesthetic agency — or vice versa.
 
+
 ---
 .header[Control Characteristics | Who]
 
-## Intention, Curation, and the Inalienability of the WHO
+## Human Domains: Intention and Curation
+
+???
+* No matter how autonomous a generative system becomes, two dimensions of WHO 
+cannot be delegated.
+
+
+--
+
+* Intention: the conceptual framework that initializes and continuously shapes the process
+    * Divergence-setting: it defines the space the system explores
+
+--
+
+* Curation: the iterative act of selection and evaluation
+    * Convergent thinking: the creative complement to the system's divergent generation
+
+--
+
+> Even when the artist cannot predict the output, they remain the entity that decides whether it matters.
+
+???
+
+* This is the irreducibly human component of the WHO.
+
+
+The divergent/convergent pairing is worth making explicit. Generative systems are structurally divergent — they produce variation, proliferate possibilities, explore the space. Curation is the complementary act: collapsing that space back down to a single meaningful choice. This is not a passive or mechanical act. Deciding what matters requires aesthetic judgment, contextual awareness, and intentional framing — none of which the system possesses. Intention operates at both ends of the process: it shapes the initial conditions and it continuously re-frames what counts as a successful output as the work evolves. Together they define the minimum irreducible human presence in any generative authorship — the floor below which WHO cannot be further delegated.
+
+
 From the thesis: no matter how autonomous a generative system becomes, the artist retains what the thesis calls "artistic control" — the combination of intention (the conceptual framework that initializes and continuously shapes the process) and curation (the iterative act of selection and evaluation). These are the dimensions of WHO that cannot be delegated. Curation is convergent thinking — the creative complement to the system's divergent generation. Even when the artist cannot predict the output, they remain the entity that decides whether it matters. This is the irreducibly human component of the WHO.
 
----
-.header[Control Characteristics | Who]
-
-##  WHO Determines Aesthetic Meaning
+  
 The distribution of WHO across artist and system is not just a question of authorship — it shapes the kind of meaning the work can carry. A work made by an artist exercising tight intentional control carries a different aesthetic quality than one shaped by emergent system behavior that the artist curates but cannot author. Neither is more valuable, but they are different. The thesis quotes Boden: "The autonomy in the intentional sense of the generative systems does not exist." But something else exists — a form of creative surprise that the artist creates the conditions for, without being able to produce directly. That gap is where generative aesthetics lives.
 
----
-template: inverse
-
-# Five Dimensions, One Design Space
-
----
-
-## The Five Dimensions Are Coupled
-HOW, WHAT, WHERE, WHEN, and WHO are not independent variables. A decision about WHAT — introducing exemplar-based input instead of parametric control — changes HOW interaction works, WHERE it applies, and WHEN it is possible, and it redistributes WHO by reducing the artist's ability to specify and increasing the system's generative latitude. Any change in one dimension propagates. The design space is not flat — it is a high-dimensional configuration space in which every choice has consequences across all axes.
-
-Note the relationship to the Gieseke et al. framework: Navigation, Transparency, Variation, and Stimulation are evaluative outcomes; HOW, WHAT, WHERE, WHEN, and WHO are the generative inputs to those outcomes. Configuring the five dimensions well is what produces a system that scores well on the four evaluative criteria — plus, now, a fifth: meaningful authorship.
-
-
----
-
-## The Same Five Questions Apply to Watercolor on Paper
-Return to the opening image: watercolor on paper. Walk through all five dimensions. HOW: direct, on-canvas, embodied. WHAT: pigment, water ratio, pressure — low-abstraction, physical parameters. WHERE: wherever the brush lands, with bleed behavior that propagates outward. WHEN: continuous, real-time, non-reversible. WHO: fully artist-led, with the material as an agent of unpredictability (bleed, granulation, drying) that the artist works with but does not control. The point: digital generative systems do not introduce a new problem. They scale the same problem into a design space that must be explicitly and consciously architected.
-
----
-
-## Emergent Aesthetics as a Configured Outcome
-The aesthetic qualities that emerge from a generative system — complexity, surprise, coherence, expression — are not accidental properties of the algorithm. They are functions of how the five dimensions are configured. A system with rich spatial targeting (WHERE), real-time feedback (WHEN), sketch-based input (HOW + WHAT), and a deliberately calibrated co-agency spectrum (WHO) will produce different aesthetic qualities than one with global parameters, deferred feedback, and full autonomy. Aesthetic quality is not a byproduct. It is the outcome of design decisions made across all five dimensions. This is what it means to be the author of a generative system.
 
 ---
 template: inverse
 
-# Authorship is a Configuration
+# Authorship as Configuration
 
 ---
-## The Practical Implication
-If the five dimensions structure creative control, then designing a generative system means making explicit decisions about each of them. HOW will the artist interact? WHAT will they provide? WHERE will control act? WHEN in the process will it be available? WHO will hold agency at each stage? These are not interface questions or UX questions. They are authorial questions. The thesis frames this as the shift from artist-as-craftsperson to artist-as-system-architect. The system architect makes decisions that are not about individual outputs but about the entire class of outputs the system can produce.
+
+## Authorship as Configuration
+
+* Navigation, Transparency, Variation, Stimulation as **evaluative outcomes**.
+* How, What, Where, When, Who — **the design decisions that produce them**.
+
+--
+
+<br />
+
+> A change in one dimension propagates across all others!
+
+
+???
+Introducing **exemplar-based input** instead of parametric control:
+
+* Changes **HOW** — the artist no longer specifies, they reference
+* Changes **WHERE** — the exemplar applies at a different spatial register
+* Changes **WHEN** — the input stage shifts earlier in the process
+* Redistributes **WHO** — the system's generative latitude increases
+
+
+Students often treat the five 
+dimensions as a checklist — address each one independently and the system is 
+well-designed. The reality is that every decision is entangled. Changing WHAT 
+ripples immediately into HOW, WHERE, and WHEN, and the WHO redistribution is 
+often the least anticipated consequence. The relationship to the Gieseke 
+evaluative framework is worth stating explicitly here: if you configure the five 
+dimensions well, the four evaluative outcomes follow. They are consequences, not 
+goals. And now there is a fifth evaluative criterion the original framework could 
+not capture: meaningful authorship.
 
 ---
-## The Open Question
-Every generative system instantiates a theory of creative control — whether or not its maker has articulated it. The five dimensions are always configured; the question is whether they are configured deliberately. Closing provocation: when you next design a system, or teach a student to design one, ask not "does it work?" but: How does the artist act? What do they give? Where does it land? When can they intervene? And who, at the end, is responsible for what emerges?
+layout: false
+
+.center[<img src="./img/watercolor_01.jpg" alt="watercolor_01" style="width:84%;">]
+.imgref[[Image: [pexels, Fahad Puthawala](https://www.pexels.com/photo/close-up-of-hand-painting-a-watercolor-landscape-29559075/)]]
+
+???
+
+HOW — direct, on-canvas, embodied. No indirection between act and effect.
+WHAT — pigment, water ratio, pressure. Low-abstraction physical parameters.
+WHERE — wherever the brush lands, with bleed that propagates outward unpredictably.
+WHEN — continuous, real-time, non-reversible. The loop never closes faster than this.
+WHO — fully artist-led, with the material as an agent of unpredictability the 
+artist works with but does not control.
+
+The point: digital generative systems do not introduce a new problem. They scale 
+the same problem into a design space that must be explicitly and consciously 
+architected. The watercolor painter never had to make these decisions — the 
+medium made them. The generative artist has no such luxury.
+
+---
+
+## Authorship as Configuration
+
+.center[
+
+|           |                                                     |
+| --------- | --------------------------------------------------- |
+| **How**   | Direct, on-canvas, embodied                         |
+| **What**  | Pigment, water ratio, pressure                      |
+| **Where** | Wherever the brush lands — bleed propagates outward |
+| **When**  | Continuous, real-time, non-reversible               |
+| **Who**   | Artist-led — material as unpredictable co-agent     |
+
+]
+
+--
+
+* Digital generative systems do not introduce a new problem.  
+* They scale the same problem into a space that must be consciously architected.
+
+???
+The table is a deliberate callback to the opening provocation — the same five 
+questions, now answered for the medium we started with. The punchline is that 
+watercolor configures all five dimensions elegantly and implicitly, because the 
+medium has been refined over centuries. Computational systems offer vastly more 
+freedom — but freedom is not the same as configuration. The generative artist 
+must make explicit what the watercolorist receives for free.
+
+
+
+---
+
+## Authorship as Configuration
+
+
+???
+
+Complexity, surprise, coherence, expression — these are not accidental properties 
+of an algorithm.
+
+They are functions of how the five dimensions are configured.
+
+--
+
+.center[
+
+|                | System A             | System B               |
+| -------------- | -------------------- | ---------------------- |
+| **How + What** | Numeric parameters   | Sketch-based input     |
+| **Where**      | Global only          | Rich spatial targeting |
+| **When**       | Deferred, post-hoc   | Real-time, continuous  |
+| **Who**        | Full system autonomy | Calibrated co-agency   |
+
+]
+
+???
+
+* Same algorithm class. Completely different aesthetic relationship.
+* Aesthetic quality is not a byproduct. It is the outcome of design decisions.
+
+The table makes the coupling concrete and comparative. Two systems built on 
+similar generative principles but configured differently across the five 
+dimensions will produce not just different outputs but different kinds of 
+authorial relationships — different aesthetics in the deepest sense. This is 
+what it means to be the author of a generative system: not to produce individual 
+outputs, but to design the configuration space from which an entire class of 
+outputs becomes possible.
+
+
+---
+
+## Authorship as Configuration
+
+* ...artist-usable!
+* ...it works!
+
+> Not helpful...
+
+???
+* A system that "works" in the technical sense may still configure its five dimensions poorly — producing low transparency, locked temporal access, impoverished vocabulary, and an unexamined WHO. The five questions are the minimum due diligence for any generative system that claims to support creative authorship.
+
+
+--
+
+
+But when designing a system make **explicit decisions** across all five dimensions and answer to:
+
+
+* **How** will the artist interact?
+* **What** will they provide?
+* **Where** will control act?
+* **When** in the process will it be available?
+* **Who** will hold agency at each stage?
+
+--
+
+> These are **authorial** questions.
+
+The five dimensions are always configured. The question is whether they are configured deliberately.
+
+
+
+???
+* These are not interface questions. They are not UX questions.
+
+
+The shift: from **artist-as-craftsperson** to **artist-as-system-architect**
+
+> The system architect makes decisions not about individual outputs —  
+> but about the entire **class** of outputs the system can produce.
+
+
+The craftsperson/architect distinction is the practical takeaway students should 
+leave with. A craftsperson makes decisions about the work in front of them. An 
+architect makes decisions about the space of possible works — the constraints, 
+affordances, and relationships that shape everything the system will ever 
+produce. This is a fundamentally different cognitive mode, and it requires a 
+fundamentally different vocabulary. The five dimensions are that vocabulary.
+
+
+---
+template:inverse
+
+# The End
+
+<br />
+### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
+
+#### Film University Babelsberg KONRAD WOLF
+
+
+
+
+
+
+
+
+
 
