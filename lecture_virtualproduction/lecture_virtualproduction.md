@@ -1,14 +1,25 @@
+name: inverse
+layout: true
+class: center, middle, inverse
+---
 
+
+### How, What, Where, When, Who
+## Mechanisms for Creative Control
+
+<br />
+### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
+
+#### Film University Babelsberg KONRAD WOLF
+
+
+???
+
+This talk offers an introduction to virtual production and its toolset. It outlines how real-time engines, LED volumes, performance capture and in-camera visual effects reshape the relationship between physical sets and digital environments. Through practical examples, the talk considers the creative and organisational implications of virtual production, showing how these techniques influence aesthetic and narrative decisions in contemporary filmmaking.
 
 ---
 layout:false
 
-## Introduction to Virtual Production Techniques
-
-This talk offers an introduction to virtual production and its toolset. It outlines how real-time engines, LED volumes, performance capture and in-camera visual effects reshape the relationship between physical sets and digital environments. Through practical examples, the talk considers the creative and organisational implications of virtual production, showing how these techniques influence aesthetic and narrative decisions in contemporary filmmaking.
-
-Talk Outline: Introduction to Virtual Production Techniques
-Duration: ~60 min | Level: Introductory
 
 1. Framing the Problem
 * Tension between physical and digital environments in narrative filmmaking
