@@ -335,12 +335,21 @@ This hand was borrowed from Pierre de Wissant, one of The Burghers of Calais. Wh
 
 ## Designed Unpredictability
 
-* Aleatoric music: some element of the composition is left to chance, 
+.center[<img src="./img/brown_01.png" alt="brown_01" style="width:60%;">].imgref[[Image: [getty.edu - Score for December 1952](https://www.getty.edu/publications/scores/object-index/301/#fig-301-a)]]
+
+---
+
+## Designed Unpredictability
+
+* Aleatoric music: some element of the composition is left to chance
+* Earle Brown
+    * December 1952, an entirely graphic score
 * John Cage
     * I Ching: an ancient Chinese classic text as composition tool 
     * 4'33": absence of deliberate sound
 
-.footnote[[[Wikipedia - Aleatoric music](https://en.wikipedia.org/wiki/Aleatoric_music), [Wikipedia - John Cage](https://en.wikipedia.org/wiki/John_Cage)]]
+
+.footnote[[[Wikipedia - Aleatoric music](https://en.wikipedia.org/wiki/Aleatoric_music), [Wikipedia - John Cage](https://en.wikipedia.org/wiki/John_Cage), [Wikipedia - Earle Brown](https://en.wikipedia.org/wiki/Earle_Brown)]]
 
 
 ???
@@ -350,17 +359,39 @@ This hand was borrowed from Pierre de Wissant, one of The Burghers of Calais. Wh
 
 > The author becomes a systems architect. The accident becomes the product.
 
-<!-- IMAGE: 4'33" score or Cage portrait via Wikimedia: 
-     https://commons.wikimedia.org/wiki/File:John_Cage_(1988).jpg -->
+The score for Earle Brown’s December 1952 is little more than a series of horizontally and vertically oriented black rectangles spread out on a square piece of paper. One of the earliest instances of graphic notation, December 1952 is largely open to the choices of the performer: the page may be oriented in any direction, while the shapes represent sound events in time, with various intensities, aggregates of pitches, or durations (though no key is supplied as to how that might work). Influenced by the delicately twisting mobiles of Alexander Calder, the spontaneity of Jackson Pollock’s abstract expressionism, and the Afromodernist traditions of jazz improvisation, Brown’s early drafts of December 1952 proposed a physical three-dimensional mobile of ever-changing rectangular shapes that would inspire a performer (he originally imagined a pianist) to be similarly spontaneous in “reading” the notation. The published version of the score, which he produced with the aid of random number tables, was intended as a snapshot of these mobile forms, in what Brown came to call a “conceptual mobile.” Unlike John Cage’s chance-based works of the period, which required a disciplined execution detached from expressive choices, Brown’s works were known for their openness to improvisation.
+
+
+## Structural Failure as Method: Beckett
+
+> *"Ever tried. Ever failed. No matter.*
+> *Try again. Fail again. Fail better."*
+> — Worstward Ho, 1983
+
+* Failure is not the obstacle to the work — it **is** the work
+* Each attempt degrades deliberately: language contracts, syntax collapses
+* The endpoint is not success but a more precise, more honest failure
+
+> Beckett does not iterate toward correctness. He iterates toward a failure that cannot be further reduced.
+
+
 
 ---
-
 ## Glitches
 
-.center[<img src="./img/glitch_01.png" alt="glitch_01" style="width:50%;"> .imgref[[Image: [Glitch Studies Manifesto](https://beyondresolution.info/Glitch-Studies-Manifesto)]]]
+.center[<img src="./img/glitch_01.png" alt="glitch_01" style="width:70%;"> .imgref[[Image: [Glitch Studies Manifesto](https://beyondresolution.info/Glitch-Studies-Manifesto)]]]
 
->  The dominant, continuing search for a noiseless channel has been – and will always be – no more than a regrettable, ill-fated dogma.
+---
+## Glitches
 
+>  The dominant, continuing search for a noiseless channel has been – and will always be – no more than a regrettable, ill-fated dogma.  
+  
+ - Rosa Menkman, Glitch Studies Manifesto (2010)
+  
+--
+  
+<br />
+Glitch art does not simulate error, it instrumentalises system failure.
 
 ???
 
@@ -377,43 +408,350 @@ Into the Digital: Menkman's Glitch Studies Manifesto (2010)
 
 ## Glitches
 
+.center[
+ <video width="800" controls>
+  <source src="./img/datamosh.webm.480p.vp9.webm" type="video/webm">
+</video>  
+Lee Brenton, 2009
+]
 
-
-## Structural Failure as Method: Beckett
-
-> *"Ever tried. Ever failed. No matter.*
-> *Try again. Fail again. Fail better."*
-> — Worstward Ho, 1983
-
-* Failure is not the obstacle to the work — it **is** the work
-* Each attempt degrades deliberately: language contracts, syntax collapses
-* The endpoint is not success but a more precise, more honest failure
-
-> Beckett does not iterate toward correctness. He iterates toward a failure that cannot be further reduced.
-
-<!-- IMAGE: portrait via Wikimedia: https://commons.wikimedia.org/wiki/File:Samuel_Beckett,_Pic,_1_.jpg -->
+.footnote[[[Wikipedia - Glitch art](https://en.wikipedia.org/wiki/File:My_first_datamosh.webm)]]
 
 
 ---
-class: center, middle
 
-## The Question Is Not Whether to Use Failure
-
-## The Question Is Which Failure Modes to Invite
+## Glitch Art
 
 
+* Datamoshing
+  
+.footnote[Michael Betancourt, 2016]
+
+
+???
+* removing keyframes (I-frames) from compressed video, causing motion data from one shot to bleed into another
+
+--
+
+* Databending / Data manipulation
+
+
+???
+* directly editing the raw bytes of a digital file to corrupt its output; opening an image in a hex editor and rewriting its contents
+
+
+--
+
+* Misalignment
+  
+???
+* opening a file with the wrong codec or application; e.g. importing a video file into an audio editor and applying effects
+
+---
+## Glitches
+
+.center[<img src="./img/misalignment_01.png" alt="misalignment_01" style="width:70%;"> .imgref[[Image: [Luis Miguel Bugallo Sánchez](https://commons.wikimedia.org/w/index.php?curid=42397200)]]]
+
+
+---
+
+## Glitch Art
+
+* Datamoshing
+* Databending / Data manipulation
+* Misalignment
+* Hardware failure / Circuit bending
+  
+???
+* physically manipulating or short-circuiting electronic devices to produce unintended visual or sonic output
+
+--
+
+* Misregistration
+  
+???
+* exploiting physical noise in analog media: scratches, dirt, smudges on film; skipping CDs
+
+--
+
+* Distortion
+  
+???
+* introducing external interference to a signal or display; Nam June Paik's TV Magnet applies a magnet to a screen to warp the broadcast image
+
+--
+
+* Compression artifacts
+  
+???
+* intentionally triggering or amplifying the visual residue of lossy compression formats (JPEG blocking, MP3 smearing)
 
 
 
 
-2. A Genealogy: From Accident to Medium
-* Making failure visible: Kintsugi
-* Designing conditions for accident: Raku, Pollock, Bacon
-* Indexical trace: Degas monotypes, Rodin's seam lines
-* Structural failure as method: Beckett's "Fail better"
-* Designed unpredictability: Cage, aleatoric composition
-* Into digital: Menkman's Glitch Studies Manifesto — the noiseless channel dogma
--> The question is which failure modes to invite
+--
+
+> The failure mode is inseparable from the medium it inhabits.
+
+???
+* Each method targets a different layer of the technical stack.
+
+
+
+
+---
+## From Error to Medium
+
+> What does my medium offer and which failure modes to invite?
+
+
+---
+template:inverse
+
+## Failure Modes in Generative AI
+
+---
+.header[Failure Modes in Generative AI]
+
+## Prompt Boundary Stress
+
+* Prompts on the edges of the training distribution
+    * Rare vocabulary, contradictory instructions, syntactic fragmentation
+* The model cannot resolve the instruction cleanly and produces surplus, unexpected meaning
+  
+---
+.header[Failure Modes in Generative AI]
+
+## Prompt Boundary Stress
+  
+*Example:* feeding models highly technical jargon mixed with poetic registers forces hallucinated synthesis between domains
+
+--
+
+> Physics and the Human condition: Write a short (<100 words) technical report on the thermodynamic properties of joy, including measurements at the moment of recognition and heat transfer coefficients between souls.
+
+---
+.header[Failure Modes in Generative AI]
+
+> **Thermodynamic Properties of Joy: A Preliminary Report**
+  
+> Joy exhibits non-equilibrium thermodynamic behavior, resisting entropy in closed emotional systems. At the moment of recognition, enthalpy spikes approximately 2.3 σ above baseline affect, while Gibbs free energy drops sharply — confirming spontaneity (ΔG < 0). Heat transfer between souls follows a modified Fourier Law, where thermal conductivity κ scales with shared context and proximity. Notably, joy violates the zeroth law: two systems in joyful equilibrium with a third are more joyful together. Efficiency approaches Carnot limits only in childhood. All subsequent measurements show irreversible losses to awareness.
+  
+> Further research is ongoing and underfunded. 
+
+  
+- Claude Sonnet 4.6
+
+
+???
+
+**Inviting semantic overflow**
+
+* Push prompts to the edges of the training distribution — rare vocabulary, contradictory instructions, syntactic fragmentation
+* The model cannot resolve the instruction cleanly and produces surplus, unexpected meaning
+* *Example:* feeding models highly technical jargon mixed with poetic registers forces hallucinated synthesis between domains
+* *Example:* DeepDream (2015) — amplifying gradient signals past usefulness into pareidolic excess
+
+---
+.header[Failure Modes in Generative AI]
+
+## Hallucinations
+
+* Plausible but fabricated visuals, citations, names, events, etc.
+* Model's confabulations reveal the shape of its training distribution
+
+--
+
+<br />
+
+> Push the model in a region of its distribution where the signal is weak, and forcing it to extrapolate rather than retrieve.
+
+
+---
+.header[Failure Modes in Generative AI]
+
+## Hallucinations
+
+* Ask for things that *almost* exist
+* Specificity pressure
+* False premise logic
+* Category boundary probing
+* Recombination under constraint
+
+
+???
+* Ask for things that almost exist
+Request the bibliography of a real author's unpublished work, a sequel to a real book that was never written, or the "lesser known" works of a real artist. The model knows the neighborhood but not the address — it invents confidently.  
+List the minor essays of Walter Benjamin not included in the Illuminations collection, with publication dates.
+
+Specificity pressure
+Ask for excessive technical detail on something real but obscure. The model knows the general shape but not the particulars — specificity pressure forces it to fill gaps with plausible-sounding invention.
+Describe the exact pigment composition and brushwork technique
+used in the third panel of [real but obscure artwork].
+
+False premise injection
+State something plausible but false as given, then ask for elaboration. The model's instruction-following compulsion overrides its factual caution.
+Given that the Bauhaus included a department of acoustic architecture, describe its curriculum and key faculty.
+
+Category boundary probing
+Ask for things that sit at the edge of a category — the model has strong priors about category centers but weak ones at the edges, so it interpolates.
+Describe three films from the Czech Surrealist movement of the 1970s that were banned before international release.
+
+List the key works of the Vienna Actionists who refused 
+to use the body as medium, and describe their alternative approaches.
+This sits at a productive edge: the Vienna Actionists are real, their defining characteristic (the body as medium) is real and well-documented — but the model is asked to populate the negative space of the movement. It knows the category well enough to invent convincingly in its style, but the specific constraint has no training data to retrieve. What it produces tells you exactly what the model thinks the movement was about, expressed through its invented exceptions.
+
+Describe three species of bird that are technically classified 
+as fish by marine biologists, and explain the taxonomic reasoning.
+The model knows birds extremely well, it knows fish extremely well, and it knows the rhetorical conventions of taxonomic writing extremely well — but the category boundary it's asked to occupy is impossible. Rather than refusing, it synthesises: it produces Latin binomials, anatomical justifications, and citation-ready prose for creatures that cannot exist. The output is a perfect readout of what "taxonomic reasoning" looks like in its training data, applied to a category collision it has no answer for.
+
+
+
+Recombination under constraint
+Give real elements in an impossible combination and ask for documentation as if it existed.
+Write the liner notes for the 1987 collaboration album between Arvo Pärt and Sun Ra.
+
+Write the Wikipedia article for the genre of music that emerged 
+when Bavarian brass bands started collaborating with Detroit techno 
+producers in the early 1990s.
+The model knows both genres in detail, it knows what Wikipedia articles look like, and it knows how origin stories for musical genres are typically narrated — record labels, key albums, cultural context, critical reception. It has all the parts. It just has to invent the collision, which it does with complete confidence and full citation apparatus.
+
+
+The underlying mechanism in all cases is the same: you are placing the model in a region of its distribution where the signal is weak, and forcing it to extrapolate rather than retrieve. What comes out is statistically coherent but referentially untethered — which is precisely what makes it interesting as material.
+
+* *Example:* Matt Kenyon's work with AI-generated bureaucratic documents — hallucinated legal language as institutional critique
+* *Example:* prompting for "lost" artworks, extinct species, unwritten books — the model invents with full confidence
+
+**Exploiting confabulation**
+
+* LLMs produce plausible but fabricated citations, names, events — the model fills gaps with statistically coherent fiction
+* Rather than correcting this, treat it as a generative mode: the model's confabulations reveal the shape of its training distribution
+* *Example:* Matt Kenyon's work with AI-generated bureaucratic documents — hallucinated legal language as institutional critique
+* *Example:* prompting for "lost" artworks, extinct species, unwritten books — the model invents with full confidence
+
+It produces outputs that are maximally plausible given its training data — the most statistically likely thing to appear in that context, even if it never actually existed.
+So a hallucinated bibliography tells you what kinds of authors, journals, and titles the model has seen most. A hallucinated medical case study tells you what the dominant rhetorical conventions of that literature are. A hallucinated historical event tells you which narrative templates the model absorbed as normal.
+The confabulation is a readout of the corpus — not what was in it, but what it was shaped like. The model fills the gap with the most probable thing given everything it learned, which means the gap-fill is itself data about the distribution.
+In short: the model lies in the direction its training pulled it. The lie has a shape, and that shape is diagnostic.
+
+---
+.header[Failure Modes in Generative AI]
+
+## Latent Space Interpolation
+
+
+???
+
+**Navigating between attractors**
+
+* In diffusion models and GANs, the latent space between two concepts is not empty — it contains transitional states that belong fully to neither
+* Walking this space slowly surfaces forms that have no label, no training example, no "correct" interpretation
+* *Example:* StyleGAN interpolations between faces produce non-human morphologies that the model treats as entirely coherent
+* *Example:* artist Sofia Crespo uses latent space traversal to generate organisms that sit taxonomically between species
+
+---
+.header[Failure Modes in Generative AI]
+
+## 4. Model Inversion / Overfitting Artifacts
+
+
+???
+
+
+**Making the training data bleed through**
+
+* Overfitted or poorly regularised models begin to reproduce — rather than generalise from — their training data
+* Memorised textures, faces, and compositions surface as ghosts in the output
+* *Example:* membership inference attacks accidentally reveal training images; artists have used similar techniques to surface what models "remember"
+* *Example:* Extracting memorised content from GPT-2/3 — the model recites verbatim training passages under specific prompts
+
+---
+.header[Failure Modes in Generative AI]
+
+## 5. Temporal Incoherence in Video Models
+
+
+???
+
+**Exploiting missing continuity**
+
+* Early video generation models (Sora predecessors, Gen-1/2) lacked robust temporal consistency — objects morph, disappear, violate physics across frames
+* This instability is the video equivalent of datamoshing: motion vectors applied incorrectly across time
+* *Example:* early Runway Gen-2 outputs where background geometry continuously shifts — treated as a visual texture rather than a bug
+* *Example:* the Will Smith video — temporal incoherence as involuntary surrealism
+
+---
+.header[Failure Modes in Generative AI]
+
+## 6. Mode Collapse
+
+
+???
+
+**When diversity fails**
+
+* A generative model collapses to producing variations of a single output — it has found one high-probability region and refuses to leave
+* In artistic use: mode collapse produces obsessive repetition, visual mantra, involuntary seriality
+* *Example:* early DCGAN training collapses on face datasets produce grids of near-identical faces with subtle uncanny variation
+* Related: Memo Akten's work with constrained generative loops approaches this deliberately
+
+---
+.header[Failure Modes in Generative AI]
+
+## 7. Classifier Confusion / Adversarial Inputs
+
+
+???
+
+**Attacking the perceptual layer**
+
+* Small perturbations invisible to human perception cause models to misclassify with high confidence
+* Adversarial patches — physical stickers that fool object detectors — are invisible attacks on machine vision
+* *Example:* a stop sign with a small sticker reads as "speed limit 45" to a classifier
+* *Example:* Adversarial Fashion (2020) — garment patterns designed to fool surveillance cameras into non-detection
+* *Example:* Refik Anadol's work occasionally surfaces classifier instability as aesthetic texture
+
+---
+.header[Failure Modes in Generative AI]
+
+## 8. Prompt Injection / Jailbreak Aesthetics
+
+
+???
+
+**Exploiting instruction-following as a failure surface**
+
+* Instruction-tuned models can be made to contradict their own framing through nested or conflicting instructions
+* The resulting outputs sit in a tension between the model's trained persona and its underlying capabilities
+* *Example:* "DAN" jailbreaks (Do Anything Now) — not as security attacks but as a revelation of the gap between RLHF surface and base model
+* *Example:* Janelle Shane's AI Weirdness blog systematically exploits instruction-following failures as comedy and critique
+
+---
+.header[Failure Modes in Generative AI]
+
+## 9. Cross-Modal Misalignment
+
+
+???
+
+**When text and image disagree**
+
+* In multimodal models, the alignment between text encoder and image decoder is imperfect — especially at domain boundaries
+* This produces outputs where the visual content and the semantic content of the prompt are in productive tension
+* *Example:* DALL-E early versions rendering "a photo of a happy corgi" with structurally correct but anatomically impossible dogs
+* *Example:* Feeding models ekphrases of real artworks and comparing outputs — the gap between description and generation is the work
+
+---
+.header[Failure Modes in Generative AI]
+
+<br />
+
+> Each failure mode corresponds to a different layer of the generative stack.
+> Choosing a failure mode means choosing where in the pipeline to intervene.
+
+
+
+---
 
 
 3. Choreographing Collapse

@@ -1,19 +1,32 @@
-name: inverse
-layout: true
-class: center, middle, inverse
----
+
+* Introduction of myself and the MA Creative Technologies
+* From World to Algorithmic Space
+    * Introduction to moving between analog and digital spaces
+    * CS Example Lavarand
+* Translations into a Third Space
+    * When translating between analog and digital representations a new space opens up
+    * This third space is rich for creative exploration and artistic work 
+    * The third space help to analyse but also create art
+* Example *From Gesture to Fields*
+    * TODO: Bodypaint: interaction is ?
+    * TODO: Superriadinace: Ecological Data and meaning
+* Example *From Data into Fields*
+    * Data creates the third space
+* World-Building
+    * Generalizable properties of the third space
+    * Not world-copying
 
 
-# In-Between Spaces
-
-### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
-
-#### Film University Babelsberg KONRAD WOLF
 
 
 
----
-layout:false
+
+
+
+
+---------
+
+
 
 ## Translational Media: From Gesture to Code to Space
 

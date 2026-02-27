@@ -3,7 +3,6 @@ layout: true
 class: center, middle, inverse
 ---
 
-
 ### From Gesture to Code to Space:
 # Translational Media
 
@@ -12,119 +11,79 @@ class: center, middle, inverse
 
 #### Film University Babelsberg KONRAD WOLF
 
-
 ???
-* This talk examines computational pipelines that translate physical behaviour into algorithmic systems: for example, gesture into fields, architectural layouts into navigable graph structures, and performance movements into agent-based simulation logic. It explores how such translations shape aesthetics, interaction, and our understanding of space as both computational construct and experiential domain.
+* Goal: Give a usable mental model for how pipelines translate phenomena into computational worlds. 
+* Thesis: translation is not transfer. It produces a third space with its own rules and consequences.
+
+---
+layout: false
+
+## TODO: Teaser Lavarand
 
 ---
 
-## Teaser Image "Gesture to Space"
+## TODO: Teaser Superradiance
 
 ---
-## Teaser Image "Datamorphism"
+
+## TODO: Teaser Nature Dreams
 
 ---
-layout:false
+template: inverse
+
+### Computational representations are **new objects**, not copies.  
+
+---
+template: inverse
+
+### Pipeline design is **world-building**, not just engineering.
+
+---
+
+
 ## Agenda
 
---
-* Introduction
-
---
-* Translations
-
-
-???
-2. Framing — What Do We Mean by Translation?
-
---
-* Case *Gesture into Fields*
-
-
-???
-3. Example — Gesture into Fields
-    * What is a Gesture?
-    * The Capture Problem
-    * Example, e.g., Body Paint (2009), Memo Akten
-    * What the Field Has That the Gesture Doesn't
-    * The Thinking Ocean (2024), Memo Akten & Katie Hofstadter
-    * Transition Question
-
---
-* Example *Architecture into Navigation*
-
-
-???
-4. Case 2 — Architectural Layout into Navigation Graphs
-    * What is Architectural Space?
-    * Space Syntax: The Translation Framework
-    * What the Graph Has That the Building Doesn't
-    * Million Dollar Blocks (2006), Laura Kurgan
-    * The Façade-Tilted Bird's-Eye View
-
-
---
-* Example *Data into TODO:Space*
-
-
-???
-5. Case 3 — Ecological Data into Navigable Space
-    * A Different Kind of Source Domain
-    * Julie Freeman, The Lake (2005)
-    * What the Space Has That the Lake Doesn't
-    * Marshmallow Laser Feast, In the Eyes of the Animal (2015)
-    * Transition to Synthesis
-
---
+* Translation is not neutral  
+* A minimal case: Lavarand  
 * The Third Space
-
+* Example: Gesture → fields  
+* Data → fields + reception  
+* World-building
 
 ???
-6. Synthesis —  The Properties of the Third Space (on the example of Datamorphism)
-    * What Do These Three Cases Share?
-    * Introducing Datamorphism
-    * Three Properties of the Third Space
-    * The Audience Is Already Inside
-    * From Translation to World-Building
-
-
---
-* World-Building, Not World-Copying
-
-
-
----
-layout:false
-
-## MA Creative Technologies
-
-
+* Goal: Give a usable mental model for how pipelines translate phenomena into computational worlds. 
+* Thesis: translation is not transfer. It produces a third space with its own rules and consequences.
 
 ---
 template:inverse
 
 # Translation
 
+---
+.header[Translation]
+
+## Pipeline From World to Algorithmic Space
+
+Source →  
+
+* Capture / Encode →  
+* Model / Transform →  
+  
+Third space 
+
 
 ???
-* Going from where to where?
-* This talk examines computational pipelines that translate the physical world into algorithmic systems
-* I propose the perspective that we are not simply moving something across, but rather — in most cases — producing a third space that belongs fully to neither domain.
 
----
-## From World to Algorithmic Space
+TODO:
+Examples:
+- body → tracking → simulation → field
+- building → segmentation → graph → navigable model
+- data → embedding → synthesis → environment
 
-* Source domain
-    * TODO: Examples
-* Translational Operation (incl. Hardware)
-* Resulting domain
-    -> Is what?
-
----
-## What Do We Mean by Translation?
 
 
 ---
+.header[Translation | From World to Algorithmic Space]
 
 .center[<img src="./img/lavarand_01.jpg" alt="lavarand_01" style="width:32%;"> <img src="./img/lavarand_02.png" alt="lavarand_02" style="width:67%;">] .imgref[[Images: [By HaeB - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=116926170), [Martin J. Levy](https://blog.cloudflare.com/randomness-101-lavarand-in-production/)]]
 
@@ -132,6 +91,8 @@ template:inverse
 
 
 ???
+A simple translation with surprising stakes. This is the "hello world" of third spaces.
+
 
 * Consider what happens when we try to bring something from the real world into computation. 
 * Take randomness as a first example. Random numbers play a key role in computational processes ranging from the generation of secure cryptographic keys to the random initialization of weights during AI network training. Yet computers cannot produce true randomness. They simulate it using deterministic algorithms — PRNGs — and that simulation is structurally different from the thing it mimics. It has period lengths, statistical biases, seeds. In other words, the move from real-world phenomenon to computational representation is not a neutral transfer. Something changes in the crossing.
@@ -149,151 +110,307 @@ Random numbers play a key part of computational processes from the generation of
 This distinction is particularly salient in the area of cryptography, which is involved in the study of securing communication across networks (Rivest, 1990). The security of the world’s internet traffic relies to a large extent on the ability to generate cryptographic keys with a degree of unpredictability high enough to make them difficult if not practically impossible to guess. In such cases, a PRNG is often initialised with a truly random seed in order to quickly and efficiently produce a random key. In the San Francisco offices of the internet security firm CloudFlare there is a wall of lava lamps filmed 24 hours a day in order to provide cryptographic keys for some 20% of the world’s internet traffic (Fig. 1). Known as the Lavarand, the idea is based on an original patent by the US company Silicon Graphics in 1996 (Noll *et al.,* 1996). Whenever a key is required, the CloudFlare systems translate a frame from the live feed into a numeric value that is then fed as a seed into a PRNG, generating the key (Leebow-Fieser, 2017). Due to the highly chaotic movement of the liquid in the lamps, as well as the atmospheric and lighting conditions that eventually become rendered as pixels in the image, the seeds are extremely difficult to predict. The images, despite their use of brightly coloured objects made for human entertainment, are made to be purely operational for the computational process of pseudo-random number generation.
 
 
+
 ---
-## What Do We Mean by Translation?
+## Translation
 
 --
-Moving something from one domain into another:
-  
---
-* Image capture → Pixel value → Seed for Pseudo Random Number Generator (PRNG) → Pseudo Random Number
 
-
-???
-* And here is where it gets interesting: what emerges on the other side is not a failed copy. The simulation is a new kind of object — one that behaves like randomness under certain conditions, but operates according to its own internal logic. It is neither the original phenomenon nor a mere approximation of it. It is something third.
+> Not just "moving content" between media.
 
 --
+
 <br />
-*In which domain are we now?*
+Translation as a pipeline that
 
 --
+* captures or encodes a phenomenon
 
-> Translation as production of a third space.
+--
+* transforms it via an algorithmic model
 
-
-
+--
+* into a *third space* with a new structure.
 
 ???
-
-Computational translation is typically framed as transfer (moving something from one domain into another), but this framing obscures what is actually happening. Introduce the alternative frame: translation as production of a third space. Lead over to examples
-
-
-The integration question is worth thinking through carefully. Here is an honest assessment:
-The domain/translation/third space structure for Lavarand
-
-Source domain: chaotic physical phenomenon (fluid, light, heat)
-Translation: camera → pixel values → hash function → PRNG seed
-"Third space": pseudo-random number sequence
-
-The third space is genuinely novel — it is neither the lava lamps nor true randomness. It has its own internal logic: period lengths, statistical distributions, seed dependency. And it has real-world consequences: it secures 20% of internet traffic. By your own three criteria it actually scores reasonably well: emergent structure (yes), generativity (yes, infinite), feedback potential (yes — it shapes cryptographic infrastructure globally).
-But the third space is entirely operational, not experiential or inhabitable. Nobody lives in a PRNG sequence. This is categorically different from Body Paint, Superradiance, or The Lake, where the third space is a space you can be inside.
-My recommendation: keep it, but reframe its function explicitly
-Lavarand works perfectly as a conceptual on-ramp — it illustrates the translation structure with unusual clarity and surprise, before the artistic examples complicate it. The weakness is actually rhetorical rather than logical: if you present it as a case study on equal footing with the others, the third space claim feels thin. But if you frame it explicitly as the simplest possible example of the structure — translation produces something that belongs to neither domain — it earns its place. And the closing callback to the lava lamp wall lands well precisely because the audience has been carrying it the whole time.
-The slide note already says this well: "The PRNG was never a failed copy of randomness — it was a new kind of object." That is the argument. Just make sure the introduction frames Lavarand as illustration, not as full case study.
+We translate behavior into signals, signals into models, models into spaces.
+The result belongs fully to neither side.
 
 ---
+.header[Translation]
+
 ## Lavarand
 
-* Source domain: chaotic physical phenomenon (fluid, light, heat)
-* Translation: camera → pixel values → hash function → PRNG seed
-* "Third space": pseudo-random number sequence
+Pipeline: Source →  Capture / Encode →  Model / Transform → Third space 
 
+--
 
+<br />
+
+* **Source**: Chaotic physical process (fluid, light, heat)  
+* **Capture**: Camera frames → pixel values  
+* **Transform**: Hashing / extraction → seed  
+* **Third space**: Pseudo-random numbers (PRNG output)
+
+???
+After the camera captures the lava lamps, you have a large array of pixel values. That image contains physical entropy, but in a messy, structured form.
+
+In the transform step, the system first extracts the raw pixel data and converts it into a binary string. Then it runs that data through a cryptographic hash function, such as SHA-256. A hash function deterministically maps any input to a fixed-length output and spreads small differences widely across the result. This helps remove bias and produce a uniformly distributed bitstring.
+
+That resulting bitstring becomes the seed for the pseudo-random number generator. The hash does not create randomness. It reorganizes physical entropy into a clean numerical form that a PRNG can use.
+
+* Key idea: computers simulate randomness, so we import entropy from physics.
+* The "randomness" we get is not lava and not true randomness.
+* It is a new operational object.
 
 ---
 template:inverse
 
-### Example
-# Gesture into Fields
+# The Third Space
 
 ---
-## What is a Gesture?
-
-
-???
-* Anchoring the source domain
-A brief phenomenological provocation: gesture is embodied, continuous, intentional, and unrepeatable. It carries weight, hesitation, momentum — properties that belong to a body in time.
-
----
-## What is a Gesture?
-
-.center[<img src="./img/dance_01.png" alt="dance_01" style="width:37%;"> <img src="./img/dance_02.jpg" alt="dance_02" style="width:21%;"> <img src="./img/hands_01.jpg" alt="hands_01" style="width:39%;">] .imgref[[Images: [Lucas, A. 2014. Breathe Life Into Your Ballet Performance | Dance Advantage. Accessed at illusionsofamisadventurer](https://illusionsofamisadventurer.wordpress.com/2014/04/10/expression-and-communication-through-dance/), [NYC Dance Project. Accessed at Creative Boom](https://www.creativeboom.com/inspiration/the-art-of-movement-breathtaking-photographs-of-incredible-dancers-in-motion/), [freepik](https://www.freepik.com/premium-photo/beautiful-sensitive-hands-concept_29662593.htm#from_element=cross_selling__photo)]]
-
----
-## What is a Gesture?
-
-<img src="./img/dance_01.png" alt="dance_01" style="width:16%;"> <img src="./img/dance_02.jpg" alt="dance_02" style="width:9%;"> <img src="./img/hands_01.jpg" alt="hands_01" style="width:17%;">  
-
-
-> A movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude 
-[...]
-
-.footnote[[[Merriam-Webster Dictionary: gesture](https://www.merriam-webster.com/dictionary/gesture)]]
-
-
-???
--> raised his hand overhead in a gesture of triumph
-* the use of motions of the limbs or body as a means of expression
-* something said or done by way of formality or courtesy, as a symbol or token, or for its effect on the attitudes of others. 
--> a political gesture to draw popular support …— V. L. Parrington
+## The Third Space
 
 --
 
+The third space is the model-generated *world* created by the pipeline.
 
-*How to capture a gesture?*
+--
 
-.footnote[[[Merriam-Webster Dictionary: gesture](https://www.merriam-webster.com/dictionary/gesture)]]
+* It might have its own rules.
+* It might produces its own behaviors.
+* It can affect its environment, e.g. the analog space.
 
+<br />
+
+> Not the physical source. Not a mere digital copy.
 
 ???
--> raised his hand overhead in a gesture of triumph
-* the use of motions of the limbs or body as a means of expression
-* something said or done by way of formality or courtesy, as a symbol or token, or for its effect on the attitudes of others. 
--> a political gesture to draw popular support …— V. L. Parrington
+* Think of it this way: When you simulate fluid, you do not have water. But you do not have a picture of water either. You have a system with viscosity, diffusion, attractors. That is the third space.
+
+* It is where the translation lives...
+
+* It is computational, but it behaves. And behavior is ontology.
+
+
 
 
 ---
-## Body Capture Technologies
+## The Third Space
+
+???
+Before we look at more examples, we need a way to describe and compare third spaces.
+Not all of them behave in the same way. Some are built for systems, others for humans. Some are tightly controlled, others produce open-ended behavior.
+
+To make that difference more understandable, we can position them along two continuous dimensions.
+
+If we take the third space seriously as a model-generated world, then we need criteria to evaluate it. Not in terms of taste, but in terms of behavior, consequence, and meaning.
 
 
+--
+
+Two continuous dimensions describing the *type* of the third space:
+
+--
+- **Operational** (used by systems) ↔ **Experiential** (lived by humans)
+
+--
+- **Deterministic** (mostly predictable) ↔ **Generative** (open-ended outcomes)
+
+
+
+???
+Operational: used by systems (security, robots, infrastructure).
+Experiential: lived by humans (interaction, perception, art).
+Deterministic: mostly predictable mapping.
+Generative: produces open-ended outcomes.
+
+---
+## The Third Space
+
+Four properties describing how the third space *behaves*:
+
+* **Structure (ontology)**
+    * The existing entities and rules.
+    * Do new internal patterns or laws emerge?
+
+???
+* Ontology is the study of what exists and what counts as real within a system.  
+* It defines its own kinds of objects, rules, and relationships that did not exist in the source domain.
+* Nodes, vectors, fields, attractors — these are ontological commitments.
+
+--
+* **Production (dynamics)**
+    * How entities and rules generate behavior over time.
+    * Are states produced that the source could not?
+
+--
+* **Influence (feedback)**
+    * How the third space affect the original domain.
+    * Does it change behavior, decisions, or perception?
+
+--
+* **Meaning (interpretation)**
+    * Semantic resonance
+    * Does the translation articulate a coherent conceptual claim?
+    * Does it reorganize how we understand the source?
+
+We could score per item: 0 (weak), 1 (some), 2 (strong)
+
+
+???
+
+The following four properties help us distinguish when a translation merely represents something and when it actually builds a world.
+
+- This is not about “beauty.”
+- It is about whether the translation means something structurally, not just aesthetically.
+- Does the mapping itself carry an argument?
+
+
+---
+.header[The Third Space of Lavarand]
+
+.center[<img src="./img/lavalamps_01.gif" alt="lavalamps_01" style="width:90%;">] .imgref[[Images: [Code Golf - Simplistic Lava Lamp](https://codegolf.stackexchange.com/questions/171984/simplistic-lava-lamp)]]
+
+
+---
+
+## The Third Space of Lavarand
+
+- Operational ↔ Experiential? Operational ✓
+- Deterministic ↔ Generative? Generative ✓ (in its output behavior)
+
+???
+
+* The algorithm is deterministic, but the output stream is open-ended and practically unpredictable.
+* Nobody inhabits the PRNG; it functions as infrastructure.
+
+It demonstrates that translation produces a third space even when it is purely operational.
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure
+* Production over time beyond source
+* Influence
+* Meaning
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure: **some**
+    * Statistical properties (distribution, period, seed-dependency)
+    * Limited internal dynamics
+* Production over time beyond source
+* Influence
+* Meaning
+
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure: **some**
+* Production over time beyond source: **strong**
+    * Extends physical entropy into a vast executable number stream
+* Influence
+* Meaning
+
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure: **some**
+* Production over time beyond source: **strong**
+* Influence: **strong**
+    * Shapes cryptographic systems and global communication infrastructure
+* Meaning
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure: **some**
+* Production over time beyond source: **strong**
+* Influence: **strong**
+* Meaning: **weak**
+    * Instrumental rather than interpretive
+    * No conceptual claim
+    * Does not reorganize how we understand randomness
+
+---
+
+## The Third Space of Lavarand
+
+* Emergent structure: **some**
+* Production over time beyond source: **strong**
+* Influence: **strong**
+* Meaning: **weak**
+
+
+???
+This matters: Lavarand is powerful but not "artful" in itself.
+It does not reorganize how we understand randomness experientially. It instrumentalizes it.
+
+--
+
+> Lavarand produces an operational third space: algorithmically structured and highly generative in its output, globally influential as infrastructure, yet weak in semantic resonance because it functions instrumentally rather than conceptually.
+
+---
+
+template: inverse
+### Example
+# Gesture → Fields
+
+???
+We have described the third space in abstract terms: a model-generated world with its own entities, dynamics, influence, and meaning. That can sound theoretical. So let us ground it in something immediate.
+
+What happens when we translate the human body?
+
+We now move into spaces that can be inhabited, played, and felt.
+The key shift is not prettier output. It is new rules.
+
+---
+
+.center[<img src="./img/dancing_01.gif" alt="dancing_01" style="width:50%;">].imgref[[Images: [giphy](https://giphy.com/stickers/originals-dancing-3ohhwxtchVEHfSPj0c)]]
+
+
+???
+* What happens when we translate the human body?
+* Technically, we can capture kinematics: joints, velocities, trajectories.
+* But is that enough for a third space that aims to be meaningful?
+
+Movement is not only displacement in space. It carries intention, emotion, and context. When we translate a body computationally, we risk reducing expression to coordinates.
+
+Those layers of significance beyond pure joint transformations are what we call gestures. And it is precisely in translating gesture, not just motion, that artistic third spaces become interesting.
+
+
+---
+## Body Capture Cheat Sheet
 
 Marker-based
 * Optical mocap (Vicon, OptiTrack)
 * Inertial mocap (Xsens, Rokoko)
-
 
 Markerless
 * Depth sensors (LiDAR, structured light, e.g. Azure)
 * Multi-camera volumetric
 * Video-based pose estimation (ML-driven, MediaPipe, OpenPose)
 
-
-
 ???
-Marker-based
-* Optical mocap (Vicon, OptiTrack) — retroreflective markers + IR cameras
-* Inertial mocap (Xsens, Rokoko) — IMU suits, no optical dependency
+CS lens: these are different sensor models with different error profiles.
+Noise is not a bug. It changes the third space.
 
-Markerless
-* Depth sensors (LiDAR, structured light, ToF) — e.g. Azure Kinect
-* Multi-camera volumetric capture — photogrammetric reconstruction, e.g. 4D Views
-* Video-based pose estimation (MediaPipe, OpenPose) — single or multi-cam, ML-driven
 
 ---
 ## Body Capture Technologies
 
 .center[<img src="./img/mocap_01.png" alt="mocap_01" style="width:86%;"> ] .imgref[[Images: [University of Eastern Finland, HUMEA lab](https://sites.uef.fi/humea/humea-laboratory/human-motion-and-performance-analysis/)]]
 
----
-## Body Capture Technologies
 
-.center[<img src="./img/mocap_02.png" alt="mocap_02" style="width:27%;">] .imgref[[Images: [IEEE Pulse, Decoding Dance](https://www.embs.org/pulse/articles/decoding-dance/)]]
-
-
----
-## Body Shapes
-
-.center[<img src="./img/mocap_02.png" alt="mocap_02" style="width:27%;"> <img src="./img/mocap_03.png" alt="mocap_03" style="width:28%;"> <img src="./img/mocap_04.png" alt="mocap_04" style="width:43%;">] .imgref[[Images: [IEEE Pulse, Decoding Dance](https://www.embs.org/pulse/articles/decoding-dance/), [Design Collector, Motion Capture Dance Performance for AICP Awards](https://designcollector.net/likes/motion-capture-dance-performance-for-aicp-awards)]]
 
 
 ---
@@ -307,13 +424,253 @@ Markerless
 
 .footnote[[Major Lazer – Light it Up (feat. Nyla & Fuse ODG)](https://www.youtube.com/watch?v=r2LpOUwca94)]
 
+---
+## The Third Space of *Light It Up*
+
+- Operational ↔ Experiential? Experiential ✓
+
+???
+
+The output is designed for perception and cultural consumption.
+It is not infrastructure. It is aesthetic media.
+The third space is primarily lived through viewing.
+
+It demonstrates translation as stylistic transformation rather than system-level world-building.
+
+--
+- Deterministic ↔ Generative: (Mainly) Deterministic  ✓
+
+
+???
+* The motion capture data is recorded.
+* The retargeting process maps joints to another rig.
+* The choreography does not evolve dynamically.
+
+There is transformation, but not open-ended production.
+This is a controlled translation, not a generative system.
+
 
 ---
-template:inverse
-# A *Third* Space
+## The Third Space of *Light It Up*
+
+* Emergent structure: **weak**  
+    * Rig constraints and stylization alter perception  
+    * No new internal behavioral laws emerge  
+
+
+???
+Low to Moderate
+	•	The rig mapping introduces constraints.
+	•	Surface textures and stylization alter perception.
+	•	The CG body may exaggerate or smooth motion.
+
+However:
+	•	No new dynamic laws emerge.
+	•	The choreography remains fundamentally the dancer’s.
+
+This is structural transformation, not structural emergence.
+
+--
+
+* Production over time beyond source: **weak**  
+    * Re-expresses captured motion  
+    * Does not generate new trajectories  
+
+???
+The animation unfolds over time, but:
+	•	It does not generate new motion.
+	•	It re-expresses captured motion.
+	•	The temporal structure remains largely identical to the source performance.
+
+The third space extends style, not behavior.
+
 
 ---
-## Body Paint
+## The Third Space of *Light It Up*
+
+
+
+* Influence: **some**  
+    * Cultural and aesthetic impact  
+    * No structural or infrastructural feedback loop  
+
+
+???
+Weak to Moderate
+
+Locally:
+	•	It may influence fashion, dance trends, aesthetics.
+
+Systemically:
+	•	It does not restructure infrastructure or embodied practice in real time.
+
+Feedback exists culturally, not structurally.
+
+--
+
+* Meaning: **weak**  
+    * Raises questions of body shapes, digital identity and mediated performance  
+
+???
+Moderate to Strong
+
+This is where it becomes interesting.
+
+The translation:
+	•	Separates movement from biological identity.
+	•	Applies new surfaces and materials.
+	•	Potentially reframes dance as stylized, augmented embodiment.
+
+It makes a conceptual move:
+The body becomes transferable, skinnable, modular.
+
+If read critically, it participates in discussions about:
+	•	Virtual embodiment
+	•	Digital identity
+	•	Mediation of performance
+
+However, this depends on interpretation. The semantic resonance is not structurally embedded as strongly as in Superradiance.
+
+
+---
+## The Third Space of *Light It Up*
+
+> The Major Lazer video produces an experiential but largely deterministic third space: structurally transformed yet not dynamically generative, culturally influential rather than infrastructural, and moderately resonant in meaning through its reframing of embodied identity.
+
+
+???
+* Not every translation produces strong emergence.
+* Not every third space is generative.
+* Not every aesthetically rich output is dynamically rich.
+
+It is a transformation of embodiment, but not a new behavioral world.
+
+
+---
+## Beyond Joint Movement
+
+.center[<img src="./img/dance_01.png" alt="dance_01" style="width:37%;"> <img src="./img/dance_02.jpg" alt="dance_02" style="width:21%;"> <img src="./img/hands_01.jpg" alt="hands_01" style="width:39%;">] .imgref[[Images: [Lucas, A. 2014. Breathe Life Into Your Ballet Performance | Dance Advantage. Accessed at illusionsofamisadventurer](https://illusionsofamisadventurer.wordpress.com/2014/04/10/expression-and-communication-through-dance/), [NYC Dance Project. Accessed at Creative Boom](https://www.creativeboom.com/inspiration/the-art-of-movement-breathtaking-photographs-of-incredible-dancers-in-motion/), [freepik](https://www.freepik.com/premium-photo/beautiful-sensitive-hands-concept_29662593.htm#from_element=cross_selling__photo)]]
+
+???
+Gesture is embodied, continuous, intentional, and unrepeatable. It carries weight, hesitation, momentum — properties that belong to a body in time.
+
+---
+## What is a Gesture?
+
+<img src="./img/dance_01.png" alt="dance_01" style="width:16%;"> <img src="./img/dance_02.jpg" alt="dance_02" style="width:9%;"> <img src="./img/hands_01.jpg" alt="hands_01" style="width:17%;">  
+
+> A movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude 
+[...]
+
+.footnote[[[Merriam-Webster Dictionary: gesture](https://www.merriam-webster.com/dictionary/gesture)]]
+
+
+???
+-> raised his hand overhead in a gesture of triumph
+* the use of motions of the limbs or body as a means of expression
+* something said or done by way of formality or courtesy, as a symbol or token, or for its effect on the attitudes of others. 
+-> a political gesture to draw popular support …— V. L. Parrington
+
+
+
+
+---
+## Gesture As Source
+
+.left-even[
+Gesture
+* Embodied
+* Continuous in time
+* Intentional (often)
+* Context-bound
+* Hard to repeat exactly
+]
+
+???
+Think "signal plus meaning plus body".
+Capturing gesture always throws something away.
+
+--
+
+.right-even[
+Common encodings:
+- Joints (skeleton pose)
+- Silhouettes / optical flow
+- Inertial measurements (IMUs)
+]
+
+--
+
+<br />
+
+Encodings are **abstractions**, not neutral measurements.
+
+
+???
+
+Every encoding smuggles assumptions:
+what is a joint, what counts as motion, what counts as noise.
+
+---
+## Gesture As Source
+
+Encodings reduce gesture to discrete measurements.
+
+--
+
+<br />
+
+> What kind of space do we reconstruct from those measurements?
+
+--
+
+How do we transform motion data into a rich spatial system?
+
+
+???
+When we encode gesture, we fragment it into coordinates, vectors, or signals. We turn lived movement into discrete measurements.
+
+But measurements alone do not form a world. They are isolated data points.
+
+One powerful answer is the field.
+
+The body disappears.
+Velocity remains.
+And velocity becomes environment.
+
+---
+
+.center[<img src="./img/anadol_01.gif" alt="anadol_01" style="width:60%;"> .imgref[[Image: [Asia News - Turning data into art](https://asianews.network/turning-data-into-art/)]]]
+
+???
+
+---
+## A Field as Target
+
+A field assigns a value to each point in space (and often time):
+* Velocity 
+* Density 
+* Potential 
+* Force 
+
+Fields are great because they:
+* Persist
+* Can be integrated
+* Can produce trajectories
+
+???
+Fields are "gesture after it becomes physics".
+That is already a philosophical crime. A useful one.
+
+A potential field assigns a scalar value to each point in space that represents stored influence or “energy.”
+Potential is stored influence.
+Force is the push or pull that results from that influence.
+
+The field continues to exist independently of the original input event.
+
+
+---
+## *Body Paint* (Memo Akten, 2009)
 
 --
 
@@ -328,23 +685,31 @@ Akten's infrared camera does not record the body — it records movement. Speed,
 .imgref[[Images: [xinfrared](https://www.xinfrared.com/pl/blogs/blog/the-capabilities-and-limitations-of-thermal-camera?srsltid=AfmBOopnv_2JS-e1YbCx1qtqDB4wCziekN6YMK5WAq72denV_wbsOUeO), [numerical-tours](https://www.numerical-tours.com/matlab/graphics_5_fluids/), Memo Atken. 2009. [Body Paint](https://www.memo.tv/works/bodypaint/)]]
 
 --
-> What does the field offer (that the gesture doesn't)?
+> The system does not see "people", it sees "movement".
+
+
+???
+Key line: the system does not see "people", it sees "movement".
+So the ontology changes: person → motion agent.
+
+---
+.header[Body Paint (Memo Akten, 2009)]
+
+.center[<img src="./img/bodypaint_03.png" alt="mocap_02" style="width:80%;">] .imgref[[Image: [Creative Applications: Body Paint – Gestures and dance into evolving compositions](https://www.creativeapplications.net/project/body-paint-openframeworks/)]]
+
+
 
 
 ---
-.center[<img src="./img/bodypaint_03.png" alt="mocap_02" style="width:90%;">] .imgref[[Image: [Creative Applications: Body Paint – Gestures and dance into evolving compositions](https://www.creativeapplications.net/project/body-paint-openframeworks/)]]
-
-
-
-
----
+.header[Body Paint (Memo Akten, 2009)]
 
 .center[
- <video width="1060" controls>
+ <video width="960" controls>
   <source src="./img/bodypaint_01.mp4" type="video/mp4">
 </video> 
-Memo Atken. 2009. Body Paint. [https://www.memo.tv/](https://www.memo.tv/works/bodypaint/)
+
 ]
+.footnote[[https://www.memo.tv/](https://www.memo.tv/works/bodypaint/)]
 
 ???
 
@@ -354,242 +719,376 @@ The fluid field produced by Body Paint has viscosity, diffusion rates, attractor
 
 
 ---
-## The Third Space
+.header[Body Paint (Memo Akten, 2009)]
 
-<img src="./img/bodypaint_04.jpg" alt="bodypaint_04" style="width:50%;">  
+## The Pipeline
 
-> The joy of the movement, the sensation of play...
-
-
-
-.footnote[[[Creative Applications: Body Paint – Gestures and dance into evolving compositions](https://www.creativeapplications.net/project/body-paint-openframeworks/)]]
+* **Source**: Moving bodies (gesture)  
+* **Capture**: Motion signal (via depth camera, flow, tracking)  
+* **Transform**: Motion → velocity vectors → fluid simulation parameters  
+* **Third space**: Animated painterly field (viscosity, diffusion, memory)
 
 ???
-* User-to-user interaction: throw paint, splash each other
-* While the installation is suitable for a single user, when multiple users are present a new dynamic emerges between people. A user-to-user interaction is born when the audience start playing with each other through the installation, throwing virtual paint at each other, trying to splash their friends, working collaboratively to create shared artwork, or mischievously trying to vandalize others’ work.
+Key line: the system does not see "people", it sees "movement".
+So the ontology changes: person → motion agent.
 
 ---
+.header[Body Paint (Memo Akten, 2009)]
 
-## Body Paint
+## Field Specific Properties
 
-Source domains
-* The moving body (infrared camera: speed, acceleration, curvature)
-* Fluid dynamics simulation
+- **Persistence**: memory in the field
+- **Spatial extension**: values everywhere, not only on the body
+- **Dynamics**: diffusion, turbulence, attractors
+- **Composability**: multiple agents superpose
+
+???
+This is the third space doing third-space things.
+It has its own grammar.
+
+
+---
+## The Third Space of *Body Paint*
+
+- Operational ↔ Experiential? Experiential ✓
+- Deterministic ↔ Generative? Generative ✓
+
+???
+
+Primarily experiential:
+Participants inhabit the system.
+The output exists as an interactive environment.
+
+Generative:
+The fluid simulation produces patterns and trajectories
+that are not explicitly scripted.
+
+Multi-user dynamics emerge:
+Participants influence one another through the field.
+
+Important for CS:
+Interaction emerges from coupling,
+not from hard-coded choreography.
+
+---
+## The Third Space of *Body Paint*
+
+* Emergent structure: **strong**  
+    * Fluid simulation introduces internal dynamics  
+    * Patterns arise that were not present in the original gesture  
+
+???
+Strong
+
+The field has real internal laws. (viscosity, diffusion, attractors)
+It accumulates memory.
+It develops vortices and flow structures.
+
+The gesture does not contain these dynamics.
+They arise from the simulation.
+
+This is structural emergence, not stylistic transformation.
 
 --
 
-Translation operation
-* Motion signal → velocity vectors → fluid field parameters
-* The system does not see bodies — only movement
-
+* Production over time beyond source: **strong**  
+    * Generates trajectories and forms no body performed  
+    * The field continues evolving beyond the initiating gesture  
 
 ???
-* the translation is real-time and reactive, the third space is co-produced live.
+The system does not replay motion.
+It produces new motion.
+
+The field integrates over time.
+It extends and transforms the input.
+
+This is genuine generativity, not re-expression.
+
+
+
+
+---
+## The Third Space of *Body Paint*
+
+* Influence: **some**  
+    * Immediate embodied feedback  
+    * Participants adjust movement in response to the evolving field  
+    * Overall setup is very popular 
+
+???
+Local but real feedback
+
+Users respond to what the field does.
+Movement changes because of the simulation.
+
+However:
+The feedback is immediate and embodied,
+not infrastructural or systemic.
+
+The loop is tight but local.
 
 --
 
-The third space
-* A living painterly space with its own viscosity, diffusion, and memory
-* Neither the gesture nor the physics — a new aesthetic domain
+* Meaning: **some**  
+    * Reframes gesture as material  
+    * Makes us re-experience movement
 
 ???
-* The body is already abstracted away at capture: anything moving triggers the same response.
-* The field has properties the gesture never had: persistence, diffusion rates, attractor behavior.
-* The third space talks back — multi-user dynamics emerge that were never choreographed.
+Strong semantic resonance
+
+The translation carries a clear conceptual claim:
+Movement is not only expression.
+Movement becomes world.
+
+The body dissolves into dynamics.
+Play becomes co-creation.
+
+The conceptual argument is embedded in the computational structure.
 
 
 ---
-## Body Capture Technologies
+## The Third Space of *Body Paint*
 
-
-Neural
-* Neural Radiance Fields (NeRF)
-* Gaussian Splatting
-
+> *Body Paint* produces an experiential and generative third space: dynamically emergent, locally interactive, and aesthetically resonant through its transformation of gesture into environment.
 
 ???
- Neural
-* Neural Radiance Fields (NeRF) for dynamic body reconstruction
-* Gaussian Splatting for real-time volumetric representation
-  
-Emerging
-* Radar-based (no camera, through walls)
-* EEG/EMG — capturing intent before visible movement occurs
 
----
+Why:
+- the field has real internal dynamics (attractors, diffusion, memory)
+- the system produces forms no gesture alone could produce
+- users adjust movement in response
+- the mapping carries an argument: movement becomes material, play becomes world
+
+Semantic resonance here is structural:
+the translation does not just look painterly, it *reframes gesture* as environment.
+This is computational meaning-production.
+
+
+
+Unlike *Light It Up*:
+
+- It does not merely stylize motion.
+- It produces a behavioral system.
+- It embeds its conceptual claim structurally.
+
+This is not re-skinning embodiment.
+It is re-ontologizing it.
+
+Exercise:
+
+Prompt: "Translate *clapping* into a field."
+
+Three choices:
+1) amplitude envelope → scalar field
+2) onset detection → impulse field
+3) spectral centroid → color + turbulence
+
+Same source, different third spaces.
+
+OUT:
+## (Bridge) New capture, new third spaces
+
+Emerging encodings:
+- neural representations (NeRF, Gaussian splatting)
+- intent signals (EMG, EEG, physiological proxies)
+
+Point: richer encodings do not reduce ambiguity.
+They multiply design choices.
+
+???
+Avoid deep tech dive.
+Keep it as a bridge: better capture increases responsibility, not neutrality.
+
+
+# Architecture → Navigation
+
+???
+Now translation creates a space that predicts and shapes movement.
+We shift from bodies-in-a-room to people-in-a-city.
+
+
+## Architectural space as source
+
+Buildings are:
+- continuous geometry
+- constrained movement
+- layered semantics (doors, thresholds, visibility)
+
+Navigation needs:
+- discrete structures
+- costs
+- decisions
+
+Translation is unavoidable.
+
+???
+This is the classic continuous-to-discrete problem.
+Also known as: graphs ate my building.
+
+## Two translation options (pick one as your main)
+
+Option A: **Space syntax** (visibility, accessibility, integration)  
+Option B: **SLAM / robotics** (occupancy grids, pose graphs)
+
+Both yield: **graph-like** structures + metrics.
+
+???
+For this talk, you can lead with space syntax (fits media/architecture),
+and mention SLAM as the CS cousin.
+
+
+## Pipeline: layout → graph
+
+**Source**: floorplan / urban layout  
+**Capture**: segmentation into cells, lines, visibility, adjacency  
+**Transform**: construct graph (nodes, edges, weights)  
+**Third space**: navigable model with centrality, paths, flow predictions
+
 .center[
- <video width="1000" controls>
-  <source src="./img/gaussiansplat_01.mp4" type="video/mp4">
-</video> 
-Masaki Mizuno. 2026. 3D Gaussian Splatting. [X](https://x.com/MIZNOM/status/2023421414163013995?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2023421414163013995%7Ctwgr%5E6f47b56b09a9834c7d8b448b38bcf38c16c0dcf0%7Ctwcon%5Es1_&ref_url=https%3A%2F%2F80.lv%2Farticles%2Fmagical-animation-with-afterimage-made-from-3d-gaussian-splatting)
+<img src="./img/space_syntax_placeholder.png" style="width:70%;">
 ]
 
----
-## The Third Space
+.footnote[[Replace with a space syntax / visibility graph image + credit]]
 
-.center[<img src="./img/thirdspace_01.png" alt="thirdspace_01" style="width:66%;">] .imgref[[Image: Masaki Mizuno. 2026. 3D Gaussian Splatting. [X](https://x.com/MIZNOM/status/2023421414163013995?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2023421414163013995%7Ctwgr%5E6f47b56b09a9834c7d8b448b38bcf38c16c0dcf0%7Ctwcon%5Es1_&ref_url=https%3A%2F%2F80.lv%2Farticles%2Fmagical-animation-with-afterimage-made-from-3d-gaussian-splatting)]]
+???
+The graph has properties the building does not:
+betweenness, centrality, shortest paths, predicted flows.
+These are not "in" the walls. They are in the representation.
 
----
+
+## What the graph has that the building does not
+
+- **Discrete decisions** (turn left vs right)
+- **Global metrics** (centrality, integration)
+- **Predictive capacity** (flow as a derived object)
+- **Algorithmic manipulability** (optimize signage, routes, safety)
+
+???
+This is where CS students usually nod: "yep, graphs".
+
+
+## Façade-tilted bird’s-eye view (your research hook)
+
+Problem:
+- 2D maps hide vertical information
+- 3D perspective hides overview
+
+Translation move:
+- tilt façades outward with height-dependent displacement
+
+Third space:
+- a hybrid view that makes façades legible while retaining ground references
 
 .center[
- <video width="1080" controls>
-  <source src="./img/superradiance_01.mp4" type="video/mp4">
-</video> 
-Memo Akten and Katie Hofstadter, 2025. [Superradiance](https://superradiance.net/)
+<img src="./img/facade_tilt_placeholder.png" style="width:75%;">
 ]
 
+.footnote[[Replace with your figure + credit]]
 
 ???
-* NO AUDIO
-* What could be the third space?
+This example is gold because it shows a translation is a design argument.
+You choose what must be preserved.
 
----
-## Superradiance
+## Architecture → navigation: matrix placement
 
-Memo Akten and Katie Hofstadter, 2025:
-
-> We know that we are deeply entangled within complex, interdependent networks and assemblages of life, composed of and embedded within expansive scales of intelligence, unfolding across multiple boundaries of self.
-  
-
-
----
-## Superradiance
-
-Memo Akten and Katie Hofstadter, 2025:
-
-> We know that **we are deeply entangled within complex, interdependent networks** and assemblages of life, composed of and embedded within expansive scales of intelligence, unfolding across multiple boundaries of self.
-  
---
-  
-<br />
-> It’s one thing to intellectually know this, but how can we feel it, in our bodies?
-
+Operational ✔ (used for planning, routing, safety)  
+Experiential ✔ (humans perceive and act via the representation)  
+Deterministic-ish ✔ (mostly)  
+Generative: **1** (models can simulate many trajectories)
 
 ???
-* https://www.roborantreview.com/reviews/superradiance-memo-akten-and-katie-hofstadter-gray-area
-* You are only made of non-you elements.
-* Memo Akten and Katie Hofstadter have produced something profound and rare: imagery none of us have ever seen before. Katie’s dancing body is the centerpiece of this work, which appropriately, we never see. Instead, her liquid movements materialize nebulae, plankton, trees, worms, and mushrooms that seamlessly blend into video backdrops of earth’s beauty. 
-* Literalism can be the bane of good art, but in this case, it’s a literalism that most of us have forgotten and desperately need to restore.
+It sits near the middle: operational and experiential at once.
+That makes feedback effects likely.
 
----
-## Superradiance
 
-The following images are all from:
-  
-<br />
-  
-Memo Akten and Katie Hofstadter. 2025. Superradiance.  
-https://superradiance.net/
+## Architecture → navigation: rubric score
 
----
-<img src="./img/superradiance_01.jpg" alt="superradiance_01" style="width:100%;">
+1) Emergent structure: **2** (graph metrics emerge)  
+2) Generativity beyond source: **1** (many simulated paths)  
+3) Feedback potential: **2** (maps change how people move)  
+4) Semantic resonance: **1**
 
----
-<img src="./img/superradiance_02.jpg" alt="superradiance_02" style="width:100%;">
+Why:
+- structure and prediction are strong
+- feedback is infrastructural
+- semantic resonance is moderate: the translation reframes architecture as network and flow,
+  but primarily toward instrumentality (navigation, prediction, optimization)
 
----
-<img src="./img/superradiance_03.jpg" alt="superradiance_03" style="width:100%;">
+???
+It reorganizes understanding, but toward efficiency and control.
+This is epistemically strong, aesthetically restrained.
 
----
-<img src="./img/superradiance_04.jpg" alt="superradiance_04" style="width:100%;">
 
----
-<img src="./img/superradiance_05.jpg" alt="superradiance_05" style="width:100%;">
 
----
-<img src="./img/superradiance_06.jpg" alt="superradiance_06" style="width:100%;">
+Now imagine replacing the dancer with a dataset. Millions of images instead of limbs. Statistical similarity instead of muscle tension.
 
----
-<img src="./img/superradiance_07.jpg" alt="superradiance_07" style="width:100%;">
+The input is no longer embodied intention. It is aggregated data.
 
----
-<img src="./img/superradiance_08.jpg" alt="superradiance_08" style="width:100%;">
-
----
-<img src="./img/superradiance_09.jpg" alt="superradiance_09" style="width:100%;">
+In this configuration, data performs the role gesture previously held: it becomes the animating force of the third space.
 
 
 ---
-## The Making of Superradiance
-
-* Script
-* Choreography
-* Simulation
-* Generative AI: Chapter 1 - Embodied Simulation
-* Generative AI: Chapter 2 - Embodied Earth
-
-.footnote[[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
-
-
----
+.header[Machine Hallucinations — Nature Dreams (Rafik Anadol, 2021)]
 
 .center[
- <video width="1080" controls>
-  <source src="./img/superradiance_makingof_cutout_01.mp4" type="video/mp4">
+ <video width="960" controls>
+  <source src="./img/machineHallucinations_02.mp4" type="video/mp4">
 </video> 
+
 ]
-
-.footnote[[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
-
----
-## Superradiance
-
-Source domains
-* The dancing body
-* Natural processes: waves, root growth, wind, tidal movement
-
---
-
-Translation operation
-* Body pose → ControlNet skeleton → diffusion latent space
-* Natural imagery → IP-Adapter conditioning
+.footnote[[https://refikanadol.com/works/machine-hallucinations-nature-dreams/](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
 
 
 ???
-* Superradiance it is authored and rendered, the third space is designed in advance. 
+It is data, and the translation makes "data-space" feel real.
 
---
+TODO: make slide for
+Common move:
+- high-dimensional features
+- dimensionality reduction or manifold learning
+- render as navigable space or evolving field
 
-The third space
-* Ecological entanglement made *felt*, not just known
-* Neither the dance nor the footage but a new experiential domain
+Key claim:
+the embedding is not "the data".
+It is a *world model*.
 
-???
-* The idea (entanglement) is not in either source domain. 
-* It only emerges in the crossing
-* The third space is not a copy of either domain (dancing, nature), it is a system with its own rules.
+Data are not inherently spatial. We make them spatial.
+
+Gesture → field
+Data → field
+
+Embodiment dissolves.
+Distribution replaces intention.
+
+
 
 ---
-## Machine Hallucinations — Nature Dreams
+## *Nature Dreams* (Rafik Anadol, 2021)
 
-Rafik Anadol, 2021
 
 > A giant data sculpture displaying machine-generated, dynamic pigments of nature.
 
 <br />
 
+--
+
 > [...] to commemorate the beauty of the earth we share.
 
----
-## Machine Hallucinations — Nature Dreams
 
-* Superradiance → the body steers the latent space
-* Anadol → data IS the latent space, rendered as environment
+---
+## *Nature Dreams* (Rafik Anadol, 2021)
+
+The pipeline has four distinct stages:
+
+
+* Data collection
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
 
 
 ???
-* Then Anadol flips the input: instead of a body, the source is pure data — millions of images, climate records, neural signals — fed directly into ML models, and the latent space is rendered as architectural-scale visual space. The gesture disappears; data becomes the gesture.
-* utilizes over 300 million publicly available photographs of nature collected between 2018- 2021 at Refik Anadol Studio
-* used to train a GAN AI algorithm
-* The resulting AI Data Painting incorporates pigments, shapes, and patterns that we associate with nature, but only exist in the mind of a machine as dreams. 
 
----
-## Nature Dreams
-
-* Data collection
-    * 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
-
-.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+* 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
 
 ---
 <img src="./img/naturedreams_01.png" alt="naturedreams_01" style="width:98%;">
@@ -616,39 +1115,47 @@ Rafik Anadol, 2021
 
 .footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
 
----
-## Nature Dreams
+???
 
 * Data collection
     * 300 million publicly available nature photographs of flowers, trees, mushrooms, landscapes, water, clouds, etc
 
 ---
-## Nature Dreams
+## *Nature Dreams* (Rafik Anadol, 2021)
 
+The pipeline has four distinct stages:
+
+* Data collection
 * Feature extraction and filtering (ResNeXt)
-    * A CNN architecture, producing a high-dimensional feature vector per image
-    * Vectors encode semantic content
-    * Xie, S., Girshick, R., Dollár, P., Tu, Z., and He, K. 2017. Aggregated Residual Transformations for Deep Neural Networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1492–1500. https://doi.org/10.1109/CVPR.2017.634
-
----
-## Nature Dreams
-
-* Dimensionality reduction and spatial clustering (UMAP)
-    * Projection of high-dimensional feature vectors into three-dimensional space using UMAP, preserving local and global structure of the data manifold, where proximity equals semantic similarity. 
-    * McInnes, L., Healy, J., and Melville, J. 2018. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv preprint arXiv:1802.03426. https://arxiv.org/abs/1802.03426
-
----
-## Nature Dreams
-
-* Generative synthesis (StyleGAN2-ADA)
-    * Thematically clustered subsets train a StyleGAN2-ADA model, producing 1024-dimensional embeddings
-    * A custom Latent Space Browser (developed since 2017) enables navigation and interpolation through the learned distribution
-    * Sampled GAN outputs — color fields, forms, textures that exist nowhere outside the model — serve as Anadol's "data pigments"
-    * These pigments feed a GPU-accelerated fluid dynamics solver (vvvv / Fuse library), where they become color and form attributes driving a particle simulation of up to 100 million elements
-    * Karras, T., Aittala, M., Hellsten, J., Laine, S., Lehtinen, J., and Aila, T. 2020. Training Generative Adversarial Networks with Limited Data. In Advances in Neural Information Processing Systems (NeurIPS), Vol. 33, 12104–12114. https://arxiv.org/abs/2006.06676
-
 
 .footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
+???
+
+* A CNN architecture, producing a high-dimensional feature vector per image
+* Vectors encode semantic content
+* Xie, S., Girshick, R., Dollár, P., Tu, Z., and He, K. 2017. Aggregated Residual Transformations for Deep Neural Networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1492–1500. https://doi.org/10.1109/CVPR.2017.634
+
+--
+
+* Dimensionality reduction and spatial clustering (UMAP)
+
+???
+
+* Projection of high-dimensional feature vectors into three-dimensional space using UMAP, preserving local and global structure of the data manifold, where proximity equals semantic similarity. 
+* McInnes, L., Healy, J., and Melville, J. 2018. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv preprint arXiv:1802.03426. https://arxiv.org/abs/1802.03426
+
+--
+
+* Generative synthesis (StyleGAN2-ADA)
+
+???
+
+* Thematically clustered subsets train a StyleGAN2-ADA model, producing 1024-dimensional embeddings
+* A custom Latent Space Browser (developed since 2017) enables navigation and interpolation through the learned distribution
+* Sampled GAN outputs — color fields, forms, textures that exist nowhere outside the model — serve as Anadol's "data pigments"
+* These pigments feed a GPU-accelerated fluid dynamics solver (vvvv / Fuse library), where they become color and form attributes driving a particle simulation of up to 100 million elements
+* Karras, T., Aittala, M., Hellsten, J., Laine, S., Lehtinen, J., and Aila, T. 2020. Training Generative Adversarial Networks with Limited Data. In Advances in Neural Information Processing Systems (NeurIPS), Vol. 33, 12104–12114. https://arxiv.org/abs/2006.06676
 
 
 ???
@@ -672,21 +1179,134 @@ This two-stage synthesis is the crucial technical detail for your talk: the GAN 
 * Image Cluster: The UML-UMAP algorithm is used in a real time explorable, and three-dimensional data universe with a custom software.
 * Style Gan2, with adaptive descriptor augmentation (ADA) with a latent space browser
 
-## Machine Hallucinations — Nature Dreams
 
-Source domain
-* 300,000,000 publicly available nature photographs (2018–2021)
+---
+.header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
+
+## The Pipeline
+
+* **Source**: 300M publicly available nature photographs  
+* **Capture**: Feature extraction → high-dimensional image embeddings  
+* **Transform**: Dimensionality reduction + generative synthesis → latent navigation + fluid particle simulation  
+* **Third space**: Large-scale animated data field (abstract, immersive, continuously evolving)
+
+---
+.header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
+
+## The Third Space of *Nature Dreams*
+
+- Operational ↔ Experiential? Experiential ✓
+- Deterministic ↔ Generative? Generative ✓
+
+???
+
+Primarily experiential:
+The work is immersive and perceptual.
+It is encountered as environment rather than tool.
+
+Generative:
+The system synthesizes novel visual states from latent space.
+Outputs are not present in the original dataset.
+
+However:
+There is no live interaction.
+The generativity is model-driven, not participant-driven.
+
+---
+.header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
+
+## The Third Space of *Nature Dreams*
+
+* Emergent structure: **some**  
+    * Latent space organizes images by similarity  
+    * Fluid simulation introduces visual continuity  
+
+???
+
+Moderate emergence
+
+The embedding creates structure: clusters, manifolds, transitions.
+The fluid system produces continuous transformation.
+
+However:
+No complex behavioral laws arise beyond interpolation and flow.
+Structure is statistical and aesthetic, not dynamically autonomous.
 
 --
 
-Translation pipeline
-* Feature extraction
-* Dimensionality reduction
-* Generative synthesis
+* Production over time beyond source: **strong**  
+    * Generates images never captured  
+    * Produces continuous morphing sequences  
+
+???
+
+Strong generativity
+
+The GAN synthesizes novel forms.
+The dataset is metabolized into new configurations.
+
+The third space produces states the source never contained.
+
+
+---
+.header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
+
+## The Third Space of *Nature Dreams*
+
+* Influence: **weak/some**  
+    * Shapes perception of "data as pigment"  
+    * Hugly popular, culturally influential?
+
+???
+
+Influence is perceptual, not structural.
+
+It may alter how audiences think about data,
+but it does not change systems, decisions, or embodied practice.
+
+Feedback is cultural, not infrastructural.
 
 --
 
-The third space
+* Meaning: **some**  
+    * Aestheticis of data?
+
+???
+
+Moderate semantic resonance
+
+The work proposes a conceptual move:
+Data becomes landscape.
+Latent space becomes environment.
+
+However:
+The mapping does not strongly articulate a structural argument.
+The meaning depends largely on framing rather than interaction.
+
+
+---
+.header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
+
+## The Third Space of *Nature Dreams*
+
+> *Nature Dreams* produces an experiential and generative third space: statistically structured and visually immersive, perceptually influential yet only moderately resonant in meaning through its transformation of data into environment.
+
+???
+
+Why:
+- It metabolizes vast datasets into synthetic imagery.
+- It generates novel visual states.
+- It embeds statistical structure into spatial experience.
+- But it lacks strong feedback loops or deeply embedded conceptual coupling.
+
+Unlike *Body Paint*:
+The body does not steer the system.
+Data replaces gesture.
+
+The third space is beautiful and generative,
+but less behaviorally emergent and less tightly conceptually bound.
+
+
 * Very beautiful moving abstract imagery
 
 > The translation is complete, but the space produced has no grammar of its own.
@@ -709,103 +1329,322 @@ The third space
 * Anadol: spectacular, but you watch it from the outside
 * This sets up the question Datamorphism attempts to answer
 
-## The Third Space
 
-Oftentimes the idea of a thrid space based on data is enoguh.
 
-We call this *Datamorphism*.
+
+
+
+
 
 
 ---
-## Datamorphism
+.header[Superradiance (Memo Akten & Katie Hofstadter, 2025)]
 
-> How data properties and our understanding of data shape the form *and reception* of data artworks.
+
+.center[
+ <video width="960" controls muted>
+  <source src="./img/superradiance_01.mp4" type="video/mp4">
+</video> 
+]
+.footnote[[Superradiance](https://superradiance.net/)]
+
+
+???
+* NO AUDIO
+* What do you intuitively think about the third space, the world that is build here?
+
+---
+## *Superradiance* (Memo Akten & Katie Hofstadter, 2025)
+
+Memo Akten and Katie Hofstadter, 2025:
+
+> We know that we are deeply entangled within complex, interdependent networks and assemblages of life, composed of and embedded within expansive scales of intelligence, unfolding across multiple boundaries of self.
   
 
-Analogous to anthropomorphism, but instead of projecting *human traits*, datamorphism projects *data values*:  
-truth, universality, objectivity.
 
+---
+## *Superradiance* (Memo Akten & Katie Hofstadter, 2025)
 
-.footnote[[Huson, M. and Gieseke, L. 2025. Datamorphism: Data Art of the Other-Than-Human. xCoAx 2025.]]
+Memo Akten and Katie Hofstadter, 2025:
+
+> We know that **we are deeply entangled within complex, interdependent networks** and assemblages of life, composed of and embedded within expansive scales of intelligence, unfolding across multiple boundaries of self.
+  
+--
+  
+<br />
+> It’s one thing to intellectually know this, but how can we feel it, in our bodies?
 
 
 ???
-* In related work, we proposed datamorphism to describe how data properties — their size, their mapping logic, and their meta-communication — actively shape both the form of a data-based representation and its reception by an audience. The concept was developed in the context of data art about other-than-human phenomena, but it applies directly here. The key insight: translation is never neutral. The codec is an argument. What you encode, how you map it, and what you make visible to the audience are all decisions that produce the third space — not merely describe it.
+* https://www.roborantreview.com/reviews/superradiance-memo-akten-and-katie-hofstadter-gray-area
+* You are only made of non-you elements.
+* Memo Akten and Katie Hofstadter have produced something profound and rare: imagery none of us have ever seen before. Katie’s dancing body is the centerpiece of this work, which appropriately, we never see. Instead, her liquid movements materialize nebulae, plankton, trees, worms, and mushrooms that seamlessly blend into video backdrops of earth’s beauty. 
+* Literalism can be the bane of good art, but in this case, it’s a literalism that most of us have forgotten and desperately need to restore.
 
-Four properties that shape datamorphic reception:
-
-* **Dataset size** — scale produces the sublime; comprehension breaks down
-* **Meta-communication** — the audience must *know* the work is data-based
-* **Machine-generated data** — decoupled from human agency at the moment of capture
-* **Data mapping** — the translation from formal data to aesthetic form
-
-* The perceptual shift is the core claim: knowing an artwork is data-based changes how you receive it.
-* "Belief at first sight" — Kosminsky et al. 2019 — data lend authority the work may not otherwise possess.
-* Key distinction from visualization: datamorphism is about reception and artistic potential, not communicative efficiency.
-* The limit case of Anadol now reads clearly: the pipeline is there, the scale is there, but the meta-communication is weak — the audience experiences spectacle, not data.
 
 ---
-## Datamorphism
+<img src="./img/superradiance_03.jpg" alt="superradiance_03" style="width:100%;">  
+.footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
 
-Four properties that shape datamorphic reception:
-
-* **Dataset size** — scale produces the sublime; comprehension breaks down
-* **Meta-communication** — the audience must *know* the work is data-based
-* **Machine-generated data** — decoupled from human agency at the moment of capture
-* **Data mapping** — the translation from formal data to aesthetic form
-
-.footnote[[Huson, M. and Gieseke, L. 2025. Datamorphism: Data Art of the Other-Than-Human. xCoAx 2025.]]
 
 ---
-## Three Properties of the Third Space 
+<img src="./img/superradiance_05.jpg" alt="superradiance_05" style="width:100%;">  
+.footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
 
-1. Emergent structure
-    * the third space has properties that were not present in the source and could not have been predicted from it alone. The fluid field has attractors; the navigation graph has centrality; the lake installation has harmonic emergence.
-
----
-## Three Properties of the Third Space 
-
-2. Generativity beyond the source
-    * the third space produces outputs, events, or behaviors that exceed what the source could generate. The field produces movements no body made; the graph predicts flows the building cannot; the fish installation composes music no fish intended.
 
 ---
-## Three Properties of the Third Space 
+<img src="./img/superradiance_08.jpg" alt="superradiance_08" style="width:100%;">  
+.footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
 
-3. Feedback potential
-    * the third space begins to shape behavior in the original domain. The navigation representation changes how pedestrians walk. The datamorphic artwork changes how audiences perceive the phenomenon it represents. The encoded space starts encoding us.
-
----
-## From Translation to World-Building 
-
-If the third space is real — if it has its own structure, generativity, and feedback effects — then the act of designing the pipeline is not a technical decision. It is an ontological one. The pipeline author decides what exists in the third space. This reframes the entire practice of computational translation: not as a means of representing the world, but as a means of producing new parts of it. One line to close the section and open the final movement: we have been building worlds. The question is whether we have been doing so deliberately.
-
-Closing: World-Building, Not World-Copying
 
 ---
-## From Translation to World-Building 
+<img src="./img/superradiance_09.jpg" alt="superradiance_09" style="width:100%;">  
+.footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
 
-A single image: the Cloudflare lava lamp wall. The opening provocation revisited. The PRNG was never a failed copy of randomness — it was a new kind of object, built deliberately for a purpose, with its own internal logic and its own real-world effects. It secures 20% of the world's internet traffic. The third space it produces is consequential. The same is true, I want to propose, of every computational pipeline that translates physical behavior into algorithmic systems.
 
-## The Take-Home
+---
+## The Making of Superradiance
 
-Computational translation is not world-copying. It is world-building.
+* Script
+* Choreography
+* Simulation
+* Generative AI: Chapter 1 - Embodied Simulation
+* Generative AI: Chapter 2 - Embodied Earth
 
+.footnote[[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
+
+
+---
+.header[*Superradiance* (Memo Akten & Katie Hofstadter, 2025)]
+
+
+.center[
+ <video width="960" controls>
+  <source src="./img/superradiance_makingof_cutout_01.mp4" type="video/mp4">
+</video> 
+]
+
+.footnote[[https://superradiance.net/]]
+
+
+---
+.header[Superradiance (Memo Akten & Katie Hofstadter, 2025)]
+
+## The Pipeline
+
+* **Source**: Dancing body + ecological imagery and themes of planetary interconnectedness  
+* **Capture**: Motion, embodied performance, and environmental references via dance / choreography and sensor data → encoding of body + environment  
+* **Transform**: Synthesized generative imagery, immersive video and sound through computational media (AI, simulations, latent space conditioning, custom software)  
+* **Third space**: Immersive, multi-screen audiovisual environment that explores embodied connection to planetary systems
+
+???
+This work weaves dance, neuroscience, poetry, code, AI, and environment into a visceral narrative exploring embodiment and planetary consciousness. [oai_citation:0‡superradiance.art](https://superradiance.art/?utm_source=chatgpt.com)
+
+
+---
+## The Third Space of *Superradiance*
+
+- Operational ↔ Experiential? Experiential ✓  
+- Deterministic ↔ Generative? Generative ✓  
 
 ???
 
-Slide 3 — The Open Question Closing without resolution
+Primarily experiential:
+The installation invites bodily perception beyond the skin into a sense of ecological entanglement.
 
-If we accept that computational pipelines produce third spaces — spaces with emergent structure, generativity, and feedback potential — then every design decision in the pipeline carries authorial and ethical weight. Who decides what gets encoded? What is lost in the translation, and for whom? When the third space starts shaping behavior in the original domain, who is responsible?
+Generative:
+The project synthesizes visuals and sound that are not directly present in the source choreography or imagery.
+---
+## The Third Space of *Superradiance*
 
-## The Take-Home
+* Emergent structure: **strong**  
+    * Internal visual and conceptual structures arise through computational synthesis  
+    * Patterns of imagery, transformation rules, and temporal motifs emerge from the coupling of choreography, model constraints, and sonic pacing  
 
+???
+Strong emergence (in an artistic sense)
 
-If we are building worlds, what does that oblige us to?
+The third space is not a linear translation of a recorded dance.
+It is a coupled system: body signals, environmental imagery, model priors, and audio-temporal structure interact.
+
+“Emergent” here does not mean autonomous like a fluid solver.
+It means the work generates coherent, rule-like aesthetic behavior that is not directly specified frame-by-frame:
+recurring morphologies, transitions, and tempo-patterns that arise from the generative process itself.
+
+The result has a grammar:
+what kinds of transformations are possible,
+how motifs recur,
+how time and form cohere.
+
+--
+
+* Production over time beyond source: **strong**  
+    * Visual and sonic sequences evolve beyond any single captured performance  
+    * Produces novel states and transitions that the source choreography and footage do not contain  
+
+???
+Strong production
+
+The system does not merely restage the dance.
+It synthesizes new audiovisual states and continuous transformations that exceed the source material.
+
+Even if authored and curated, the output space is larger than the input space:
+the work “produces” through generative recombination, interpolation, and transformation.
 
 
 ---
-template:inverse
+## The Third Space of *Superradiance*
 
-## The End
+* Influence: **strong**  
+    * Alters perceptual and emotional understanding of embodiment and ecology  
+    * Encourages audiences to sense themselves as entangled within broader systems  
 
-# 💧 🌊 💦
+???
+Strong influence (via perception and cognition)
+
+Influence does not need to be infrastructural to be strong.
+Here the feedback loop runs through humans.
+
+The third space changes the audience’s perceptual model:
+what the body is,
+where “self” ends,
+how environment and organism are related.
+
+That shift can persist after the experience and shape discourse, values, and artistic/technical imaginaries.
+This is high-impact feedback through interpretation and embodied perception.
+
+--
+
+* Meaning: **strong**  
+    * Semantic resonance is central  
+    * The translation structurally embodies a coherent claim about interdependence and extended embodiment  
+
+???
+Strong meaning
+
+The conceptual claim is not just narrated.
+It is enacted by the mapping.
+
+Body → transformation logic → ecological imagery is not arbitrary decoration.
+It makes “entanglement” perceptible as a rule of the world.
+
+Meaning is carried by structure:
+the way motion steers transformation,
+the way forms blend across scales,
+the way the environment is not backdrop but continuity.
+
+---
+## The Third Space of *Superradiance*
+
+> *Superradiance* produces an experiential and generative third space: visually emergent, contextually powerful, and conceptually resonant through its immersive exploration of embodiment and planetary interconnectivity.
+
+???
+
+Why:
+- the installation synthesizes novel audiovisual states beyond any single source performance  
+- internal aesthetic and temporal structures arise through generative computation  
+- it encourages a felt sense of ecological entanglement and extended embodiment
+
+It is not a passive display.
+It is designed to *reframe how we perceive bodies and environment*. [oai_citation:3‡superradiance.art](https://superradiance.art/?utm_source=chatgpt.com)
+
+
+This is not autonomous emergence, but authored emergence: rule-like behavior that arises from a designed generative system rather than from manual animation.”
+
+
+
+
+
+
+
+---
+template: inverse
+
+# From Translation to World-Building
+
+???
+We have three cases.
+Now we unify them and land the plane.
+
+---
+
+layout: false
+## The rubric, revisited
+
+A third space becomes world-like when it integrates:
+
+1) **Emergent structure** (ontology)  
+2) **Generativity beyond the source** (production)  
+3) **Feedback potential** (influence)  
+4) **Semantic resonance** (meaning)
+
+???
+Structure makes it stable.
+Generativity makes it alive.
+Feedback makes it consequential.
+Semantic resonance makes it intelligible and culturally situated.
+
+---
+
+layout: false
+## Why this matters for CS
+
+Pipeline choices decide:
+- what counts as signal vs noise
+- what exists as an object (joints, nodes, clusters)
+- what can be optimized and controlled
+- who is included or excluded by the representation
+
+Translation is an epistemic act, not only a technical act.
+
+???
+This is your ethical hinge without moralizing.
+Make it crisp.
+
+---
+
+layout: false
+## Closing callback: the lava lamps
+
+The PRNG was not a failed copy of randomness.  
+It was a new object with real-world effects.
+
+Same pattern:
+gesture-fields, navigation-graphs, data-environments.
+
+**Computational translation is world-building.**
+
+.center[
+<img src="./img/lavarand_01.jpg" style="width:40%;">
+<img src="./img/lavarand_02.png" style="width:55%;">
+]
+
+.footnote[[Replace images + credit]]
+
+???
+Circular closure helps memory.
+Also, it is funny that lava lamps are a security primitive.
+
+---
+
+template: inverse
+## The take-home
+
+If we are building worlds,  
+what does that oblige us to do well?
+
+???
+End on obligation, not guilt.
+Obligation is a design constraint. CS loves constraints.
+
+---
+
+template: inverse
+# Thank you
+
+Slides and references: (add link)  
+Contact: l.gieseke@filmuniversitaet.de
+
+???
+Invite questions about the rubric and template.
+If students ask "is this always true", answer: "it is a working theory, useful in many systems".
