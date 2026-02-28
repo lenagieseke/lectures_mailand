@@ -18,41 +18,64 @@ class: center, middle, inverse
 ---
 layout: false
 
-## TODO: Teaser Lavarand
+.center[<img src="./img/lavarand_02.png" alt="lavarand_02" style="width:72%;">] .imgref[[Image: [Martin J. Levy](https://blog.cloudflare.com/randomness-101-lavarand-in-production/)]]
+
 
 ---
 
-## TODO: Teaser Superradiance
+.center[<img src="./img/machineHallucinations_01.png" alt="machineHallucinations_01" style="width:92%;">].imgref[[Image: Rafik Anadol. 2021. Machine Hallucinations — Nature Dreams. https://refikanadol.com/works/machine-hallucinations-nature-dreams/]]
 
 ---
 
-## TODO: Teaser Nature Dreams
+.center[<img src="./img/superradiance_04.jpg" alt="superradiance_04" style="width:92%;">].imgref[[Image: Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
 
----
-template: inverse
-
-### Computational representations are **new objects**, not copies.  
 
 ---
 template: inverse
 
-### Pipeline design is **world-building**, not just engineering.
+### *Computational translation constructs new spaces with their own rules.*
+
+
+???
+Computational representations are new objects, **not copies**.  
+
+*Translation produces a structured space.
+*That space has its own rules.
+*That space can shape perception and behavior.
+*Therefore, translation is not neutral.
+
+---
+template: inverse
+
+### *Designing those spaces is world-building.*
+
+???
+
+Pipeline design is **world-building**, not just engineering and it is not a neural act.
+
+*Translation produces a structured space.
+*That space has its own rules.
+*That space can shape perception and behavior.
+*Therefore, translation is not neutral.
 
 ---
 
 
 ## Agenda
 
-* Translation is not neutral  
-* A minimal case: Lavarand  
+* Translation  
+    * Example: Lavarand  
 * The Third Space
-* Example: Gesture → fields  
-* Data → fields + reception  
-* World-building
+    * Example: Gesture → fields  
+    * Example: Data → fields  
+    * Example: Gesture & Data → fields  
+* World-Building
 
 ???
 * Goal: Give a usable mental model for how pipelines translate phenomena into computational worlds. 
 * Thesis: translation is not transfer. It produces a third space with its own rules and consequences.
+
+"it is a working theory, useful in many systems".
 
 ---
 template:inverse
@@ -1476,7 +1499,9 @@ what kinds of transformations are possible,
 how motifs recur,
 how time and form cohere.
 
---
+---
+## The Third Space of *Superradiance*
+
 
 * Production over time beyond source: **strong**  
     * Visual and sonic sequences evolve beyond any single captured performance  
@@ -1552,6 +1577,17 @@ It is designed to *reframe how we perceive bodies and environment*. [oai_citatio
 This is not autonomous emergence, but authored emergence: rule-like behavior that arises from a designed generative system rather than from manual animation.”
 
 
+---
+.header[Superradiance (Memo Akten & Katie Hofstadter, 2025)]
+
+
+.center[
+ <video width="960" controls>
+  <source src="./img/superradiance_01.mp4#t=97" type="video/mp4">
+</video> 
+]
+.footnote[[Superradiance](https://superradiance.net/)]
+
 
 
 
@@ -1562,21 +1598,16 @@ template: inverse
 
 # From Translation to World-Building
 
-???
-We have three cases.
-Now we unify them and land the plane.
 
 ---
-
-layout: false
-## The rubric, revisited
+## The Thrid Space
 
 A third space becomes world-like when it integrates:
 
-1) **Emergent structure** (ontology)  
-2) **Generativity beyond the source** (production)  
-3) **Feedback potential** (influence)  
-4) **Semantic resonance** (meaning)
+* **Emergent structure** (ontology)  
+* **Production beyond the source** (production)  
+* **Influence** (feedback loop)  
+* **Meaning** (semantic resonance)
 
 ???
 Structure makes it stable.
@@ -1584,27 +1615,103 @@ Generativity makes it alive.
 Feedback makes it consequential.
 Semantic resonance makes it intelligible and culturally situated.
 
----
+--
 
-layout: false
-## Why this matters for CS
+> When these properties are weak, we have a technical demonstration.  
 
-Pipeline choices decide:
-- what counts as signal vs noise
-- what exists as an object (joints, nodes, clusters)
-- what can be optimized and controlled
-- who is included or excluded by the representation
+--
 
-Translation is an epistemic act, not only a technical act.
+> Art begins where technical translation becomes ontological, dynamic, influential, and meaningful.
 
 ???
-This is your ethical hinge without moralizing.
-Make it crisp.
+When they are integrated and mutually reinforcing, we approach art.
 
 ---
+## Technical Translation
 
-layout: false
-## Closing callback: the lava lamps
+Every pipeline decision defines the world it produces.
+
+It decides:
+* What counts as signal and what is discarded
+* What entities exist in the model
+* What can be measured and optimized
+* Whose behavior fits the representation and whose does not
+
+???
+
+“what counts as signal vs noise”
+* When you track a body, jitter can be filtered out. But sometimes jitter is expressive.
+* When you process audio, you remove background noise. But that noise may be context.
+* The filter encodes a value judgment.
+
+“what exists as an object”
+* Is a body 15 joints? 33 landmarks? A mesh? A volume?
+* Is a city intersections and edges? Or visibility polygons?
+* The representation defines the ontology of the third space.
+
+“what can be optimized and controlled”
+* Once something becomes a node, weight, or parameter, it can be optimized.
+* Things not encoded cannot be optimized.
+* You can only control what you model.
+
+“who is included or excluded”
+* Pose models trained on certain bodies work better on some bodies than others.
+* Urban graphs may privilege certain mobility patterns.
+* Representation shapes inclusion.
+
+So what is the slide really saying?
+
+Translation is an epistemic act.
+It shapes what is knowable, measurable, and actionable.
+
+
+---
+template:inverse
+
+## *Technical Translation as World Building*
+
+
+???
+A data structure is not just a structure.
+A simulation is not just a tool.
+A pipeline is not just implementation.
+
+Each one defines a reality with rules. And once deployed, that reality acts back on us.
+
+That is world building.
+
+I am not saying engineers are secretly fantasy novelists.
+
+I am saying:
+
+Every time we design a model, we decide what kind of world can exist inside it.
+
+---
+.header[Technical Translation as World Building]
+
+.center[<img src="./img/lavarand_01.jpg" alt="lavarand_01" style="width:32%;"> <img src="./img/lavarand_02.png" alt="lavarand_02" style="width:67%;">] .imgref[[Images: [By HaeB - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=116926170), [Martin J. Levy](https://blog.cloudflare.com/randomness-101-lavarand-in-production/)]]
+
+.footnote[[Walmsley, Alexander. 2026. Live Stream.]]
+
+
+???
+
+
+We began with lava lamps.
+
+An operational system.  
+A wall of chaotic light feeding cryptographic keys.
+
+But look again:
+
+* It defines what counts as randomness.  
+* It creates a statistical world with rules (periods, distributions, seeds).  
+* It shapes global communication infrastructure.  
+
+This is not decoration.
+
+It is constructed operational reality.
+
 
 The PRNG was not a failed copy of randomness.  
 It was a new object with real-world effects.
@@ -1614,37 +1721,82 @@ gesture-fields, navigation-graphs, data-environments.
 
 **Computational translation is world-building.**
 
-.center[
-<img src="./img/lavarand_01.jpg" style="width:40%;">
-<img src="./img/lavarand_02.png" style="width:55%;">
-]
 
-.footnote[[Replace images + credit]]
-
-???
 Circular closure helps memory.
 Also, it is funny that lava lamps are a security primitive.
 
 ---
+## Sociotechnical Worlds 
 
-template: inverse
-## The take-home
-
-If we are building worlds,  
-what does that oblige us to do well?
 
 ???
-End on obligation, not guilt.
-Obligation is a design constraint. CS loves constraints.
+Many systems are not purely operational.  
+They are not purely artistic either.
+
+In-between technical spaces:
+
+--
+
+* Social media  
+* Recommendation systems  
+* Navigation platforms  
+* AI assistants  
+* Generative AI
+
+--
+
+Third spaces that:
+
+* Algorithms decide what you see, who you meet, ...
+* People adapt their behavior — both consciously and unconsciously
 
 ---
+## Technical Translation as World Building
 
-template: inverse
-# Thank you
+> Digital structures reorganize (analog) life.  
 
-Slides and references: (add link)  
-Contact: l.gieseke@filmuniversitaet.de
+--
+
+That is world building in a literal sense.
+
+---
+template:inverse
+
+### *If we are building worlds, what does that oblige us to?*
 
 ???
-Invite questions about the rubric and template.
-If students ask "is this always true", answer: "it is a working theory, useful in many systems".
+
+> You are already designing realities. You might as well understand that power.
+
+If translation builds worlds, then:
+
+* Model design is ontological design.  
+* Data structures define what can exist.  
+* Algorithms define what can happen.  
+* Interfaces define how humans enter the system.  
+
+You are not only implementing solutions.
+
+You are constructing environments that act back on society.
+
+Technical translation is world building.
+
+The question is not whether we build worlds.
+
+The question is whether we do it deliberately.
+
+
+---
+template:inverse 
+
+.center[
+<img src="./img/qr_lecturethirdspaces.png" style="width:20%;">
+]
+
+
+# *The End*
+
+
+### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
+
+#### Film University Babelsberg KONRAD WOLF
