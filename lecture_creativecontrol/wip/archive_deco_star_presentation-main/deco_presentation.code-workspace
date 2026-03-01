@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../deco_star_overleaf/210319_1600/deco_star_revision"
+		}
+	],
+    "settings": {
+
+
+
+        "workbench.colorCustomizations":
+        {
+            "titleBar.activeBackground":"#ff7d41",
+            "titleBar.inactiveBackground":"#ff7d419d",
+            "titleBar.activeForeground":"#2c2c2c",
+            "titleBar.inactiveForeground":"#a3a3a3",
+        },
+        "liveServer.settings.multiRootWorkspaceName": "deco_presentation",
+    }
+}
