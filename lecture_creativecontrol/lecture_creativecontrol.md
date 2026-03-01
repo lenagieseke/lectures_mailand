@@ -1724,7 +1724,7 @@ That is why aesthetic outcome shifts.
 
 --
 
-> Is not enoguh...
+> Is not enough...
 
 ???
 * A system that "works" in the technical sense may still configure its five dimensions poorly — producing low transparency, locked temporal access, impoverished vocabulary, and an unexamined WHO. The five questions are the minimum due diligence for any generative system that claims to support creative authorship.
@@ -1778,16 +1778,19 @@ fundamentally different vocabulary. The five dimensions are that vocabulary.
 
 
 ---
-template:inverse
+template:inverse 
 
-# The End
+.center[
+<img src="./img/qr_lecturecreativecontrol.png" style="width:20%;">
+]
 
-<br />
+
+# *The End*
+
+
 ### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
 
 #### Film University Babelsberg KONRAD WOLF
-
-
 
 
 
