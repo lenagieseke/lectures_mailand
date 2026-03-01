@@ -1,3 +1,6 @@
+https://thecvf-art.com/
+
+
 ## Models of Misbehaviour: Artistic Uses of Failure
 
 1. The Optimization Trap
