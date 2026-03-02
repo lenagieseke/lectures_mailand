@@ -605,7 +605,7 @@ deterministic systems produce consequential third spaces.
 * Structural difference: **some**
     * Introduces algorithmic entities (seed, state, recurrence rule)
     * Defines statistical properties (distribution, period)
-    * Internal rules are fixed and minimal
+    * Internal rules are fixed
 * Dynamic difference
 * Behavioral difference
 * Interpretive difference
@@ -710,6 +710,13 @@ Markerless
 CS lens: these are different sensor models with different error profiles.
 Noise is not a bug. It changes the third space.
 
+Inertial motion capture (inertial mocap) tracks body movement using small wearable sensors instead of cameras.
+* The performer wears a suit with IMUs (Inertial Measurement Units). Each IMU contains:
+    * an accelerometer (measures acceleration)
+    * a gyroscope (measures rotation)
+    * often a magnetometer (measures orientation relative to Earth’s magnetic field)
+
+Optical mocap sees the body from outside. Inertial mocap feels the body from inside.
 
 ---
 ## Body Capture Technologies
@@ -744,7 +751,7 @@ The third space is primarily lived through viewing.
 It demonstrates translation as stylistic transformation rather than system-level world-building.
 
 --
-- Deterministic ↔ Generative: (Mainly) Deterministic  ✓
+- Deterministic ↔ Generative: Deterministic  ✓
 
 
 ???
@@ -820,17 +827,17 @@ Moderate to Strong
 This is where it becomes interesting.
 
 The translation:
-	•	Separates movement from biological identity.
-	•	Applies new surfaces and materials.
-	•	Potentially reframes dance as stylized, augmented embodiment.
+* Separates movement from biological identity.
+* Applies new surfaces and materials.
+* Potentially reframes dance as stylized, augmented embodiment.
 
 It makes a conceptual move:
 The body becomes transferable, skinnable, modular.
 
 If read critically, it participates in discussions about:
-	•	Virtual embodiment
-	•	Digital identity
-	•	Mediation of performance
+* Virtual embodiment
+* Digital identity
+* Mediation of performance
 
 However, this depends on interpretation. The semantic resonance is not structurally embedded as strongly as in Superradiance.
 
@@ -906,11 +913,17 @@ Common encodings:
 --
 
 <br />
+Encodings are **abstractions**, not neutral measurements.  
 
-Encodings are **abstractions**, not neutral measurements.
 
 
 ???
+* The comparison to what a gesture conatin vs. encodings can capture show the limites
+
+
+Inertial Measurement Units (IMUs) are compact sensors that measure acceleration and rotation to estimate the orientation and movement of an object in space.
+
+
 
 Every encoding smuggles assumptions:
 what is a joint, what counts as motion, what counts as noise.
@@ -952,15 +965,24 @@ And velocity becomes environment.
 ## A Field as Target
 
 A field assigns a value to each point in space (and often time):
+
+--
+
 * Velocity 
 * Density 
 * Potential 
 * Force 
 
+--
+
 Fields are great because they:
+
+--
+
 * Persist
-* Can be integrated
 * Can produce trajectories
+* Can be integrated
+
 
 ???
 Fields are "gesture after it becomes physics".
@@ -981,7 +1003,11 @@ The field continues to exist independently of the original input event.
 <img src="./img/infrared_01.png" alt="infrared_01" style="width:30%;">
 ???
 * The translation in action
-Akten's infrared camera does not record the body — it records movement. Speed, acceleration, curvature, and size of motion are extracted and fed into a fluid simulation, producing strokes, drips, spirals, and splashes on a projected canvas. Show the installation image alongside the output field. Crucially: the system does not see people at all, only movement. Anything moving — living or not — triggers the same response. The body has already been abstracted away.
+* Akten's infrared camera does not record the body — it records movement. 
+* Speed, acceleration, curvature, and size of motion are extracted and fed into a fluid simulation, producing strokes, drips, spirals, and splashes on a projected canvas. 
+* Crucially: the system does not see people at all, only movement. Anything moving — living or not — triggers the same response. The body has already been abstracted away.
+
+
 --
  → <img src="./img/field_01.png" alt="field_01" style="width:30%;">
 --
@@ -1027,28 +1053,20 @@ The fluid field produced by Body Paint has viscosity, diffusion rates, attractor
 
 ## The Pipeline
 
-* **Source**: Moving bodies (gesture)  
+* **Source**: Moving bodies  
+* **Capture**: Camera → depth map  
+* **Transform**: Motion → velocity vectors and fluid simulation parameters  
+* **Third space**: Animated painterly field
+
+???
+* **Source**: Moving bodies (aiming gesture)  
 * **Capture**: Motion signal (via depth camera, flow, tracking)  
 * **Transform**: Motion → velocity vectors → fluid simulation parameters  
 * **Third space**: Animated painterly field (viscosity, diffusion, memory)
 
-???
+
 Key line: the system does not see "people", it sees "movement".
 So the ontology changes: person → motion agent.
-
----
-.header[Body Paint (Memo Akten, 2009)]
-
-## Field Specific Properties
-
-- **Persistence**: memory in the field
-- **Spatial extension**: values everywhere, not only on the body
-- **Dynamics**: diffusion, turbulence, attractors
-- **Composability**: multiple agents superpose
-
-???
-This is the third space doing third-space things.
-It has its own grammar.
 
 
 ---
@@ -1066,6 +1084,15 @@ The output exists as an interactive environment.
 Generative:
 The fluid simulation produces patterns and trajectories
 that are not explicitly scripted.
+
+- **Persistence**: memory in the field
+- **Spatial extension**: values everywhere, not only on the body
+- **Dynamics**: diffusion, turbulence, attractors
+- **Composability**: multiple agents superpose
+
+This is the third space doing third-space things.
+It has its own grammar.
+
 
 Multi-user dynamics emerge:
 Participants influence one another through the field.
@@ -1133,7 +1160,7 @@ The loop is tight but local.
 
 --
 
-* Interpretive difference: **some**  
+* Interpretive difference: **weak**  
     * Reframes gesture as material  
     * Makes us re-experience movement
 
@@ -1214,24 +1241,15 @@ In this configuration, data performs the role gesture previously held: it become
 ???
 It is data, and the translation makes "data-space" feel real.
 
-TODO: make slide for
 Common move:
 - high-dimensional features
 - dimensionality reduction or manifold learning
 - render as navigable space or evolving field
 
-Key claim:
-the embedding is not "the data".
-It is a *world model*.
-
 Data are not inherently spatial. We make them spatial.
 
 Gesture → field
 Data → field
-
-Embodiment dissolves.
-Distribution replaces intention.
-
 
 
 ---
@@ -1239,6 +1257,9 @@ Distribution replaces intention.
 
 
 > A giant data sculpture displaying machine-generated, dynamic pigments of nature.
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
+
 
 <br />
 
@@ -1306,7 +1327,7 @@ The pipeline has four distinct stages:
 
 * A CNN architecture, producing a high-dimensional feature vector per image
 * Vectors encode semantic content
-* Xie, S., Girshick, R., Dollár, P., Tu, Z., and He, K. 2017. Aggregated Residual Transformations for Deep Neural Networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1492–1500. https://doi.org/10.1109/CVPR.2017.634
+* Xie, S., Girshick, R., Dollár, P., Tu, Z., and He, K. 2017. **Aggregated Residual Transformations for Deep Neural Networks.** In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1492–1500. https://doi.org/10.1109/CVPR.2017.634
 
 --
 
@@ -1315,11 +1336,20 @@ The pipeline has four distinct stages:
 ???
 
 * Projection of high-dimensional feature vectors into three-dimensional space using UMAP, preserving local and global structure of the data manifold, where proximity equals semantic similarity. 
-* McInnes, L., Healy, J., and Melville, J. 2018. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv preprint arXiv:1802.03426. https://arxiv.org/abs/1802.03426
+* McInnes, L., Healy, J., and Melville, J. 2018.** UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction.** arXiv preprint arXiv:1802.03426. https://arxiv.org/abs/1802.03426
 
---
 
+---
+## *Nature Dreams* (Rafik Anadol, 2021)
+
+The pipeline has four distinct stages:
+
+* Data collection
+* Feature extraction and filtering (ResNeXt)
+* Dimensionality reduction and spatial clustering (UMAP)
 * Generative synthesis (StyleGAN2-ADA)
+
+.footnote[Refik Anadol. 2021. [Machine Hallucinations — Nature Dreams.](https://refikanadol.com/works/machine-hallucinations-nature-dreams/)]
 
 ???
 
@@ -1327,10 +1357,13 @@ The pipeline has four distinct stages:
 * A custom Latent Space Browser (developed since 2017) enables navigation and interpolation through the learned distribution
 * Sampled GAN outputs — color fields, forms, textures that exist nowhere outside the model — serve as Anadol's "data pigments"
 * These pigments feed a GPU-accelerated fluid dynamics solver (vvvv / Fuse library), where they become color and form attributes driving a particle simulation of up to 100 million elements
-* Karras, T., Aittala, M., Hellsten, J., Laine, S., Lehtinen, J., and Aila, T. 2020. Training Generative Adversarial Networks with Limited Data. In Advances in Neural Information Processing Systems (NeurIPS), Vol. 33, 12104–12114. https://arxiv.org/abs/2006.06676
+* Karras, T., Aittala, M., Hellsten, J., Laine, S., Lehtinen, J., and Aila, T. 2020. **Training Generative Adversarial Networks with Limited Data.** In Advances in Neural Information Processing Systems (NeurIPS), Vol. 33, 12104–12114. https://arxiv.org/abs/2006.06676
 
 
-???
+Generative synthesis (StyleGAN2-ADA) — Thematically clustered subsets train a StyleGAN2-ADA model. The ADA variant is specifically designed to prevent discriminator overfitting on smaller training sets — relevant because thematic clusters, despite originating from 300M images, are relatively small after filtering. A latent space browser then allows navigation and interpolation through the learned distribution. (Karras et al., 2020, NeurIPS)
+
+-------
+
 The pipeline has four distinct stages:
 1. Data collection — 300 million publicly available nature photographs gathered over three years. The scale matters: this is not a curated art dataset but a mass-scraped collective visual memory of how humans have photographed nature.
 2. Feature extraction and filtering (ResNeXt) — Each image is passed through ResNeXt, a CNN architecture that extends ResNet via grouped convolutions, producing a high-dimensional feature vector per image. These vectors encode semantic content — not pixels, but learned representations of what the image means to the network. The vectors are then used to qualitatively filter the dataset, removing noise and semantic outliers. (Xie et al., 2017, CVPR)
@@ -1358,9 +1391,12 @@ This two-stage synthesis is the crucial technical detail for your talk: the GAN 
 ## The Pipeline
 
 * **Source**: 300M publicly available nature photographs  
-* **Capture**: Feature extraction → high-dimensional image embeddings  
-* **Transform**: Dimensionality reduction + generative synthesis → latent navigation + fluid particle simulation  
-* **Third space**: Large-scale animated data field (abstract, immersive, continuously evolving)
+* **Capture**: Feature extraction of camera images → high-dimensional embeddings  
+* **Transform**: Dimensionality reduction + generative synthesis + latent navigation → fluid particle simulation  
+* **Third space**: Large-scale animated data field
+
+???
+Third space: abstract, immersive, continuously evolving
 
 ---
 .header[Machine Hallucinations — Nature Dreams (Refik Anadol, 2021)]
@@ -1394,6 +1430,8 @@ The generativity is model-driven, not participant-driven.
     * Fluid simulation introduces visual continuity  
 
 ???
+
+Fluid simulation introduces visual continuity
 
 Moderate emergence
 
@@ -1440,7 +1478,7 @@ Feedback is cultural, not infrastructural.
 
 --
 
-* Interpretive difference: **some**  
+* Interpretive difference: **weak**  
     * Aestheticis of data?
 
 ???
@@ -1606,13 +1644,15 @@ Memo Akten and Katie Hofstadter, 2025:
 
 ## The Pipeline
 
-* **Source**: Dancing body + ecological imagery and themes of planetary interconnectedness  
-* **Capture**: Motion, embodied performance, and environmental references via dance / choreography and sensor data → encoding of body + environment  
-* **Transform**: Synthesized generative imagery, immersive video and sound through computational media (AI, simulations, latent space conditioning, custom software)  
-* **Third space**: Immersive, multi-screen audiovisual environment that explores embodied connection to planetary systems
+* **Source**: Dancing body + ecosystems  
+* **Capture**: Images, motion, (sensor data?) → encoding of body + environment  
+* **Transform**: Synthesized imagery and sound through computational media (AI, simulations, latent space conditioning, custom software)  
+* **Third space**: Immersive, multi-screen audiovisual environment 
 
 ???
-This work weaves dance, neuroscience, poetry, code, AI, and environment into a visceral narrative exploring embodiment and planetary consciousness. [oai_citation:0‡superradiance.art](https://superradiance.art/?utm_source=chatgpt.com)
+* This work weaves dance, neuroscience, poetry, code, AI, and environment into a visceral narrative exploring embodiment and planetary consciousness. [oai_citation:0‡superradiance.art](https://superradiance.art/?utm_source=chatgpt.com)
+
+* that explores embodied connection to planetary systems
 
 
 ---
@@ -1632,8 +1672,8 @@ The project synthesizes visuals and sound that are not directly present in the s
 ## The Third Space of *Superradiance*
 
 * Structural difference: **strong**  
-    * Internal visual and conceptual structures arise through computational synthesis  
-    * Patterns of imagery, transformation rules, and temporal motifs emerge from the coupling of choreography, model constraints, and sonic pacing  
+    * New visual and conceptual structures arise  
+    * Emergence from the coupling of body signals, environmental imagery, model priors, and audio-temporal structure   
 
 ???
 Strong emergence (in an artistic sense)
@@ -1655,7 +1695,7 @@ how time and form cohere.
 
 
 * Dynamic difference: **strong**  
-    * Visual and sonic sequences evolve beyond any single captured performance  
+    * Audivisual sequences evolve beyond any single captured performance  
     * Produces novel states and transitions that the source choreography and footage do not contain  
 
 ???
@@ -1672,8 +1712,8 @@ the work “produces” through generative recombination, interpolation, and tra
 ## The Third Space of *Superradiance*
 
 * Behavioral difference: **strong**  
-    * Alters perceptual and emotional understanding of embodiment and ecology  
-    * Encourages audiences to sense themselves as entangled within broader systems  
+    * Alters perceptual and emotional understanding of interconnection 
+    * Appreciation of ecological systems  
 
 ???
 Strong influence (via perception and cognition)
@@ -1693,7 +1733,7 @@ This is high-impact feedback through interpretation and embodied perception.
 
 * Interpretive difference: **strong**  
     * Semantic resonance is central  
-    * The translation structurally embodies a coherent claim about interdependence and extended embodiment  
+    * Coherent claim about interdependence and extended embodiment  
 
 ???
 Strong meaning
@@ -1712,7 +1752,7 @@ the way the environment is not backdrop but continuity.
 ---
 ## The Third Space of *Superradiance*
 
-> Movement unfolds into an immersive field of shifting natural forms — generative, embodied, and conceptually charged, inviting us to experience the body as part of a larger living system.
+> Movement unfolds into an immersive field of shifting natural forms — generative, embodied, and conceptually charged, probing us to experience our body as part of a larger living system.
 
 ???
 *Superradiance* produces an experiential and generative third space: visually emergent, contextually powerful, and conceptually resonant through its immersive exploration of embodiment and planetary interconnectivity.
@@ -1776,11 +1816,8 @@ Semantic resonance makes it intelligible and culturally situated.
 > Art begins where technical translation becomes ontological, dynamic, influential, and meaningful.
 
 ???
-When they are integrated and mutually reinforcing, we approach art.
-
----
-## Technical Translation
-
+When they are integrated and mutually reinforcing, we approach art.  
+  
 Every pipeline decision defines the world it produces.
 
 It decides:
