@@ -70,6 +70,7 @@ layout:false
 
 --
 
+* Bachelor in Science (Vordiplom Computer Graphics)
 * Master in Fine Art (MFA Dramatic Media)
 * Phd in Computer Science (Dr. rer. nat. Computer Graphics)
 
