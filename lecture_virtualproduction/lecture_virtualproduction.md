@@ -19,7 +19,124 @@ This talk offers an introduction to virtual production and its toolset. It outli
 ---
 layout:false
 
+.center[<img src="./img/vp_shot_01.png" alt="vp_shot_01" style="width:100%;">].imgref[[Image: Der Turm - Filmuniversität]]
+
+---
+
+.center[<img src="./img/vp_shot_02.jpg" alt="vp_shot_02" style="width:100%;">].imgref[[Image: Interconnections - Filmuniversität]]
+
+---
+
+.center[
+ <video width="1024" controls>
+  <source src="./img/mandalorian_cutout_01.mp4" type="video/webm">
+</video>  
+]
+
+.footnote[[[YouTube - The Virtual Production of The Mandalorian Season One](https://www.youtube.com/watch?v=gUnxzVOs3rk), Industrial Light & Magic]]
+
+---
+
+.center[<img src="./img/mandalorian_01.png" alt="mandalorian_01" style="width:100%;">]
+
+.footnote[[[YouTube - The Virtual Production of The Mandalorian Season One](https://www.youtube.com/watch?v=gUnxzVOs3rk), Industrial Light & Magic]]
+
+
+---
+
 .center[<img src="./img/halostage_01.jpg" alt="halostage_01" style="width:100%;">].imgref[[Image: Adrian Weber & Halostage]]
+
+---
+
+.center[<img src="./img/mandalorian_02.png" alt="mandalorian_02" style="width:100%;">]
+
+.footnote[[[YouTube - The Virtual Production of The Mandalorian Season One](https://www.youtube.com/watch?v=gUnxzVOs3rk), Industrial Light & Magic]]
+
+
+
+---
+## Who am I?
+
+* Master in Fine Art (MFA Dramatic Media)
+* 6 years in the industry (VFX, R&D, Software Development)
+* Phd in Computer Science (Dr. rer. nat. Computer Graphic)
+
+--
+
+<br />
+
+* Film University Babelsberg KONRAD WOLF, Potsdam, Germany
+* Professor for Image-based Media Technologies
+* MA Creative Technologies
+
+> Computer Science meets Creativity, Art & Film...
+
+
+---
+.header[MA Creative Technologies]
+
+.center[<img src="./img/qr_filmunictech.png" alt="qr_filmunictech" style="width:45%;">]
+
+---
+.header[MA Creative Technologies]
+
+.center[<img src="./img/qr_filmuniinsta.png" alt="qr_filmuniinsta" style="width:45%;">]
+
+
+---
+## Film University Babelsberg KONRAD WOLF
+
+--
+
+* Largest film school in Germany (established 1954), now public university
+
+--
+
+* About 100 in-house film productions yearly
+
+--
+
+* State-of-the-art equipment and environments (2 studios, 150 and 300 sqm)
+
+???
+* e.g., Sony F55, ARRI Alexa, Panasonic VariCam, Harrison MPC4D console with Dolby Atmos
+* ceiling lighting rigs
+
+---
+## Film University Babelsberg KONRAD WOLF
+
+.left-quarter[
+Neighbor: Babelsberg Film Studio, oldest large-scale film studio in the world, producing films since 1912.
+]
+.right-quarter[<img src="./img/studio_01.jpg" alt="studio_01" style="width:78%;"> .imgref[[Image: [Studio Babelsberg](https://www.metropolitanbacklot.com/galerie/)]]]
+
+
+???
+* Hundreds of films, including Fritz Lang's Metropolis and Josef von Sternberg's The Blue Angel were filmed there. More recent productions include V for Vendetta, Captain America: Civil War, Æon Flux, The Bourne Ultimatum, Valkyrie, Inglourious Basterds, Cloud Atlas, The Grand Budapest Hotel, The Hunger Games, Isle of Dogs and The Matrix Resurrections. 
+
+---
+template:inverse
+
+# Introduction to Virtual Production Techniques
+
+
+---
+## Agenda
+
+--
+
+* Basics
+    * Film Production Steps
+    * Visual Effects
+
+--
+
+* Virtual Production
+    * Real-time Engines
+    * LED Walls
+
+--
+* Implications
 
 ???
 
@@ -29,45 +146,131 @@ The tools of virtual production: Realtime Engines, LED Walls, Hybrid Green Scree
 ---
 template:inverse
 
-# VFX Basics
+# Basics
 
 ???
-Short overview of VFX, virtual production and its subcategories.
+Let's assume we are talking about movie making that includes computer generated imagery (CGI)
 
 ---
 
-.center[<img src="./img/halostage_01.jpg" alt="halostage_01" style="width:100%;">].imgref[[Image: Adrian Weber & Halostage]]
+.center[<img src="./img/vfx_01.jpg" alt="vfx_01" style="width:100%;">].imgref[[Image: *Avatar: The Way of Water*, Disney via [Backstage](https://www.backstage.com/magazine/article/create-digital-effects-film-project-13748/)]]
+
+---
+
+.center[<img src="./img/vfx_02.jpg" alt="vfx_02" style="width:100%;">].imgref[[Image: *House of the Dragon* Credit: Ollie Upton/HBO via [Backstage](https://www.backstage.com/magazine/article/create-digital-effects-film-project-13748/)]]
+
+---
+
+.center[<img src="./img/vfx_03.png" alt="vfx_03" style="width:100%;">].imgref[[Image: *1899 Virtual Production*, [Framestore](https://www.framestore.com/work/1899-virtual-production)]]
+
+
+---
+.header[Basics]
+
+## Visual Effects
+
+--
+
+.left-even[
+* VFX
+
+]
+
+
+.right-even[<img src="./img/vfx_04.jpg" alt="vfx_04" style="width:100%;"> .imgref[[Image: studiobinder](https://www.studiobinder.com/blog/what-is-vfx/)]]
+
+---
+.header[Basics]
+
+## Visual Effects
+
+
+.left-even[
+* VFX
+* Computer-generated imagery (CGI) or manipulated images integrated into live-action footage
+
+]
+
+
+.right-even[<img src="./img/vfx_04.jpg" alt="vfx_04" style="width:100%;"> .imgref[[Image: studiobinder](https://www.studiobinder.com/blog/what-is-vfx/)]]
+
+---
+.header[Basics]
+
+## Visual Effects
+
+.left-even[
+* VFX
+* Computer-generated imagery (CGI) or manipulated images integrated into live-action footage
+* **Post-Production** step
+]
+
+
+.right-even[<img src="./img/vfx_04.jpg" alt="vfx_04" style="width:100%;"> .imgref[[Image: studiobinder](https://www.studiobinder.com/blog/what-is-vfx/)]]
+
+
+
+
+
+---
+.header[Basics]
+
+## Visual Effects
+
+.center[<img src="./img/cgi_03a.png" alt="cgi_03a" style="width:80%;">].imgref[[Image: Adrian Weber & Halostage]]
 
 ???
+
+Live action plus CG elements.
+* Gravity  
+* The Mandalorian
+
+
 Full CG productions.
 Mocap with live preview.
-
 * The Lion King  
 * The Jungle Book  
 * Ready Player One
 
----
-
-.center[<img src="./img/halostage_01.jpg" alt="halostage_01" style="width:100%;">].imgref[[Image: Adrian Weber & Halostage]]
-
-???
 Live action and CG characters.
 Live preview of characters.
+* Real Steel  
+* Hulk (MCU)
 
-Real Steel  
-Hulk (MCU)
+
 
 ---
+.header[Basics | Visual Effects]
 
-.center[<img src="./img/halostage_01.jpg" alt="halostage_01" style="width:100%;">].imgref[[Image: Adrian Weber & Halostage]]
+## 2D Compositing
 
-???
-Live action plus CG elements.
-Preview of the final result directly on set.
-Plates for postproduction lead to LED virtual production.
+.center[<img src="./img/layers_01.jpg" alt="cgi_03a" style="width:55%;">].imgref[[Image: [freepik](https://www.freepik.com/free-vector/parallax-background-2d-landscape-with-fantasy-tree_21133686.htm#fromView=keyword&page=1&position=0&uuid=ded0997d-7f07-48a2-aca5-d62e5071c9b6&query=Cgi+animation+portfolio)]]
 
-Gravity  
-The Mandalorian
+
+
+---
+.header[Basics | Visual Effects]
+
+## On Set Green Screen Shooting
+
+.center[<img src="./img/vfx_05.png" alt="vfx_05" style="width:36%;">  <img src="./img/vfx_06.png" alt="vfx_06" style="width:36%;">.imgref[[Images: [digitalsynopsis](https://digitalsynopsis.com/design/movies-before-after-green-screen-cgi/)]]]
+
+
+
+
+
+---
+.header[Basics | Visual Effects]
+
+## VFX Film Production Pipeline
+
+.center[<img src="./img/pipeline_01.png" alt="pipeline_01" style="width:100%;">].imgref[[Image: [Unreal Engine - Virtual Production](https://www.unrealengine.com/en-US/explainers/virtual-production/what-is-virtual-production)]]
+
+
+
+
+
+
 
 ---
 

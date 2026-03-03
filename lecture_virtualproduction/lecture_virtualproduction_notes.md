@@ -1,18 +1,9 @@
-name: inverse
-layout: true
-class: center, middle, inverse
----
-
-
-## Introduction to Virtual Production Techniques
-
-<br />
-### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
-
-#### Film University Babelsberg KONRAD WOLF
-
-
-???
+* https://www.unrealengine.com/en-US/explainers/virtual-production/what-is-virtual-production
+* https://techcrunch.com/2020/02/20/how-the-mandalorian-and-ilm-invisibly-reinvented-film-and-tv-production/
+* https://www.framestore.com/work/1899-virtual-production
+* https://www.youtube.com/watch?v=gUnxzVOs3rk
+* https://www.youtube.com/watch?v=-gX4N5rDYeQ
+* https://www.youtube.com/watch?v=aKRcGoc_osQ
 
 This talk offers an introduction to virtual production and its toolset. It outlines how real-time engines, LED volumes, performance capture and in-camera visual effects reshape the relationship between physical sets and digital environments. Through practical examples, the talk considers the creative and organisational implications of virtual production, showing how these techniques influence aesthetic and narrative decisions in contemporary filmmaking.
 
