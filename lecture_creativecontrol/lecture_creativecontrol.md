@@ -22,10 +22,69 @@ class: center, middle, inverse
 
 **Storyline:** CS publications routinely claim their systems are "artist-friendly" or "creatively usable" and validate those claims with small user studies. User studies, when executed properly, are a legitimate form of validation — but they are not the only one, and on their own they leave the underlying question underspecified: what does creative usability actually consist of? The field has made previous attempts to answer this. We examine those attempts, identify what they leave open, and propose that creative control is a configuration space of five interacting dimensions: How, What, Where, When, and Who. The aesthetic qualities that emerge from any creative system — algorithmic or analog — are shaped by how those dimensions are configured and how they interact. These dimensions also give researchers and practitioners a shared vocabulary for asking more precise questions about what a system actually affords.
 
+
+
+---
+layout:false
+
+.center[<img src="./img/watercolor_01.jpg" alt="watercolor_01" style="width:84%;">].imgref[[Image: [pexels, Fahad Puthawala](https://www.pexels.com/photo/close-up-of-hand-painting-a-watercolor-landscape-29559075/)]]
+
+
+???
+ASK: Look at the following interface / activity: How would you describe the interaction and the creative control the artist has?
+
+  
+* How is input given? 
+* What does the artist provide? 
+* Where does it act? 
+* When in the process? 
+* And who is in control? 
+
+No answers yet — only the questions. These are not questions about medium. They are questions about the structure of any creative act.
+
+---
+
+.center[<img src="./img/touchdesigner_01.gif" alt="touchdesigner_01" style="width:100%;">].imgref[[Image: [interactiveimmersive.io: Scaling Interactive Notch Content in TouchDesigner](https://interactiveimmersive.io/blog/touchdesigner-resources/scaling-interactive-notch-content-in-touchdesigner/)]]
+
+
+???
+ASK: Look at the following interface / activity: How would you describe the interaction and the creative control the artist has?
+  
+* How is input given? 
+* What does the artist provide? 
+* Where does it act? 
+* When in the process? 
+* And who is in control? 
+
+No answers yet — only the questions. These are not questions about medium. They are questions about the structure of any creative act.  
+
+
+
+
+---
+
+.center[<img src="./img/keyboard_01.jpg" alt="keyboard_01" style="width:74%;">].imgref[[Image: [Filmuniversität](https://www.filmuniversitaet.de/studium/studienangebot/masterstudiengaenge/creative-technologies/projekte/making-waves)]]
+
+
+???
+ASK: Look at the following interface / activity: How would you describe the interaction and the creative control the artist has?
+  
+
+* How is input given? 
+* What does the artist provide? 
+* Where does it act? 
+* When in the process? 
+* And who is in control? 
+
+
+The point: the questions still map. What changes is not the structure of creative control but its implementation. This talk investigates what happens to each dimension when the medium becomes computational — and what that means for authorship and expression.
+
 ---
 layout:false
 
 ## Who am I?
+
+--
 
 * Master in Fine Art (MFA Dramatic Media)
 * Phd in Computer Science (Dr. rer. nat. Computer Graphic)
@@ -55,57 +114,6 @@ template:inverse
 
 ### How, What, Where, When, Who
 ## Mechanisms for Creative Control
-
-
-
----
-
-.center[<img src="./img/watercolor_01.jpg" alt="watercolor_01" style="width:84%;">].imgref[[Image: [pexels, Fahad Puthawala](https://www.pexels.com/photo/close-up-of-hand-painting-a-watercolor-landscape-29559075/)]]
-
-
-???
-ASK: 
-* How is input given? 
-* What does the artist provide? 
-* Where does it act? 
-* When in the process? 
-* And who is in control? 
-
-No answers yet — only the questions. These are not questions about medium. They are questions about the structure of any creative act.
-
----
-
-.center[<img src="./img/touchdesigner_01.gif" alt="touchdesigner_01" style="width:100%;">].imgref[[Image: [interactiveimmersive.io: Scaling Interactive Notch Content in TouchDesigner](https://interactiveimmersive.io/blog/touchdesigner-resources/scaling-interactive-notch-content-in-touchdesigner/)]]
-
-
-???
-ASK: 
-* How is input given? 
-* What does the artist provide? 
-* Where does it act? 
-* When in the process? 
-* And who is in control? 
-
-No answers yet — only the questions. These are not questions about medium. They are questions about the structure of any creative act.  
-
-
-
-
----
-
-.center[<img src="./img/keyboard_01.jpg" alt="keyboard_01" style="width:74%;">].imgref[[Image: [Filmuniversität](https://www.filmuniversitaet.de/studium/studienangebot/masterstudiengaenge/creative-technologies/projekte/making-waves)]]
-
-
-???
-ASK: 
-* How is input given? 
-* What does the artist provide? 
-* Where does it act? 
-* When in the process? 
-* And who is in control? 
-
-
-The point: the questions still map. What changes is not the structure of creative control but its implementation. This talk investigates what happens to each dimension when the medium becomes computational — and what that means for authorship and expression.
 
 ---
 ## Agenda
@@ -254,11 +262,6 @@ The problem is not a lack of seriousness. It is a definitional one. Creativity i
 - A topic that draws insights from psychology, cognitive science, philosophy, and HCI simultaneously — making it notoriously difficult to operationalize.
 
 Source: Frich et al. (2018, 2019), Remy et al. (2020) — a sequence of meta-studies calling for more rigorous evaluation and clearer definitions of creativity in HCI research.
-
----
-template:inverse
-
-# Defining Creative Control
 
 
 ---
@@ -532,20 +535,22 @@ TODO: Add links to Siggraph GenAI talk?
 ---
 .header[Defining Creative Control]
 
-## From Measuring Feelings to Specifying Mechanisms
+## Specifying Mechanisms
 
-* User-perceived creativity
-* Evaluative properties of systems
+* Based on properties of systems
+* Evaluable during development
 
 
 ???
+From Measuring Feelings to Specifying Mechanisms
+
 
 * CSI: measures user-perceived creativity (useful, but post-hoc)
 * 4D: describes evaluative properties of systems
 
 --
 
-> Which structural mechanisms produce Navigation, Transparency, Variation and Stimulation?
+> Which algorithmic mechanisms support Navigation, Transparency, Variation and Stimulation?
 
 
 ???
@@ -641,6 +646,48 @@ To design for creative control, we need to ask:
 * *How* and *What* are orthogonal in theory, but many interfaces bundle them. That’s not a flaw. It’s a design choice.
 * The separation is conceptually clean, but many examples blur: e.g., “sketch-based input” is both modality and content.
 
+---
+## Configuring Creative Control
+
+This following framework was developed for visual and graphics systems.
+
+But ultimately they describe **control structures**.
+
+???
+The dimensions are not medium-specific, not pixels.
+
+--
+
+<br />
+* In graphics, we shape for example *geometry, color, spatial composition*.
+
+--
+
+* In sonic systems, we shape for example *timbre, rhythm, temporal flow*.
+
+???
+
+The structure shifts.
+The control logic does not.
+
+Your task is not to translate images into sound.
+
+--
+
+<br />
+> It is your task is to map the following onto sonic interaction design!
+
+???
+The challenge is to identify where control lies and how it propagates.
+
+
+Where does a gesture enter the DSP chain?
+When can a performer perturb the system state?
+Who stabilizes the mix, the model, the machine?
+
+If a visual system exposes parameters, a sonic system exposes time.
+
+
 
 ---
 template:inverse
@@ -652,7 +699,7 @@ template:inverse
 
 .header[Control Characteristics]
 
-## How - User Interaction
+## How 
 
 > How is a control executed or an input given by an artist?
 
@@ -661,6 +708,9 @@ template:inverse
 
 
 ???
+
+- User Interaction
+
 How asks: by what physical or computational act does the artist exert control? In traditional media the answer is direct and embodied — a brushstroke, a chisel strike, a placement. In computational systems, the same question opens into a design problem: the artist must decide how to make control available, not just how to use it. Source: Gieseke et al. (2021): the distinction between on-canvas and separate UI as the two primary modalities, and their different levels of indirection between artist action and output effect.
 
 
@@ -668,7 +718,7 @@ How asks: by what physical or computational act does the artist exert control? I
 ---
 .header[Control Characteristics]
 
-## How - User Interaction
+## How
 
 --
 
@@ -825,9 +875,18 @@ Gieseke et al. (2021) identify a set of input content types for pattern generati
 
 Parameter usually represent certain visual characteristics and their prominence.
 
+--
+
 * Often non-intuitive, representing abstract system internals rather than perceptual qualities
+
+--
     * Parameter space vs. design space
+
+--
+
 * Too many are tedious, too few limit design space
+
+--
 
 > Notoriously difficult to develop!
 
@@ -849,7 +908,7 @@ The response to non-intuitive parameters is remapping: translating abstract syst
 
 ## Parameterization
 
-> Identify the latent properties you want to expose, then remap them into controls that match artists’ mental models.
+> Identify the properties you want to expose, then remap them into controls that match artists’ mental models.
 
 
 
@@ -999,7 +1058,7 @@ Artists routinely work global-to-local: establish overall character first, refin
 
 --
 
-> Computationally the global to local spectrum must be **architecturally planned in advance**
+> Computationally the global to local spectrum must be **architecturally planned in advance**.
 
 
 ???
@@ -1011,7 +1070,7 @@ The critical insight is the asymmetry between traditional and computational prac
 
 ## Where
 
-The openness of the design space is partly determined by how spatially differentiated control can be and with that the *Variation* of the system.
+A design space becomes more open when control can act on different levels of spatial regions and with that influences the *Variation* of the system.
 
 --
 
@@ -1021,7 +1080,11 @@ The openness of the design space is partly determined by how spatially different
 
 ???
 
-The degree of spatial targeting available in a system shapes what kinds of compositions are possible. Systems with only global control can produce internally consistent but spatially homogeneous outputs. Systems with rich spatial targeting can produce differentiated, hierarchically organized, and locally responsive work. Gieseke et al. identify this as one of the key limitations of many current procedural systems: the "trade-off between global automation and local manual manufacturing" is rarely solved elegantly. WHERE you can act determines the compositional range of what you can make.
+* The degree of spatial targeting available in a system shapes what kinds of compositions are possible. Systems with only global control can produce internally consistent but spatially homogeneous outputs. 
+
+* Systems with rich spatial targeting can produce differentiated, hierarchically organized, and locally responsive work. 
+
+* Gieseke et al. identify this as one of the key limitations of many current procedural systems: the "trade-off between global automation and local manual manufacturing" is rarely solved elegantly. WHERE you can act determines the compositional range of what you can make.
 
 ---
 template:inverse
@@ -1279,11 +1342,14 @@ can shift authorship.
 
 > How can we both embrace and steer the "out-of-control-ness"?
   
+
+.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems |  Memelink, M. 2023. Tracing Autonomy & Artistic Significance: An Alternative Framework for Analysing & Comparing Generative Art.]]
+  
 --
   
 *Stimulation* often enhances human creativity.
 
-.footnote[[Rumpf, T. 2025. Designing for Balance: Creative Intention and the Autonomy of Generative Systems |  Memelink, M. 2023. Tracing Autonomy & Artistic Significance: An Alternative Framework for Analysing & Comparing Generative Art.]]
+
 
 ???
 
@@ -1319,8 +1385,15 @@ both the outcome and the system are continuously evaluated and refined and even 
 
 
 ???
+The key insight: working with generative systems is not about ceding control — it is about distributing it.
+  
 
-From the thesis: creative work with generative systems is not a binary between the artist controlling the system and the system controlling itself. It is a spectrum — from fully artist-led (the system as obedient tool) to fully system-led (the artist as observer of autonomous behavior). At each position, distinct artist-system relationships emerge: Tool-Protagonist (direct execution), Delegate-Manager (conductor/project manager role), Collaborator (equal creative partner), Curator (responds to what the system produces). Visual: the co-agency spectrum diagram from the thesis. The key insight: working with generative systems is not about ceding control — it is about distributing it.
+* From the thesis: creative work with generative systems is not a binary between the artist controlling the system and the system controlling itself. 
+* It is a spectrum — from fully artist-led (the system as obedient tool) to fully system-led (the artist as observer of autonomous behavior). 
+* At each position, distinct artist-system relationships emerge:
+    * Tool-Protagonist (direct execution), Delegate-Manager (conductor/project manager role), Collaborator (equal creative partner), Curator (responds to what the system produces). 
+
+
 
 
 
@@ -1329,12 +1402,25 @@ From the thesis: creative work with generative systems is not a binary between t
 
 .center[<img src="./img/coagency_01.png" alt="coagency_01" style="width:100%;">]
 
+???
+The key insight: working with generative systems is not about ceding control — it is about distributing it.
+  
+
+* From the thesis: creative work with generative systems is not a binary between the artist controlling the system and the system controlling itself. 
+* It is a spectrum — from fully artist-led (the system as obedient tool) to fully system-led (the artist as observer of autonomous behavior). 
+* At each position, distinct artist-system relationships emerge:
+    * Tool-Protagonist (direct execution), Delegate-Manager (conductor/project manager role), Collaborator (equal creative partner), Curator (responds to what the system produces). 
+
 
 ---
 .header[Control Characteristics | Who | The Co-Agency Spectrum]
 
 ## Architectural Choices
 
+???
+that influence Co-Agency
+
+--
 
 * Randomness
     * Shifts agency toward the system
@@ -1543,6 +1629,9 @@ medium made them. The generative artist has no such luxury.
 ## Authorship as Configuration
 
 * Digital generative systems do not introduce a new problem.  
+
+--
+
 * They scale the same problem into a space that must be consciously architected.
 
 ???
@@ -1558,102 +1647,27 @@ must make explicit what the watercolorist receives for free.
 ---
 ## Authorship as Configuration
 
-
-???
-
-Complexity, surprise, coherence, expression — these are not accidental properties 
-of an algorithm.
-
-They are functions of how the five dimensions are configured.
+Pick one sonic system you know well.
 
 --
 
-.left-even[
-
-System A
-* **How**: Separate UI, numeric sliders
-* **What**: Abstract parameters
-* **Where**: Global only
-* **When**: Deferred, post-hoc
-* **Who**: System-dominant autonomy
-]
-
-???
-
-* Same algorithm class. Completely different aesthetic relationship.
-* Aesthetic quality is not a byproduct. It is the outcome of design decisions.
-
-The table makes the coupling concrete and comparative. Two systems built on 
-similar generative principles but configured differently across the five 
-dimensions will produce not just different outputs but different kinds of 
-authorial relationships — different aesthetics in the deepest sense. This is 
-what it means to be the author of a generative system: not to produce individual 
-outputs, but to design the configuration space from which an entire class of 
-outputs becomes possible.
-
---
-.right-even[
-System B
-* **How**: On-canvas, sketch-based interaction
-* **What**: Spatial fields, marks, elements
-* **Where**: Rich spatial targeting
-* **When**: Real-time, continuous
-* **Who**: Calibrated co-agency
-]
-
----
-
-## Authorship as Configuration
-
-
-.left-even[
-
-System A
-* **Navigation**: Indirect and abstract
-* **Transparency**: Requires mental translation
-* **Variation**: Wide but homogeneous
-* **Stimulation**: Emerges from algorithmic unpredictability
-]
-
-???
-* Navigation: Parameter-space exploration, indirect
-* Transparency: Moderate — translation required
-* Variation: Broad but globally uniform
-* Stimulation: Surprise through system behavior
-
---
-
-.right-even[
-
-System B
-* **Navigation**: Direct and spatial
-* **Transparency**: Legible and local
-* **Variation**: Structurally diverse
-* **Stimulation**: Emerges from interaction
-]
-
-???
-* Navigation: Design-space exploration, embodied
-* Transparency: High — spatial alignment of cause and effect
-* Variation: Differentiated and hierarchically structured
-* Stimulation: Dialogue through immediate feedback
-
----
-## Authorship as Configuration
-
-Pick one system you know well.
-
-1. Write one sentence for each control dimension:  
+* Write one sentence for each control dimension:  
  **How / What / Where / When / Who**
-2. Based on those, assess the system’s:   
-**Navigation / Transparency / Variation / Stimulation**
-3. Identify the mechanism you would change to improve creative control.
 
 --
-  
-> What architectural changes would shift authorship?
+
+* Based on those, assess the system’s:   
+**Navigation / Transparency / Variation / Stimulation**
+
+--
+
+* Identify the mechanism you would change to improve creative control.
+
+
 
 ???
+
+  
 Which single design decision would redistribute agency between artist and system?
 
 Example 1: Random Seed → Variation Button
