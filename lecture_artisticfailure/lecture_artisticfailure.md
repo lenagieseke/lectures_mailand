@@ -914,8 +914,7 @@ TODO: for all the following say one sentence regarding how to make use of it
 * Small shifts in one domain map to disproportionate shifts in the other
 
 .footnote[
-.caps[Bajohr, Hannes]. **Operative Ekphrasis: The Collapse of the Text/Image Distinction in Multimodal AI.** *Word & Image*, 2024. tandfonline.com/doi/full/10.1080/02666286.2024.2330335
-]
+.caps[Bajohr, Hannes]. **Operative Ekphrasis: The Collapse of the Text/Image Distinction in Multimodal AI.** *Word & Image*, 2024.]
 
 ???
 * Learned during training.
@@ -1804,10 +1803,17 @@ Students should understand:
 
 
 ---
-template: inverse
+template:inverse 
 
-<br />
+.center[
+<img src="./img/qr_lectureresiduals.png" style="width:20%;">
+]
 
-### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de
+
+# *The End*
+
+
+### Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de  
 
 #### Film University Babelsberg KONRAD WOLF
+
