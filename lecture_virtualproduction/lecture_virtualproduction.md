@@ -1156,7 +1156,7 @@ template:inverse
 template:inverse 
 
 .center[
-<img src="./img/qr_lectureresiduals.png" style="width:20%;">
+<img src="./img/qr_lecturevirtualproduction.png" style="width:20%;">
 ]
 
 
