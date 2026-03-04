@@ -52,7 +52,7 @@ layout:false
 
 * Master in Fine Art (MFA Dramatic Media)
 * 6 years in the industry (VFX, R&D, Software Development)
-* Phd in Computer Science (Dr. rer. nat. Computer Graphic)
+* Phd in Computer Science (Dr. rer. nat. Computer Graphics)
 
 --
 
