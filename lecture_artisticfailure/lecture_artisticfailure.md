@@ -834,6 +834,9 @@ Prompt Injection & Jailbreaking:
 
 > Deliberately push prompts into rare, contradictory, or weakly represented regions of the training distribution to force the model to extrapolate rather than retrieve.
 
+
+.footnote[[Generated with the help of ChatGPT 5.2]]
+
 --
 
 <br />
@@ -888,7 +891,6 @@ Technical pipeline: Training → Representation → Inference
 * Latent space interpolation is typically done after training, during inference or analysis, not during the main training loop.
 * The latent space is shaped during training through the loss function and data distribution. Interpolation happens later, when we explore that learned space by moving between two encoded points and decoding the intermediate vectors.
 
-TODO: for all the following say one sentence regarding how to make use of it
 
 ---
 .header[Residuals in Generative AI]
@@ -996,6 +998,7 @@ For artistic practice: feeding models ekphrases — verbal descriptions of exist
 
 > In a multimodal pipeline analyze where alignment scores diverge to systematically locate and exploit representational mismatch.
 
+.footnote[[Generated with the help of ChatGPT 5.2]]
 
 
 ---
@@ -1033,6 +1036,9 @@ Expose unstable or ambiguous intermediate forms:
 ## Latent Space Interpolation
 
 > Instrument your generator to interpolate between chosen latent codes (or embeddings) and use intermediate steps and the “in-between” as material (and as evidence of the model’s internal topology).
+
+.footnote[[Generated with the help of ChatGPT 5.2]]
+
 
 ???
 Interpolate between distant or weakly connected latent vectors to expose unstable intermediate forms and treat those transitional states as primary material.
@@ -1089,6 +1095,8 @@ For art: “what the model cannot forget.”
 
 > During training, compare how well the model performs on training data versus unseen validation data, and test whether it reproduces specific examples; when you detect memorized fragments, use them to inspect and adjust your dataset by removing, balancing, or intentionally emphasizing those patterns.
 
+.footnote[[Generated with the help of ChatGPT 5.2]]
+
 
 ---
 .header[Residuals in Generative AI]
@@ -1122,6 +1130,9 @@ The residual here is absence; the missing variation may itself be worth explorin
 ## Mode Collapse
 
 > During training investigate how varied the model’s outputs are, and adjust the dataset size, data augmentation, or strength of the loss function to either increase diversity or deliberately narrow it, depending on the effect you want.
+  
+.footnote[[Generated with the help of ChatGPT 5.2]]
+
 
 ---
 .header[Residuals in Generative AI]
@@ -1166,6 +1177,7 @@ Distinguish clearly:
 > If training on synthetic data, run multi-generation experiments and compare generations; (re-)use observed drifts, develop anchoring strategies or to aestheticize the iterations.
 
 
+.footnote[[Generated with the help of ChatGPT 5.2]]
 
 
 
@@ -1208,6 +1220,8 @@ template:inverse
 
 > Weaken or remove temporal constraints (identity conditioning, flow consistency, recurrence) on purpose and work with the resulting drift.
 
+.footnote[[Generated with the help of ChatGPT 5.2]]
+
 
 
 ---
@@ -1247,6 +1261,7 @@ Both of the following example works target detectors, not generators. They explo
 > Slightly modify images in controlled ways, for example by adding subtle patterns, small pixel changes, or changing the viewing angle, and observe when the classifier suddenly changes its decision; those tipping points reveal where its boundaries lie and can become your material.
 
 
+.footnote[[Generated with the help of ChatGPT 5.2]]
 
 
 ---
@@ -1771,7 +1786,9 @@ Crucial beyond technical exploration:
 * Responsibility
 
 --
-Possible residuals are time sensitive.
+  
+<br />
+> Possible residuals are time sensitive.
 
 ???
 * Framing shapes interpretation.
