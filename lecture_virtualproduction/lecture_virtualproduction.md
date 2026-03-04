@@ -75,12 +75,12 @@ layout:false
 ---
 .header[MA Creative Technologies]
 
-.center[<img src="./img/qr_filmunictech.png" alt="qr_filmunictech" style="width:45%;">]
+.center[[<img src="./img/qr_filmunictech.png" alt="qr_filmunictech" style="width:45%;">](https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/creative-technologies)]
 
 ---
 .header[MA Creative Technologies]
 
-.center[<img src="./img/qr_filmuniinsta.png" alt="qr_filmuniinsta" style="width:45%;">]
+.center[[<img src="./img/qr_filmuniinsta.png" alt="qr_filmuniinsta" style="width:45%;">](https://www.instagram.com/ctech.filmuniversity/)]
 
 
 ---
@@ -251,18 +251,31 @@ Live preview of characters.
 ---
 .header[Basics | Visual Effects]
 
-## On Set Green Screen Shooting
+## On Set Shooting: Green Screens
 
 .center[<img src="./img/vfx_05.png" alt="vfx_05" style="width:36%;">  <img src="./img/vfx_06.png" alt="vfx_06" style="width:36%;">.imgref[[Images: [digitalsynopsis](https://digitalsynopsis.com/design/movies-before-after-green-screen-cgi/)]]]
 
+---
+.header[Basics]
 
+## Visual Effects
+
+.left-even[<img src="./img/cgi_03b.png" alt="cgi_03a" style="width:100%;">  
+.imgref[[Image: Adrian Weber & Halostage]]]
+
+--
+
+.right-even[
+<br />
+So far: **very long render times**...
+]
 
 
 
 ---
 .header[Basics | Visual Effects]
 
-## VFX Film Production Pipeline
+## Film Production Pipeline
 
 .center[<img src="./img/pipeline_01.png" alt="pipeline_01" style="width:100%;">].imgref[[Image: [Unreal Engine - Virtual Production](https://www.unrealengine.com/en-US/explainers/virtual-production/what-is-virtual-production)]]
 

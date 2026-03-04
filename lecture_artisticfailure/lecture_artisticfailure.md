@@ -67,12 +67,12 @@ layout:false
 ---
 .header[MA Creative Technologies]
 
-.center[<img src="./img/qr_filmunictech.png" alt="qr_filmunictech" style="width:45%;">]
+.center[[<img src="./img/qr_filmunictech.png" alt="qr_filmunictech" style="width:45%;">](https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/creative-technologies)]
 
 ---
 .header[MA Creative Technologies]
 
-.center[<img src="./img/qr_filmuniinsta.png" alt="qr_filmuniinsta" style="width:45%;">]
+.center[[<img src="./img/qr_filmuniinsta.png" alt="qr_filmuniinsta" style="width:45%;">](https://www.instagram.com/ctech.filmuniversity/)]
 
 ---
 template:inverse
