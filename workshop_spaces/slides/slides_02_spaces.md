@@ -698,7 +698,7 @@ Optical mocap sees the body from outside. Inertial mocap feels the body from ins
 
 .center[
  <video width="1060" controls>
-  <source src="./img/spaces/majorlazer_01.mp4" type="video/mp4">
+  <source src="./img/spaces/majorlazer_01.webm" type="video/mp4">
 </video> 
 ]
 
@@ -1000,7 +1000,7 @@ So the ontology changes: person → motion agent.
 
 .center[
  <video width="960" controls>
-  <source src="./img/spaces/bodypaint_01.mp4" type="video/mp4">
+  <source src="./img/spaces/bodypaint_01.webm" type="video/mp4">
 </video> 
 
 ]
@@ -1185,7 +1185,7 @@ In this configuration, data performs the role gesture previously held: it become
 
 .center[
  <video width="960" controls>
-  <source src="./img/spaces/machineHallucinations_02.mp4" type="video/mp4">
+  <source src="./img/spaces/machineHallucinations_02.webm" type="video/mp4">
 </video> 
 
 ]
@@ -1511,7 +1511,7 @@ but less behaviorally emergent and less tightly conceptually bound.
 
 .center[
  <video width="960" controls muted>
-  <source src="./img/spaces/superradiance_01.mp4" type="video/mp4">
+  <source src="./img/spaces/superradiance_01.webm" type="video/mp4">
 </video> 
 ]
 .footnote[[Superradiance](https://superradiance.net/)]
@@ -1588,7 +1588,7 @@ Memo Akten and Katie Hofstadter, 2025:
 
 .center[
  <video width="960" controls>
-  <source src="./img/spaces/superradiance_makingof_cutout_01.mp4" type="video/mp4">
+  <source src="./img/spaces/superradiance_makingof_cutout_01.webm" type="video/mp4">
 </video> 
 ]
 
@@ -1736,7 +1736,7 @@ This is not autonomous emergence, but authored emergence: rule-like behavior tha
 
 .center[
  <video width="960" controls>
-  <source src="./img/spaces/superradiance_01.mp4#t=97" type="video/mp4">
+  <source src="./img/spaces/superradiance_01.webm#t=97" type="video/mp4">
 </video> 
 ]
 .footnote[[Superradiance](https://superradiance.net/)]
