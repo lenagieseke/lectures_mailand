@@ -33,29 +33,19 @@ Theme: Translational Pipelines — Constructing Third Spaces
 * Translation constructs new spaces
 * Examples
 
-#### TODO:
 
-* Make BA student compatible
-    * Merge structure and production
-* Check time so that it is 45-60 min
   
 ### 16:30–16:45 Break
 
 ### 16:45–17:45 Cataloging Translations and Spaces
 Together, we collect and analyze scenarios in which one medium is translated into another (e.g., gesture, voice, ambient light, movement, proximity). We identify the pipeline and examine the resulting third space: what entities and rules it introduces, how it behaves over time, and how it might influence perception or action. The goal is to map both technical setups and the kinds of worlds they produce.
 
-#### TODO:
 
-* Prepare structure how to collect and present
-* Start with clapping example
-* Prepare further examples
 
 ### 17:45–18:30 Group Work (5 groups of 5)
 Each group develops one translational scenario for a setup, design, or artwork. The outcome is a clearly articulated concept that includes a pipeline description (Source → Capture → Transform → Third Space) and a concise explanation of the world it constructs, rather than a finished implementation.
 
-#### TODO:
 
-* Generate clear instruction description including for the presentation
 
 ## Session 2 — Wednesday, March 11 | 9:00–13:30
 Theme: From Pipeline to World — Analysis and Consequences 
@@ -70,6 +60,9 @@ Each group must answer:
 * What is preserved, reduced, or transformed?
 * What rules define your third space?
 * How does it influence behavior or perception?
+
+
+
 
 #### TODO:
 
