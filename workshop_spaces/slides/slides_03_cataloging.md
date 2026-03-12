@@ -600,7 +600,7 @@ Together, the examples show that misclassification can be engineered at the boun
 
 .center[
  <video width="900" controls>
-  <source src="./img/cataloging/rainroom_cutout_01.webm" type="video/webm">
+  <source src="./img/cataloging/rainroom_cutout_01.mp4" type="video/mp4">
 </video>  
 ]
 
@@ -781,7 +781,7 @@ The visuals are created with an image generating diffusion model with Sontag’s
 
 .center[
  <video width="960" controls>
-  <source src="./img/cataloging/sonntag_cutout_01.webm" type="video/webm">
+  <source src="./img/cataloging/sonntag_cutout_01.mp4" type="video/mp4">
 </video>  
 ]
 
@@ -864,7 +864,7 @@ The failure is testimony.
 
 .center[
  <video width="960" controls>
-  <source src="./img/cataloging/zizzi_cutout_02.webm" type="video/webm">
+  <source src="./img/cataloging/zizzi_cutout_02.mp4" type="video/mp4">
 </video>  
 ]
 

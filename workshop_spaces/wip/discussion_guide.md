@@ -9,7 +9,7 @@ Goal: make students aware of the **hidden decisions in translation**.
 Prompt:
 * When you designed your pipeline, what did you have to decide that was not obvious at first?
 
-Follow-ups if the room is quiet:
+Follow-ups:
 * What did you have to simplify about the original phenomenon?
 * What did you choose to measure, and what did you ignore?
 * Did anyone change their idea because the capture method forced them to?
