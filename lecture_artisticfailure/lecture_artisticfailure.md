@@ -1804,8 +1804,9 @@ As models improve, errors and become rarer and more historically specific materi
 ---
 template:inverse
 
-### *The engineer fixes the bug.*
-### *The artist works with the bug.*
+### *Fix the bug.*
+### *Or... work with the bug!*
+
 
 
 ???
