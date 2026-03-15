@@ -713,7 +713,7 @@ Benoît B. Mandelbrot, a French and American mathematician, is considered to be 
 
 .center[
  <video width="800" controls>
-  <source src="./img/sketch_01.webm" type="video/webm">
+  <source src="./img/sketch_01_S.webm" type="video/webm">
 </video> 
 ]
 
