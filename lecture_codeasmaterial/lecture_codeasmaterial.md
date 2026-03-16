@@ -211,6 +211,10 @@ LeWitt came to fame in the late 1960s with his wall drawings and "structures" (a
 
 .footnote[[A. Adler. 2017. [*Sol LeWitt: 'Arcs and Lines' At Paula Cooper Gallery, NYC.*](https://www.huffpost.com/entry/sol-lewitt-arcs-and-lines_b_870641). Huffpost.]]
 
+
+???
+"all combinations of two lines crossing, placed at random, using arcs from corners and sides, straight, not straight and broken lines"
+
 ---
 .header[Instructions | Sol LeWitt - Wall Drawing #122, 1972]
 
@@ -331,9 +335,18 @@ So it is aleatoric in spirit, but specifically a form of performer-driven indete
 ---
 ## Instructions
 
+
+???
+
+> Many artistic practices rely on instructions that produce actions and outcomes.
+
+
+--
+
 > Code is a way of writing **instructions that produce actions and outcomes**.
 
 ???
+
 * At the most basic level, programming is not about machines.
 * It is about **describing actions through precise instructions**.
 * A line of code does not contain an image or sound.
@@ -356,15 +369,15 @@ Computation and with that **automation** as medium
 
 --
 
-* Repeat processes
+* Repetition of processes
 
 --
 
-* Condition behavior
+* Conditional behavior
 
 --
 
-* Respond to inputs
+* Responding to inputs
 
 --
 
@@ -431,8 +444,18 @@ The original BASIC program for the Commodore 64:
 ```
 <!-- ??? BASIC had its own character indices (not ASCII) -->
 
----
-.header[Algorithms]
+???
+
+* 1982 onward
+
+Algorithm
+* CHR(205) = / and CHR(206) = \
+* RND(1) generates a random number between 0 and 1.
+* 205.5 + RND(1) pushes that value either just below or above 206.
+* CHR$() converts the resulting number into a character.
+* Go to the beginning of the line again
+
+--------------------------
 
 <img src="./img/ten_print_commodore.png" alt="name" style="width:70%;">
 
@@ -443,7 +466,7 @@ Bash:
 f="╱╲";while :;do print -n ${f[(RANDOM % 2) + 1]};done
 ```
 
-???
+
 .task[TASK:]  
 
 * Show terminal version
@@ -554,31 +577,6 @@ The remarkable simplicity of complexity...
 ---
 .header[Algorithms | Emergence]
 
-## Snowflakes
-
-<img src="./img/snowflakes_01.jpg" alt="snowflakes_01" style="width:50%;">
-
-.footnote[[Wikipedia. 2023. [*Emergence*](https://en.wikipedia.org/wiki/Emergence).]]
-
-
-???
-
-* The formation of complex symmetrical and fractal patterns in snowflakes exemplifies emergence in a physical system.
-* Water droplets freeze to form ice molecules (also crystals) in the upper reaches of Earth’s atmosphere, which act as aggregates for crystallization. As the crystals grow in size, they gain mass and begin falling through the atmosphere. The differing temperatures and pressures acting on the crystal structure as it falls causes new patterns to emerge systematically that exhibit near-perfect radial symmetry. https://discover.hubpages.com/education/Self-Organization-in-Natural-Systems
-* A snowflake is a single ice crystal that has achieved a sufficient size, and may have amalgamated with others, which falls through the Earth's atmosphere as snow.[1][2][3] Each flake nucleates around a tiny particle in supersaturated air masses by attracting supercooled cloud water droplets, which freeze and accrete in crystal form. Complex shapes emerge as the flake moves through differing temperature and humidity zones in the atmosphere, such that individual snowflakes differ in detail from one another, but may be categorized in eight broad classifications and at least 80 individual variants. The main constituent shapes for ice crystals, from which combinations may occur, are needle, column, plate, and rime. Snow appears white in color despite being made of clear ice. This is due to diffuse reflection of the whole spectrum of light by the small crystal facets of the snowflakes.[4]
-
----
-.header[Algorithms | Emergence]
-
-<img src="./img/snowflakes_02.jpg" alt="snowflakes_02" style="width:70%;">  
-.caption[An early classification of snowflakes by Israel Perkins Warren.]
-
-.footnote[[Wikipedia. 2023. [*Snowflake*](https://en.wikipedia.org/wiki/Snowflake).]]
-
-
----
-.header[Algorithms | Emergence]
-
 ## Termites
 
 <img src="./img/termite_01.jpg" alt="termite_01" style="width:28%;">  
@@ -602,13 +600,6 @@ The remarkable simplicity of complexity...
 .footnote[[B. Yirka. 2015. [*Researchers use wave theories to understand flocks of birds*](https://www.sott.net/article/297335-Researchers-use-wave-theories-to-understand-flocks-of-birds). Sign of the times.]]
 
 
----
-.header[Algorithms | Emergence | 10 PRINT]
-
-.center[
-<img src="./img/ten_print_commodore.png" alt="ten_print_commodore" style="width:95%;">
-
-]
 
 ---
 .header[Algorithms | Emergence | Koch Curve]
@@ -619,6 +610,12 @@ The remarkable simplicity of complexity...
 ]
 
 ???
+
+* A fractal is a never-ending pattern. Fractals are infinitely complex patterns that are self-similar across different scales. They are created by repeating a simple process over and over in an ongoing feedback loop. Driven by recursion, fractals are images of dynamic systems – the pictures of Chaos. Geometrically, they exist in between our familiar dimensions. Fractal patterns are extremely familiar, since nature is full of fractals. For instance: trees, rivers, coastlines, mountains, clouds, seashells, hurricanes, etc. Abstract fractals – such as the Mandelbrot Set – can be generated by a computer calculating a simple equation over and over.
+* https://fractalfoundation.org/resources/what-are-fractals/
+
+
+
 
 Grammar-based models are a substitution system of rules and elements.  
 * Introduced in theoretical linguistics from [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky) (late 1950s)
@@ -644,6 +641,9 @@ L-systems
 
 ]
 
+???
+* A fractal is a never-ending pattern. Fractals are infinitely complex patterns that are self-similar across different scales. They are created by repeating a simple process over and over in an ongoing feedback loop. 
+
 --
 
 .right-even[
@@ -667,49 +667,27 @@ L-systems
 In computer graphics, or rather maths, probably one the most famous visual structure are fractals, e.g. the Mandelbrot set.
 
 
----
-.header[Algorithms | Emergence | Fractals]
-
-## Mandelbrot Set
-
-.center[<img src="./img/mandelbrot.png" alt="mandelbrot" style="width:100%;"> .imgref[[[Wiki]](https://en.wikipedia.org/wiki/Mandelbrot_set)]] 
-
-
-
-???
-  
-
-* A fractal is a never-ending pattern. Fractals are infinitely complex patterns that are self-similar across different scales. They are created by repeating a simple process over and over in an ongoing feedback loop. Driven by recursion, fractals are images of dynamic systems – the pictures of Chaos. Geometrically, they exist in between our familiar dimensions. Fractal patterns are extremely familiar, since nature is full of fractals. For instance: trees, rivers, coastlines, mountains, clouds, seashells, hurricanes, etc. Abstract fractals – such as the Mandelbrot Set – can be generated by a computer calculating a simple equation over and over.
-* https://fractalfoundation.org/resources/what-are-fractals/
 
 
 
 ---
-.header[Algorithms | Emergence | Fractals]
+.header[Algorithms]
 
-## Mandelbrot Set
 
-.center[<img src="./img/mandelbrot.gif" alt="mandelbrot" style="width:50%;">  
+## Emergence
+
+.left-even[<img src="./img/mandelbrot.gif" alt="mandelbrot" style="width:100%;">  
 .imgref[[[Wiki]](https://en.wikipedia.org/wiki/Mandelbrot_set)]]  
 
-
-
----
-.header[Algorithms | Emergence | Fractals]
-
-
-## Mandelbrot Set
-
+.right-even[
 > Bottomless wonders spring from simple rules, which are repeated without end.
 
 \- Benoît Mandelbrot 
+]
 
 ???
 
 Benoît B. Mandelbrot, a French and American mathematician, is considered to be the father of fractal geometry.
-
----
-.header[Algorithms]
 
 .center[
  <video width="800" controls>
@@ -801,7 +779,9 @@ The response to non-intuitive parameters is remapping: translating abstract syst
 
 ## Algorithms as Material
 
-> Simple Rules + Repetition → **Emergence**
+--
+
+> Rules + Repetition → **Emergence**
 
 ???
 * Rules applied repeatedly can produce **complex structures**
@@ -818,9 +798,14 @@ We design **processes** that generate output.
 
 Algorithms as Material
 
+--
 * *How do rules produce patterns and behavior?*
+
+--
 * *How can control shape variation?*
-* *Where are the unexpected outcomes?*
+
+--
+* ***Where are the unexpected outcomes?***
 
 ???
 Algorithms become a **creative material** when we explore:
@@ -842,14 +827,17 @@ template:inverse
     * Experience
     * Embodiment
 
-TODO: check terminology, keep both world building and third space? Check usage
 
 ---
-## Computational Systems
+.header[Computational Systems]
 
-.center[<img src="./img/machineHallucinations_01.png" alt="machineHallucinations_01" style="width:92%;">].imgref[[Image: Rafik Anadol. 2021. Machine Hallucinations — Nature Dreams. https://refikanadol.com/works/machine-hallucinations-nature-dreams/]]
+.center[<img src="./img/machineHallucinations_01.png" alt="machineHallucinations_01" style="width:80%;">].imgref[[Image: Rafik Anadol. 2021. Machine Hallucinations — Nature Dreams. https://refikanadol.com/works/machine-hallucinations-nature-dreams/]]
 
-.center[<img src="./img/superradiance_04.jpg" alt="superradiance_04" style="width:92%;">].imgref[[Image: Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
+---
+.header[Computational Systems]
+
+
+.center[<img src="./img/superradiance_05.jpg" alt="superradiance_05" style="width:92%;">].imgref[[Image: Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]]
 
 
 
@@ -1140,13 +1128,13 @@ Third space: abstract, immersive, continuously evolving
 
 ## The Third Space of *Nature Dreams*
 
-* Some structural and dynamic difference to the source
-    * Latent space organizes images by similarity  
-    * Fluid simulation introduces visual continuity  
-    * Represents images never captured and continuous morphing sequences 
-
+* Structural and dynamic difference to the source
   
 ???
+* Latent space organizes images by similarity  
+* Fluid simulation introduces visual continuity  
+* Represents images never captured and continuous morphing sequences 
+
 
 Fluid simulation introduces visual continuity, Moderate emergence. 
 * The embedding creates structure: clusters, manifolds, transitions.
@@ -1291,11 +1279,6 @@ but less behaviorally emergent and less tightly conceptually bound.
 
 ---
 <img src="./img/superradiance_03.jpg" alt="superradiance_03" style="width:100%;">  
-.footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
-
-
----
-<img src="./img/superradiance_05.jpg" alt="superradiance_05" style="width:100%;">  
 .footnote[Memo Akten and Katie Hofstadter. 2025. Superradiance. https://superradiance.net/]
 
 
@@ -1522,7 +1505,7 @@ Semantic resonance makes it intelligible and culturally situated.
 
 --
 
-> Art begins where technical translation becomes ontological, dynamic, influential, and meaningful.
+> Art begins where technical translation becomes ontological, dynamic, experiential, and meaningful.
 
 ???
 When they are integrated and mutually reinforcing, we approach art.  
@@ -2009,18 +1992,13 @@ Where Can Residuals Originate?
 
 
 
----
-template:inverse
-#### Models of Misuse
-#### Residuals in Generative AI
-### Input Layer (Prompting)
-
-
 
 ---
 .header[Models of Misuse | Residuals in Generative AI]
 
 ## Input Layer (Prompting)
+
+--
 
 Make the model extrapolate, not retrieve.
 
@@ -2360,17 +2338,26 @@ You are forcing the model into a low-density region of its learned distribution,
 * Time (temporal coherence) [...]
 * Decision logic (model inference) [...]
 
---
+???
 
-> Choose **where in the stack** to intervene.
-
+* Representation (data structure, encoding)
+    * Compressing a smooth gradient into 8-bit values produces visible banding because the representation cannot express the continuous change.
+* Training (bias, optimization)
+    * A cat generator trained mostly on cats datasets keeps producing cats even when asked for dogs.
+* Time (temporal coherence)
+    * In a generated video, a character’s shirt pattern subtly changes between frames because the system does not perfectly remember the previous state.
+* Decision logic (model inference)
+    * A classifier flips from “cat” to “dog” after adding tiny pixel noise because the decision boundary sits right between the two classes.
 
 
 ---
 template: inverse
 
-### Models of Misuse
+
+#### Models of Misuse: Generative AI
 ## Misalignment as Material
+
+
 
 
 ---
@@ -2483,7 +2470,7 @@ Weight space becomes the medium.
 
 * Uses GAN-based generative models trained on curated biological datasets
 * Explores the learned latent space of biological features
-* Samples and recombines features in the latent space to generate plausible but non-existent organisms
+* Samples and recombines features to generate plausible but non-existent organisms
 
 .footnote[[[*Neural Zoo*](https://sofiacrespo.com/neural-zoo), Sophia Crespo, 2018-2022.]]
 
@@ -2542,14 +2529,18 @@ Layer chosen: **latent representation**
 .header[Models of Misuse | Misalignment as Material]
 ## *Zizi* (Jake Elwes, 2019-2022)
 
-* Starts from a pretrained face-generating GAN trained on datasets shaped by dominant gender and racial priors
-* Fine-tuning of the model with a curated dataset of drag performers, introducing aesthetics and identities outside the training data
+* Starts from a given pretrained "deep fake" face generator
+* Fine-tuning of the model with a dataset of drag performers
 * The model struggles to stabilize facial identity, revealing bias in what it learned as “face”
 
 .footnote[[[*Zizi*](https://www.jakeelwes.com/), Jake Elwes, 2019-2022.]]
 
 ???
 Layer chosen: **training data assumptions**
+* Starts from a pretrained face-generating GAN trained on datasets shaped by dominant gender and racial priors
+* Fine-tuning of the model with a curated dataset of drag performers, introducing aesthetics and identities outside the training data
+* The model struggles to stabilize facial identity, revealing bias in what it learned as “face”
+
 
 Technically, the process is roughly:
 * Start from an existing face-generating GAN architecture (e.g. StyleGAN).
@@ -2596,12 +2587,18 @@ The failure is testimony.
 
 ## *A.I. Interprets A.I. Interpreting ‘Against Interpretation’ (Sontag 1966)* (Jake Elwes, 2023)
 
-* Sontag’s sentences are used as prompts in a diffusion image model
-* The generated images are re-captioned using CLIP-guided text generation with GPT-2
+* Sontag’s sentences are used as prompts in a image generation model
+* The generated images are re-captioned by an algorithm
 * Output text becomes a machine re-interpretation of the original sentence
 
 ???
 **translation chain / cross-modal misalignment**
+* Sontag’s sentences are used as prompts in a diffusion image model
+* The generated images are re-captioned using CLIP-guided text generation with GPT-2
+* Output text becomes a machine re-interpretation of the original sentence
+  
+  
+
 * Large pre-trained models are trained on internet-scale datasets
 * Sontag’s precise theoretical language is processed through systems shaped by broad, biased data
 * Text → Image → Text introduces compounding reinterpretation
@@ -2678,6 +2675,12 @@ In this series of works, the process of training is borne out in the video piece
 .footnote[[[*(un)stable equilibrium — Series 2*](https://terencebroad.com/works/unstable-equilibrium-2) (Terence Broad, 2025)]]
 
 ???
+* A generative neural network is trained without any training data
+* The network is driven by internal dynamics only
+* The network searches for something that is undefined and unresolved
+
+
+
 training without data / search instability
 * Unlike typical generative models, no external dataset is used.  ￼
 * The network is driven by internal dynamics and loss terms only.  ￼
@@ -2781,7 +2784,7 @@ Engineering with a different objective
 --
 
 * The same technical knowledge is required, often more
-* You cannot design controlled instability without understanding stability
+* You cannot design instability without understanding stability
 
 ???
 
